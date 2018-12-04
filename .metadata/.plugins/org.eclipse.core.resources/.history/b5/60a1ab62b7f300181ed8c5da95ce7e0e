@@ -1,0 +1,10 @@
+
+public class TestPendulo {
+
+	public static void main(String[] args) {
+		
+		Pendulo pendulo = new Pendulo(25.2f);
+
+	}
+
+}

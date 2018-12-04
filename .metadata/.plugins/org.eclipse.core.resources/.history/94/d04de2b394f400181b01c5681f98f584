@@ -1,0 +1,10 @@
+public class TestCoche {
+
+	public static void main(String[] args) {
+		
+		Coche c1 = new Coche();
+		Coche c2 = new Coche();
+
+	}
+
+}
