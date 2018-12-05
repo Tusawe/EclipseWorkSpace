@@ -1,0 +1,10 @@
+package cafetera;
+
+public class Utiles {
+
+	int vasos = 10;
+	int palitos = 10;
+	int azucar = 10;
+	double agua = 5.0;	
+	
+}

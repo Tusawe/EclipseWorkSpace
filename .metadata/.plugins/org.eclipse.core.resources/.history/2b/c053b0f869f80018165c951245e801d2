@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package cafetera;
+
+/**
+ * @author matinal
+ *
+ */
+public class Consumible{
+	
+	private int tiempo;
+	private double precio;
+	private double agua;
+	private double leche;
+
+	public Consumible( int tiempo, double precio, double agua, double leche ) {
+		
+		this.tiempo = tiempo;
+		this.precio = precio;
+		this.agua = agua;
+		this.leche = leche;
+	
+	}
+
+}
