@@ -1,0 +1,14 @@
+package cafetera;
+
+public class Gui {
+
+public static void main(String[] args) {
+		
+		Cafetera maquina = new Cafetera();
+		
+
+
+	}
+
+}
+

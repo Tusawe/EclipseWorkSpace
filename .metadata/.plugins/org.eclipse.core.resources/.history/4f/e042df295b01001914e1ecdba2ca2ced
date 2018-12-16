@@ -2,10 +2,10 @@ package cafetera;
 
 public class Cafetera {
 	
-	private int vasos;
-	private int palitos;
-	private int azucar;
-	private double agua;
+	private int vasos = 10;
+	private int palitos = 10;
+	private int azucar = 10;
+	private double agua = 5.0;
 	private Consumible consumibles[];
 	
 	/**
@@ -84,12 +84,6 @@ public class Cafetera {
 	 */
 	public Consumible[] getConsumibles() {
 		return consumibles;
-	}
-	
-	public void insertarConsumible(int i, int tiempo, double precio, double agua, int capsulas) {
-		
-		this.consumibles[i] = new Consumible(tiempo, precio, agua, capsulas);
-		
 	}
 	
 }

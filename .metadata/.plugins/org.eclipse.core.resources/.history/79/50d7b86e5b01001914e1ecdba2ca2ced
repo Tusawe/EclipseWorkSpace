@@ -4,7 +4,7 @@ public class Cafetera {
 	
 	private int vasos;
 	private int palitos;
-	private int azucar;
+	private int azuca;
 	private double agua;
 	private Consumible consumibles[];
 	

@@ -1,0 +1,28 @@
+package cafetera;
+
+public class Cafetera {
+	
+	private int vasos = 10;
+	private int palitos = 10;
+	private int azucar = 10;
+	private double agua = 5.0;
+	private Cosumible con[];
+	
+	/**
+	 * @param vasos
+	 * @param palitos
+	 * @param azucar
+	 * @param agua
+	 * @param con
+	 */
+	public Cafetera(int vasos, int palitos, int azucar, double agua, Cosumible[] con) {
+		this.vasos = vasos;
+		this.palitos = palitos;
+		this.azucar = azucar;
+		this.agua = agua;
+		this.con = con;
+	}
+	
+	
+
+}
