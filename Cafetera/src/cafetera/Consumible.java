@@ -5,33 +5,33 @@ public class Consumible{
 	private int tiempo;
 	private double precio;
 	private double agua;
-	private int capsulas;
+	private String tipo;
 
 	/**
 	 * @param tiempo
 	 * @param precio
 	 * @param agua
-	 * @param capsulas
+	 * @param tipo
 	 */
-	public Consumible(int tiempo, double precio, double agua, int capsulas) {
+	public Consumible(int tiempo, double precio, double agua, String tipo) {
 		this.tiempo = tiempo;
 		this.precio = precio;
 		this.agua = agua;
-		this.capsulas = capsulas;
+		this.tipo = tipo;
 	}
 
 	/**
-	 * @return the capsulas
+	 * @return the tipo
 	 */
-	public int getCapsulas() {
-		return capsulas;
+	public String getTipos() {
+		return tipo;
 	}
 
 	/**
-	 * @param capsulas the capsulas to set
+	 * @param tipo the tipo to set
 	 */
-	public void setCapsulas(int capsulas) {
-		this.capsulas = capsulas;
+	public void setCapsulas(String tipo) {
+		this.tipo = tipo;
 	}
 
 	/**

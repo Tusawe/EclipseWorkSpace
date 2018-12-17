@@ -2,25 +2,38 @@ package cafetera;
 
 public class Cafetera {
 	
+	private double dinero;
 	private int vasos;
 	private int palitos;
 	private int azucar;
 	private double agua;
 	private Consumible consumibles[];
 	
-	/**
-	 * @param vasos
-	 * @param palitos
-	 * @param azucar
-	 * @param agua
-	 * @param consumibles
-	 */
-	public Cafetera(int vasos, int palitos, int azucar, double agua) {
-		this.vasos = vasos;
-		this.palitos = palitos;
-		this.azucar = azucar;
-		this.agua = agua;
+	public Cafetera() {
+		this.dinero = 0.0;
+		this.vasos = 10;
+		this.palitos = 10;
+		this.azucar = 10;
+		this.agua = 5.0;
 		this.consumibles = new Consumible[5];
+	}
+	
+	/**
+	 * @return the dinero
+	 */
+	public double getDinero() {
+		return dinero;
+	}
+
+	/**
+	 * @param dinero the dinero to set
+	 */
+	public void sumarDinero(double dinero) {
+		this.dinero += dinero;
+	}
+	
+	public void recaudarDinero() {
+		this.dinero = 0.0;
 	}
 
 	/**
@@ -36,6 +49,10 @@ public class Cafetera {
 	public void setVasos(int vasos) {
 		this.vasos = vasos;
 	}
+	
+	public void gastarVasos() {
+		this.vasos -= 1;
+	}
 
 	/**
 	 * @return the palitos
@@ -49,6 +66,10 @@ public class Cafetera {
 	 */
 	public void setPalitos(int palitos) {
 		this.palitos = palitos;
+	}
+	
+	public void gastarPalitos() {
+		this.palitos -= 1;
 	}
 
 	/**
@@ -64,6 +85,13 @@ public class Cafetera {
 	public void setAzucar(int azucar) {
 		this.azucar = azucar;
 	}
+	
+	/**
+	 * @param terrones de azucar
+	 */
+	public void gastarAzucar(int terrones) {
+		this.azucar -= terrones ;
+	}
 
 	/**
 	 * @return the agua
@@ -78,6 +106,13 @@ public class Cafetera {
 	public void setAgua(double agua) {
 		this.agua = agua;
 	}
+	
+	/**
+	 * @param agua gastada.
+	 */
+	public void gastarAgua(double agua) {
+		this.agua -= agua;
+	}
 
 	/**
 	 * @return the consumibles
@@ -86,9 +121,9 @@ public class Cafetera {
 		return consumibles;
 	}
 	
-	public void insertarConsumible(int i, int tiempo, double precio, double agua, int capsulas) {
+	public void insertarConsumible(int i, int tiempo, double precio, double agua, String tipo) {
 		
-		this.consumibles[i] = new Consumible(tiempo, precio, agua, capsulas);
+		this.consumibles[i] = new Consumible(tiempo, precio, agua, tipo);
 		
 	}
 	
