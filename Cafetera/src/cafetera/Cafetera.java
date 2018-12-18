@@ -1,26 +1,43 @@
 package cafetera;
 
+/**
+ * @author José Luis Gómez López
+ * @version 1.0
+ */
 public class Cafetera {
 	
+	private double dinero;
 	private int vasos;
 	private int palitos;
 	private int azucar;
 	private double agua;
 	private Consumible consumibles[];
 	
-	/**
-	 * @param vasos
-	 * @param palitos
-	 * @param azucar
-	 * @param agua
-	 * @param consumibles
-	 */
-	public Cafetera(int vasos, int palitos, int azucar, double agua) {
-		this.vasos = vasos;
-		this.palitos = palitos;
-		this.azucar = azucar;
-		this.agua = agua;
+	public Cafetera() {
+		this.dinero = 0.0;
+		this.vasos = 10;
+		this.palitos = 10;
+		this.azucar = 10;
+		this.agua = 5.0;
 		this.consumibles = new Consumible[5];
+	}
+	
+	/**
+	 * @return the dinero
+	 */
+	public double getDinero() {
+		return dinero;
+	}
+
+	/**
+	 * @param dinero the dinero to set
+	 */
+	public void sumarDinero(double dinero) {
+		this.dinero += dinero;
+	}
+	
+	public void recaudarDinero() {
+		this.dinero = 0.0;
 	}
 
 	/**
@@ -30,11 +47,12 @@ public class Cafetera {
 		return vasos;
 	}
 
-	/**
-	 * @param vasos the vasos to set
-	 */
-	public void setVasos(int vasos) {
-		this.vasos = vasos;
+	public void recargarVasos() {
+		this.vasos = 10;
+	}
+	
+	public void gastarVasos() {
+		this.vasos -= 1;
 	}
 
 	/**
@@ -44,11 +62,12 @@ public class Cafetera {
 		return palitos;
 	}
 
-	/**
-	 * @param palitos the palitos to set
-	 */
-	public void setPalitos(int palitos) {
-		this.palitos = palitos;
+	public void recargarPalitos() {
+		this.palitos = 10;
+	}
+	
+	public void gastarPalitos() {
+		this.palitos -= 1;
 	}
 
 	/**
@@ -58,11 +77,15 @@ public class Cafetera {
 		return azucar;
 	}
 
+	public void recargarAzucar() {
+		this.azucar = 10;
+	}
+	
 	/**
-	 * @param azucar the azucar to set
+	 * @param terrones de azucar
 	 */
-	public void setAzucar(int azucar) {
-		this.azucar = azucar;
+	public void gastarAzucar(int terrones) {
+		this.azucar -= terrones ;
 	}
 
 	/**
@@ -72,11 +95,15 @@ public class Cafetera {
 		return agua;
 	}
 
+	public void recargarAgua() {
+		this.agua = 5.00;
+	}
+	
 	/**
-	 * @param agua the agua to set
+	 * @param agua gastada.
 	 */
-	public void setAgua(double agua) {
-		this.agua = agua;
+	public void gastarAgua(double agua) {
+		this.agua -= agua;
 	}
 
 	/**
@@ -86,9 +113,25 @@ public class Cafetera {
 		return consumibles;
 	}
 	
-	public void insertarConsumible(int i, int tiempo, double precio, double agua, int capsulas) {
+	public void insertarConsumible(int i, int tiempo, double precio, double agua, String tipo) {
 		
-		this.consumibles[i] = new Consumible(tiempo, precio, agua, capsulas);
+		this.consumibles[i] = new Consumible(tiempo, precio, agua, tipo);
+		
+	}
+	
+	/**
+	 * @param consumible el consumible que se quiere sacar
+	 * @return true si es posible sacar ese café o té.
+	 */
+	public boolean esPosible(int consumible) {
+		
+		if ((consumibles[consumible].getCapsulas() >= 1) && (vasos >= 1) && (palitos >= 1) && (azucar >= 2) && (agua >= consumibles[consumible].getAgua())) {
+			
+			return true;
+			
+		}
+		
+		return false;
 		
 	}
 	

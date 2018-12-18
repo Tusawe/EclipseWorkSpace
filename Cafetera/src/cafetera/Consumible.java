@@ -1,23 +1,50 @@
 package cafetera;
 
+/**
+ * @author José Luis Gómez López
+ * @version 1.0
+ */
 public class Consumible{
 	
 	private int tiempo;
+	private int capsulas;
 	private double precio;
 	private double agua;
-	private int capsulas;
+	private String tipo;
 
 	/**
 	 * @param tiempo
 	 * @param precio
 	 * @param agua
-	 * @param capsulas
+	 * @param tipo
 	 */
-	public Consumible(int tiempo, double precio, double agua, int capsulas) {
+	public Consumible(int tiempo, double precio, double agua, String tipo) {
 		this.tiempo = tiempo;
 		this.precio = precio;
 		this.agua = agua;
-		this.capsulas = capsulas;
+		this.tipo = tipo;
+		this.capsulas = 10;
+	}
+
+	/**
+	 * @return the tipo
+	 */
+	public String getTipo() {
+		return tipo;
+	}
+
+	/**
+	 * @param tipo the tipo to set
+	 */
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	/**
+	 * @return the tiempo
+	 */
+	public int getTiempo() {
+		return tiempo;
 	}
 
 	/**
@@ -27,18 +54,12 @@ public class Consumible{
 		return capsulas;
 	}
 
-	/**
-	 * @param capsulas the capsulas to set
-	 */
-	public void setCapsulas(int capsulas) {
-		this.capsulas = capsulas;
+	public void recargarCapsulas() {
+		this.capsulas = 10;
 	}
-
-	/**
-	 * @return the tiempo
-	 */
-	public int getTiempo() {
-		return tiempo;
+	
+	public void gastarCapsulas() {
+		this.capsulas -= 1;
 	}
 
 	/**
