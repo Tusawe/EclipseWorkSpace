@@ -1,8 +1,13 @@
 package cafetera;
 
+/**
+ * @author José Luis Gómez López
+ * @version 1.0
+ */
 public class Consumible{
 	
 	private int tiempo;
+	private int capsulas;
 	private double precio;
 	private double agua;
 	private String tipo;
@@ -18,19 +23,20 @@ public class Consumible{
 		this.precio = precio;
 		this.agua = agua;
 		this.tipo = tipo;
+		this.capsulas = 10;
 	}
 
 	/**
 	 * @return the tipo
 	 */
-	public String getTipos() {
+	public String getTipo() {
 		return tipo;
 	}
 
 	/**
 	 * @param tipo the tipo to set
 	 */
-	public void setCapsulas(String tipo) {
+	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
 
@@ -39,6 +45,21 @@ public class Consumible{
 	 */
 	public int getTiempo() {
 		return tiempo;
+	}
+
+	/**
+	 * @return the capsulas
+	 */
+	public int getCapsulas() {
+		return capsulas;
+	}
+
+	public void recargarCapsulas() {
+		this.capsulas = 10;
+	}
+	
+	public void gastarCapsulas() {
+		this.capsulas -= 1;
 	}
 
 	/**

@@ -1,5 +1,9 @@
 package cafetera;
 
+/**
+ * @author José Luis Gómez López
+ * @version 1.0
+ */
 public class Cafetera {
 	
 	private double dinero;
@@ -43,11 +47,8 @@ public class Cafetera {
 		return vasos;
 	}
 
-	/**
-	 * @param vasos the vasos to set
-	 */
-	public void setVasos(int vasos) {
-		this.vasos = vasos;
+	public void recargarVasos() {
+		this.vasos = 10;
 	}
 	
 	public void gastarVasos() {
@@ -61,11 +62,8 @@ public class Cafetera {
 		return palitos;
 	}
 
-	/**
-	 * @param palitos the palitos to set
-	 */
-	public void setPalitos(int palitos) {
-		this.palitos = palitos;
+	public void recargarPalitos() {
+		this.palitos = 10;
 	}
 	
 	public void gastarPalitos() {
@@ -79,11 +77,8 @@ public class Cafetera {
 		return azucar;
 	}
 
-	/**
-	 * @param azucar the azucar to set
-	 */
-	public void setAzucar(int azucar) {
-		this.azucar = azucar;
+	public void recargarAzucar() {
+		this.azucar = 10;
 	}
 	
 	/**
@@ -100,11 +95,8 @@ public class Cafetera {
 		return agua;
 	}
 
-	/**
-	 * @param agua the agua to set
-	 */
-	public void setAgua(double agua) {
-		this.agua = agua;
+	public void recargarAgua() {
+		this.agua = 5.00;
 	}
 	
 	/**
@@ -124,6 +116,22 @@ public class Cafetera {
 	public void insertarConsumible(int i, int tiempo, double precio, double agua, String tipo) {
 		
 		this.consumibles[i] = new Consumible(tiempo, precio, agua, tipo);
+		
+	}
+	
+	/**
+	 * @param consumible el consumible que se quiere sacar
+	 * @return true si es posible sacar ese café o té.
+	 */
+	public boolean esPosible(int consumible) {
+		
+		if ((consumibles[consumible].getCapsulas() >= 1) && (vasos >= 1) && (palitos >= 1) && (azucar >= 2) && (agua >= consumibles[consumible].getAgua())) {
+			
+			return true;
+			
+		}
+		
+		return false;
 		
 	}
 	
