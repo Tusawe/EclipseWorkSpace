@@ -146,7 +146,11 @@ public class Gui {
 							cafetera.gastarAgua(consumibles[2].getAgua());
 							cafetera.gastarPalitos();
 							cafetera.gastarVasos();
+<<<<<<< HEAD
 							consumibles[2].gastarCapsulas();
+=======
+							consumibles[1].gastarCapsulas();
+>>>>>>> c9d93477430763e1fddd4687439c7ea0239a4488
 							
 							// Producimos el consumible.
 							System.out.printf("Sirviendo %S. Espere %d segundos.%n",consumibles[2].getTipo(),consumibles[2].getTiempo());
@@ -254,7 +258,11 @@ public class Gui {
 						while (!(opAdmin >= 1 && opAdmin <= 10)) {
 							
 							System.out.println("ERROR: Opción incorrecta.");
+<<<<<<< HEAD
 							menuAdministrador();
+=======
+							menu();
+>>>>>>> c9d93477430763e1fddd4687439c7ea0239a4488
 							opAdmin  = sc.nextInt();
 							
 						}
@@ -392,7 +400,12 @@ public class Gui {
 							case 9: 
 								// Apagamos la máquina.
 								salir = true;
+<<<<<<< HEAD
 								apagar = true;								
+=======
+								apagar = true;
+								System.out.println("Apagando máquina...");
+>>>>>>> c9d93477430763e1fddd4687439c7ea0239a4488
 								
 								break;
 								
@@ -607,6 +620,10 @@ public class Gui {
 					
 				default:
 					cancelar = true;
+<<<<<<< HEAD
+=======
+					System.out.printf("Devolviendo sus %.2f €...%n",dinero);
+>>>>>>> c9d93477430763e1fddd4687439c7ea0239a4488
 					break;							
 			
 			}					
@@ -619,11 +636,14 @@ public class Gui {
 			System.out.printf("ERROR. No hay cambio. Devolviendo sus %.2f €%n%n",dinero);
 			return false;
 			
+<<<<<<< HEAD
 		} else if (dinero < consumibles[consumible].getPrecio()) {
 			
 			System.out.printf("Devolviendo sus %.2f €...%n",dinero);
 			return false;
 			
+=======
+>>>>>>> c9d93477430763e1fddd4687439c7ea0239a4488
 		}
 		
 		cafetera.sumarDinero(dinero);

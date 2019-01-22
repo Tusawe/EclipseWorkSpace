@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.131+/home/matinal/eclipse-workspace/EclipseWorkSpace/.metadata/.plugins/org.eclipse.jdt.core
 2164670237.index
 1416572448.index
@@ -14,3 +15,13 @@ INDEX VERSION 1.131+/home/matinal/eclipse-workspace/EclipseWorkSpace/.metadata/.
 3519568107.index
 1331090512.index
 3602640040.index
+=======
+INDEX VERSION 1.131+/home/tusawe/eclipse-workspace/EclipseWorkSpace/.metadata/.plugins/org.eclipse.jdt.core
+3175795592.index
+3779318413.index
+856734531.index
+2867887566.index
+2164670237.index
+1892830392.index
+646308851.index
+>>>>>>> c9d93477430763e1fddd4687439c7ea0239a4488
