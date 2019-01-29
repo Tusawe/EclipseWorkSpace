@@ -8,6 +8,13 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Donald Raab: Leverage Information Chunking to scale your Java library package design</title>
+	<guid isPermaLink="false">https://medium.com/p/fcedf64af434</guid>
+	<link>https://medium.com/@donraab/leverage-information-chunking-to-scale-your-java-library-package-design-fcedf64af434?source=rss-df39b86e9f04------2</link>
+	<description>&lt;p&gt;Organizing and grouping your packages can help make your library easier to navigate, comprehend and grow over time.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*R-Y8a6lzMw0Aqs9kM6P6ag.jpeg&quot; /&gt;Grounds for Sculpture, Hamilton Township, NJ&lt;/figure&gt;&lt;h3&gt;Scaling Java library package design is hard&lt;/h3&gt;&lt;p&gt;Java gives us packages to organize related classes and interfaces. Packages are extremely useful, but can be hard to leverage effectively because every package requires a name. Naming things is hard. Organizing things effectively into a hierarchy can be a challenge. Renaming and moving things may be easy in your IDE, but can be extremely hard on your clients if they have to manually replay the rename and move refactorings in their code when they upgrade your library.&lt;/p&gt;&lt;p&gt;It may seem a trivial decision to put everything in the same package and jar when the number of classes in your library is less than ten or twenty. But what do you do if the number of classes and interfaces you have is much more than that? If you have a large number of interfaces and classes in your library, consider splitting your API and implementation classes into separate packages. Also, if you want to enable others to implement your API without having to include the default implementations, having a separate API jar is helpful.&lt;/p&gt;&lt;p&gt;I will explain the Information Chunking strategy that we leverage in Eclipse Collections. Our package hierarchy evolved significantly over time as the library grew. The package design decisions we made consciously before we open sourced Eclipse Collections have made it possible for us to continue to grow the library over an extended period of time.&lt;/p&gt;&lt;h3&gt;How Information Chunking works&lt;/h3&gt;&lt;p&gt;The human mind can remember seven plus or minus two things at a time. This is why phone numbers are seven digits long in the United States. Humans can more effectively manage a large set of information if related concepts are grouped together in chunks of seven plus or minus two things. Sometimes sticking strictly with this number isn’t possible without exploding the number of packages unnecessarily. For instance, organizing every primitive type container into its own package would probably be overkill. Alphabetic sorting of interface and class names gives us a visual grouping within a package so we can more quickly focus or ignore things based on their prefix.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Recommendation:&lt;/strong&gt; Don’t make me scroll. If you make me scroll to see all of the classes in a package, then it is too many.&lt;/p&gt;&lt;h3&gt;The Eclipse Collections Package Strategy&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Separate Interfaces from Implementation&lt;/li&gt;&lt;li&gt;Organize top-level packages by container type&lt;/li&gt;&lt;li&gt;Organize container type specializations with container types (e.g. sorted)&lt;/li&gt;&lt;li&gt;Organize impl packages by Interface type (e.g. Mutable, Immutable)&lt;/li&gt;&lt;li&gt;Organize primitive types into a separate package&lt;/li&gt;&lt;/ul&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*x7tvAh5_CcaS0TZ1O62sRQ.png&quot; /&gt;High-level concerns in Eclipse Collections&lt;/figure&gt;&lt;h3&gt;Separate Interfaces from Implementation&lt;/h3&gt;&lt;p&gt;Eclipse Collections has separate packages and jar files for API interfaces and implementation classes. This allows for clients of our library to understand both the API and implementation separately and group both into a similar mental model by container type.&lt;/p&gt;&lt;h4&gt;Eclipse Collections org.eclipse.collections.api/impl packages&lt;/h4&gt;&lt;p&gt;Eclipse Collections has separate modules and package names for api and implementation. The api packages are on the left, and the impl packages are on the right.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/910/1*k9AWYqVmeltDWz8kUZXt0g.jpeg&quot; /&gt;Eclipse Collections API and Implementation Package Structures&lt;/figure&gt;&lt;p&gt;Eclipse Collections is a large library, but has a manageable number of high level concepts grouped into packages. We have organized Eclipse Collections so that it is easy to explore the supported container types and dive into additional detail as necessary.&lt;/p&gt;&lt;p&gt;Having the API interfaces separated from implementation classes has resulted in extra benefits for the library. The implementation classes depend on the API interfaces, but not the other way around. When API interfaces and implementation classes are in the same packages and located in the same jar, it becomes possible to introduce unwanted dependencies between interfaces and their implementation that are hard to remove later.&lt;/p&gt;&lt;h4&gt;JDK java.util package&lt;/h4&gt;&lt;p&gt;The interfaces and classes contained in the JDK &lt;strong&gt;java.util&lt;/strong&gt; package are shown below.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/982/1*K2Lxki2nCRj2kqD2k5ZrNA.jpeg&quot; /&gt;JDK java.util package&lt;/figure&gt;&lt;p&gt;This is a lot of classes and interfaces for a single package. You can differentiate interfaces and classes by their icons, but there is no way to understand the relationship between any of these utility classes. There are collections, exceptions, formatters, comparators, statistics, optionals, calendars, date, service loader, string related stuff, time zones, timer classes, and other utilities all in the same package. This is a bag of interfaces and classes sorted alphabetically by name.&lt;/p&gt;&lt;p&gt;The &lt;strong&gt;java.util&lt;/strong&gt; package has become a parking lot for things loosely classified as “utility”. Ideally, there should be a &lt;strong&gt;java.util.collection&lt;/strong&gt; package which contains only classes and interfaces that deal with collections. Because of the backwards compatibility guarantee of Java, the only reasonable way forward is to introduce new concepts in new packages like &lt;strong&gt;java.util.stream&lt;/strong&gt;.&lt;/p&gt;&lt;h4&gt;Google Guava com.google.collect package&lt;/h4&gt;&lt;p&gt;These are the classes and interfaces in Google Guava’s &lt;strong&gt;com.google.collect&lt;/strong&gt; package.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*7_1jsHkSUWpix_bChGbgig.jpeg&quot; /&gt;Guava package com.google.collect&lt;/figure&gt;&lt;p&gt;There are a lot of classes in this package, but they are all related to collections. There is a visual grouping that happens due to the prefix of some classes (e.g. Filtered, Forwarding, Immutable, Regular) but it is hard to focus on the interfaces vs. the implementations to understand the overall focus and scope of the library.&lt;/p&gt;&lt;h4&gt;Apache org.apache.commons.collections4 package&lt;/h4&gt;&lt;p&gt;The last library I will compare with here is Apache Commons Collections, which is the oldest third-party Java collections library.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/610/1*HshXa-MHHoBbs9FYk0faug.jpeg&quot; /&gt;Apache package org.apache.commons.collections4&lt;/figure&gt;&lt;p&gt;Apache Commons Collections organizes its implementations by container type, but does not split its API interfaces and implementations into separate packages.&lt;/p&gt;&lt;p&gt;Eclipse Collections is the only Java collections library out of the four that has split its API and Implementations into separate packages and separate jar files.&lt;/p&gt;&lt;h3&gt;Organize packages by container type&lt;/h3&gt;&lt;p&gt;When we decided to add immutable container types and implementations to Eclipse Collections, we knew we needed to reorganize the library. We knew it would not work well if we had over a hundred classes and interfaces in a single package. We also decided it would be good to separate our API interfaces into a separate package structure. We then chose “container type” as the high level package grouping.&lt;/p&gt;&lt;p&gt;This is the set of high level containers we had to figure out how to organize in our API and implementation packages.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/777/1*Gs6oL36CsN69d4aJPmBsag.png&quot; /&gt;Eclipse Collections container types&lt;/figure&gt;&lt;p&gt;Each container type then had a set of additional concerns that needed to be addressed in the package hierarchy.&lt;/p&gt;&lt;p&gt;This is what it looks like when you expand the &lt;em&gt;List&lt;/em&gt; container type package in both the interface and implementation packages.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*UtDtuNGSw-bHJYncopKuoA.jpeg&quot; /&gt;Interfaces in API package drive the package hierarchy in implementation package&lt;/figure&gt;&lt;h3&gt;Organize container type specializations with container types&lt;/h3&gt;&lt;p&gt;Eclipse Collections has &lt;strong&gt;sorted&lt;/strong&gt; versions of &lt;em&gt;Bag&lt;/em&gt;, &lt;em&gt;Set&lt;/em&gt;, and &lt;em&gt;Map&lt;/em&gt;. Each of these container types have a sub-package named &lt;strong&gt;sorted&lt;/strong&gt;. This strategy can be used with other container type specializations as needed.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*PBBpKrFK8lOepW1mdLyMOg.jpeg&quot; /&gt;Bag, Set and Map all have sorted versions&lt;/figure&gt;&lt;h3&gt;Organize impl packages by Interface types&lt;/h3&gt;&lt;p&gt;There are three &lt;em&gt;primary&lt;/em&gt; interface types for all container types in Eclipse Collections. They are &lt;strong&gt;Mutable&lt;/strong&gt;, &lt;strong&gt;Immutable&lt;/strong&gt; and &lt;strong&gt;Iterable&lt;/strong&gt; (a.k.a. Readable).&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*e-ojSJgIpoWCKOE7noQkfQ.png&quot; /&gt;Symmetry across container types — Iterable, Mutable, Immutable&lt;/figure&gt;&lt;p&gt;For the &lt;em&gt;List&lt;/em&gt; container type, there are implementation classes for the interface types of &lt;strong&gt;Mutable, Immutable&lt;/strong&gt; and &lt;strong&gt;FixedSize&lt;/strong&gt;. FixedSize is currently limited to &lt;em&gt;List&lt;/em&gt;, &lt;em&gt;Set&lt;/em&gt; and &lt;em&gt;Map&lt;/em&gt; container types, and is for achieving memory efficiency for Mutable container types that are are like arrays. That is they can be modified, but they cannot be grown.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/448/1*iR1iGVCubv1NNKyangmKMA.jpeg&quot; /&gt;Object List implementations organized by FixedSize, Immutable and Mutable&lt;/figure&gt;&lt;h3&gt;Organize primitive types into a separate package&lt;/h3&gt;&lt;p&gt;Primitive containers are organized below the container type packages in the API jar and below the Mutable and Immutable packages in the implementation jar.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/751/1*JX5H5yQR7zPSue7kwr4VuA.jpeg&quot; /&gt;API packages (left) and Impl packages(right) for List container type and Mutable Implementations only&lt;/figure&gt;&lt;p&gt;We could have split the primitive collections into separate packages by primitive type. This would have resulted in eight packages for each of the primitive packages. We decided not to do this because the alphabetic sorting of class names with their prefixes provided enough of a visual grouping in the primitive packages.&lt;/p&gt;&lt;h3&gt;Enough is enough&lt;/h3&gt;&lt;p&gt;You need to eventually make a decision when you have enough packages in your hierarchy, and it may not work perfectly with the magical number seven in mind.&lt;/p&gt;&lt;p&gt;The mutable collection implementations have a few extra concerns to deal with — Synchronized, Unmodifiable and MultiReader. We felt these concepts did not warrant their own packages. There is no good name we could come up with to group them together in a package. A name like “mutable.other” would not be terribly useful. So we stopped at &lt;strong&gt;list.mutable&lt;/strong&gt; and &lt;strong&gt;list.mutable.primitive&lt;/strong&gt; on the implementation packages.&lt;/p&gt;&lt;h3&gt;When is it time to restructure the packages?&lt;/h3&gt;&lt;p&gt;We reorganized the packages in Eclipse Collections when we added Immutable Collections to the library (#10), right before we open sourced the library as GS Collections. Immutable Collections significantly increased the number of concepts we had to manage in our packages.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*IdXxdLptmbKRfhWpQ5Mxmw.jpeg&quot; /&gt;Package restructuring happened around item #10&lt;/figure&gt;&lt;p&gt;The next point where we introduced something large to the ecosystem that had to fit into our package hierarchy was with primitive collections (#13). We were able to accomplish this without a complete restructuring by inserting &lt;strong&gt;primitive&lt;/strong&gt; packages into the existing hierarchy below their object counterparts.&lt;/p&gt;&lt;p&gt;The parent packages changed again from &lt;strong&gt;com.gs.collections&lt;/strong&gt; to &lt;strong&gt;org.eclipse.collections&lt;/strong&gt; when the library was migrated to the Eclipse Foundation and became Eclipse Collections. We open sourced a separate library to help users of GS Collections convert to Eclipse Collections — &lt;a href=&quot;https://github.com/eclipse/gsc-ec-converter&quot;&gt;https://github.com/eclipse/gsc-ec-converter&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Final Thoughts&lt;/h3&gt;&lt;p&gt;Java packages are a solution to help with the problem of name spacing and logical grouping. When you’re evolving and growing a library, you should be prepared to optimize your package structure to allow for better logical grouping and information chunking.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;&lt;em&gt;Eclipse Collections&lt;/em&gt;&lt;/a&gt;&lt;em&gt; is open for &lt;/em&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;&lt;em&gt;contributions&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. If you like the library, you can let us know by starring it on GitHub.&lt;/em&gt;&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=fcedf64af434&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 28 Jan 2019 18:35:17 +0000</pubDate>
+</item>
+<item>
 	<title>Eclipse Announcements: Eclipse Specification Process IV: The Specification Committee Votes</title>
 	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/om--jv9Up6M/eclipse-specification-process-iv-specification-committee-votes</guid>
 	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/om--jv9Up6M/eclipse-specification-process-iv-specification-committee-votes</link>
@@ -15,7 +22,7 @@
 	<pubDate>Mon, 21 Jan 2019 19:00:00 +0000</pubDate>
 </item>
 <item>
-	<title>Wayne Beaton: Eclipse Specification Process IV: The Specification Committee Votes</title>
+	<title>Wayne Beaton: EFSP: The Specification Committee Votes</title>
 	<guid isPermaLink="false">http://waynebeaton.wordpress.com/?p=5482</guid>
 	<link>https://waynebeaton.wordpress.com/2019/01/21/eclipse-specification-process-iv-the-specification-committee-votes/</link>
 	<description>&lt;p&gt;One key difference between Eclipse open source &lt;em&gt;software&lt;/em&gt; projects as defined by the &lt;a href=&quot;https://www.eclipse.org/projects/dev_process/&quot;&gt;Eclipse Development Process&lt;/a&gt; (EDP), and open source &lt;em&gt;specification&lt;/em&gt; projects as defined by the &lt;a href=&quot;https://www.eclipse.org/projects/efsp/&quot;&gt;Eclipse Foundation Specification Process&lt;/a&gt; (EFSP) is that specification projects must be aligned with exactly one &lt;em&gt;specification committee&lt;/em&gt;. More generally, specification projects are aligned with an Eclipse &lt;em&gt;&lt;a href=&quot;https://www.eclipse.org/org/workinggroups/&quot;&gt;working group&lt;/a&gt;&lt;/em&gt; and are governed (in part) by the working group’s specification committee.&lt;/p&gt;
@@ -35,9 +42,10 @@
 &lt;p&gt;The EFSP is silent on what happens in the event of a failed vote. In the event of a failure, we expect that feedback regarding the reason for the failure will be provided to the project team, who will work to mitigate issues and then re-engage.&lt;/p&gt;
 &lt;p&gt;Please see:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://waynebeaton.wordpress.com/2018/11/07/eclipse-foundation-specification-process-part-i-the-edp/&quot;&gt;Eclipse Foundation Specification Process, Part I: The EDP&lt;/a&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://waynebeaton.wordpress.com/2018/11/26/eclipse-foundation-specification-process-part-ii-the-efsp/&quot;&gt;Eclipse Foundation Specification Process, Part II: the EFSP&lt;/a&gt;; and&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://waynebeaton.wordpress.com/2018/11/28/eclipse-foundation-specification-process-part-iii-creation/&quot;&gt;Eclipse Foundation Specification Process, Part III: Creation&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://waynebeaton.wordpress.com/2018/11/07/eclipse-foundation-specification-process-part-i-the-edp/&quot;&gt;The EDP&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://waynebeaton.wordpress.com/2018/11/26/eclipse-foundation-specification-process-part-ii-the-efsp/&quot;&gt;The EFSP&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://waynebeaton.wordpress.com/2018/11/28/eclipse-foundation-specification-process-part-iii-creation/&quot;&gt;Creating a Specification Project;&lt;/a&gt; and&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://waynebeaton.wordpress.com/2019/01/21/eclipse-specification-process-iv-the-specification-committee-votes/&quot;&gt;Specification Committee Votes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 	<pubDate>Mon, 21 Jan 2019 17:40:50 +0000</pubDate>
 </item>
@@ -328,203 +336,6 @@ in Vert.x 4 from the Vert.x 3.6, for 3.6.2 here is the list of deprecations you 
 &lt;p&gt;Happy coding and see you soon on our user or dev &lt;a href=&quot;https://vertx.io/community&quot;&gt;channels&lt;/a&gt;.&lt;/p&gt;
 &lt;/article&gt;</description>
 	<pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>vert.x project: Vert.x Web API Service Introduction</title>
-	<guid isPermaLink="true">https://vertx.io/blog/vert-x-web-api-service-introduction</guid>
-	<link>https://vertx.io/blog/vert-x-web-api-service-introduction</link>
-	<description>&lt;article&gt;&lt;h1 id=&quot;vert-x-web-api-service&quot;&gt;Vert.x Web API Service&lt;/h1&gt;
-&lt;p&gt;Vert.x 3.6 introduces a new module called &lt;code&gt;vertx-web-api-service&lt;/code&gt;. With the new Web API Services you can easily combine the &lt;a href=&quot;https://vertx.io/docs/vertx-web/java/&quot;&gt;Vert.x Web Router&lt;/a&gt; and the &lt;a href=&quot;https://vertx.io/docs/vertx-web-api-contract/java/&quot;&gt;Vert.x OpenAPI Router Factory&lt;/a&gt; features with &lt;a href=&quot;https://vertx.io/docs/vertx-service-proxy/java/&quot;&gt;Vert.x Services on Event Bus&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;small-recap-on-openapi-and-vert-x-web-api-contract&quot;&gt;Small recap on OpenAPI and Vert.x Web API Contract&lt;/h2&gt;
-&lt;p&gt;Let’s start from this OpenAPI definition:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;openapi: &lt;span class=&quot;hljs-number&quot;&gt;3.0&lt;/span&gt;&lt;span class=&quot;hljs-number&quot;&gt;.0&lt;/span&gt;
-paths:
-  /api/transactions:
-    get:
-      operationId: getTransactionsList
-      description: Get transactions list filtered by sender
-      x-vertx-event-bus: transactions_manager.myapp
-      parameters:
-        - name: from
-          &lt;span class=&quot;hljs-keyword&quot;&gt;in&lt;/span&gt;: query
-          description: Matches exactly the email from
-          style: form
-          explode: false
-          schema:
-            type: array
-            items:
-              type: string
-      responses: &lt;span class=&quot;hljs-keyword&quot;&gt;...&lt;/span&gt;
-    post:
-      operationId: addTransaction
-      x-vertx-event-bus: transactions_manager.myapp
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: &lt;span class=&quot;hljs-string&quot;&gt;&quot;#/components/schemas/Transaction&quot;&lt;/span&gt;
-      responses: &lt;span class=&quot;hljs-keyword&quot;&gt;...&lt;/span&gt;
-  /api/transactions/{transactionId}:
-    parameters:
-      - name: transactionId
-        &lt;span class=&quot;hljs-keyword&quot;&gt;in&lt;/span&gt;: path
-        required: true
-        schema:
-          type: string
-    put:
-      operationId: updateTransaction
-      x-vertx-event-bus: transactions_manager.myapp
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: &lt;span class=&quot;hljs-string&quot;&gt;&quot;#/components/schemas/Transaction&quot;&lt;/span&gt;
-      responses: &lt;span class=&quot;hljs-keyword&quot;&gt;...&lt;/span&gt;
-    delete:
-      operationId: removeTransaction
-      x-vertx-event-bus: transactions_manager.myapp
-      responses: &lt;span class=&quot;hljs-keyword&quot;&gt;...&lt;/span&gt;
-components:
-  schemas:
-    Transaction: &lt;span class=&quot;hljs-keyword&quot;&gt;...&lt;/span&gt;
-    Error: &lt;span class=&quot;hljs-keyword&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We defined &lt;code&gt;getTransactionsList&lt;/code&gt;, &lt;code&gt;addTransaction&lt;/code&gt;, &lt;code&gt;updateTransaction&lt;/code&gt; and &lt;code&gt;removeTransaction&lt;/code&gt; operations. Now with &lt;code&gt;OpenAPI3RouterFactory&lt;/code&gt; we create a &lt;code&gt;Router&lt;/code&gt; that accepts this various operation requests:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;OpenAPI3RouterFactory.create(vertx, &lt;span class=&quot;hljs-string&quot;&gt;&quot;src/main/resources/petstore.yaml&quot;&lt;/span&gt;, ar -&amp;gt; {
-  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; (ar.succeeded()) {
-    &lt;span class=&quot;hljs-comment&quot;&gt;// Spec loaded with success&lt;/span&gt;
-    OpenAPI3RouterFactory routerFactory = ar.result();
-    routerFactory.addHandlerByOperationId(&lt;span class=&quot;hljs-string&quot;&gt;&quot;getTransactionsList&quot;&lt;/span&gt;, routingContext -&amp;gt; {
-      RequestParameters params = routingContext.get(&lt;span class=&quot;hljs-string&quot;&gt;&quot;parsedParameters&quot;&lt;/span&gt;);
-      RequestParameter from = params.queryParameter(&lt;span class=&quot;hljs-string&quot;&gt;&quot;from&quot;&lt;/span&gt;);
-      &lt;span class=&quot;hljs-comment&quot;&gt;// getTransactionsList business logic&lt;/span&gt;
-    });
-    &lt;span class=&quot;hljs-comment&quot;&gt;// add handlers for addTransaction, updateTransaction and removeTransaction&lt;/span&gt;
-    Router router = routerFactory.getRouter();
-  } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
-    &lt;span class=&quot;hljs-comment&quot;&gt;// Something went wrong during router factory initialization&lt;/span&gt;
-    Throwable exception = ar.cause();
-    &lt;span class=&quot;hljs-comment&quot;&gt;// Log exception, fail verticle deployment ... etc&lt;/span&gt;
-  }
-});&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;OpenAPI3RouterFactory&lt;/code&gt; provides an easy way to create a specification compliant &lt;code&gt;Router&lt;/code&gt;, but it doesn’t provide a mechanism to decouple the business logic from your operation handlers.&lt;/p&gt;
-&lt;p&gt;In a typical Vert.x application, when you receive a request to your router, you would forward it to an event bus endpoint that performs some actions and sends the result back to the operation handler.&lt;/p&gt;
-&lt;p&gt;Vert.x Web API Service simplifies that integration between &lt;code&gt;RouterFactory&lt;/code&gt; and &lt;code&gt;EventBus&lt;/code&gt; with a new code generator. The final result is a &lt;em&gt;loose coupling&lt;/em&gt; between the Web Router logic and your business logic.&lt;/p&gt;
-&lt;h2 id=&quot;let-s-get-started-with-vert-x-web-api-services-&quot;&gt;Let’s get started with Vert.x Web Api Services!&lt;/h2&gt;
-&lt;p&gt;To use &lt;code&gt;vertx-web-api-service&lt;/code&gt; you need to add a couple of dependencies to your project. In a Maven POM file that would be:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;io.vertx&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;vertx-codegen&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;3.6.0&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;classifier&lt;/span&gt;&amp;gt;&lt;/span&gt;processor&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;classifier&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;io.vertx&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;vertx-web-api-service&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;3.6.0&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We will proceed in this order:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Model the service interface&lt;/li&gt;
-&lt;li&gt;Rewrite it to work with Web Api Services&lt;/li&gt;
-&lt;li&gt;Implement the service&lt;/li&gt;
-&lt;li&gt;Mount the service on the event bus&lt;/li&gt;
-&lt;li&gt;Use the router factory to build a router with handlers that connects to our event bus services&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;model-your-service&quot;&gt;Model your service&lt;/h2&gt;
-&lt;p&gt;Let’s say that we want to model a service that manages all operations regarding CRUD transactions. An example interface for this asynchronous service could be:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-class&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;TransactionsManagerService&lt;/span&gt; &lt;/span&gt;{
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;getTransactionsList&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(List from, Handler&amp;gt;&amp;gt; resultHandler)&lt;/span&gt;&lt;/span&gt;;
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;addTransaction&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(Transaction transaction, Handler&amp;gt; resultHandler)&lt;/span&gt;&lt;/span&gt;;
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;updateTransaction&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String transactionId, Transaction transaction, Handler&amp;gt; resultHandler)&lt;/span&gt;&lt;/span&gt;;
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;removeTransaction&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String transactionId, Handler&amp;gt; resultHandler)&lt;/span&gt;&lt;/span&gt;;
-}&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For each operation, we have some parameters, depending on the operation, and a callback (&lt;code&gt;resultHandler&lt;/code&gt;) that should be called when the operation succeeds or fails.&lt;/p&gt;
-&lt;p&gt;With &lt;a href=&quot;https://vertx.io/docs/vertx-service-proxy/java/&quot;&gt;Vert.x Service Proxy&lt;/a&gt;, you can define an event bus service with a Java interface similar to the one we just saw and then annotate it with &lt;code&gt;@ProxyGen&lt;/code&gt;. This annotation will generate a &lt;em&gt;service handler&lt;/em&gt; for the defined service that can be plugged to the event bus with &lt;code&gt;ServiceBinder&lt;/code&gt;. &lt;code&gt;vertx-web-api-service&lt;/code&gt; works in a very similar way: you need to annotate the Java interface with &lt;code&gt;@WebApiServiceGen&lt;/code&gt; and it will generate the service handler for the event bus.&lt;/p&gt;
-&lt;p&gt;Let’s rewrite the &lt;code&gt;TransactionsManagerService&lt;/code&gt; to work with Web API Service:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; io.vertx.ext.web.api.*;
-&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; io.vertx.ext.web.api.generator.WebApiServiceGen;
-
-&lt;span class=&quot;hljs-annotation&quot;&gt;@WebApiServiceGen&lt;/span&gt;
-&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-class&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;TransactionsManagerService&lt;/span&gt; &lt;/span&gt;{
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;getTransactionsList&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(List from, OperationRequest context, Handler&amp;gt; resultHandler)&lt;/span&gt;&lt;/span&gt;;
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;addTransaction&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(Transaction body, OperationRequest context, Handler&amp;gt; resultHandler)&lt;/span&gt;&lt;/span&gt;;
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;updateTransaction&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String transactionId, Transaction body, OperationRequest context, Handler&amp;gt; resultHandler)&lt;/span&gt;&lt;/span&gt;;
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;removeTransaction&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String transactionId, OperationRequest context, Handler&amp;gt; resultHandler)&lt;/span&gt;&lt;/span&gt;;
-
-  &lt;span class=&quot;hljs-comment&quot;&gt;// Factory method to instantiate the implementation&lt;/span&gt;
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;static&lt;/span&gt; TransactionsManagerService &lt;span class=&quot;hljs-title&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(Vertx vertx)&lt;/span&gt; &lt;/span&gt;{
-    &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;TransactionsManagerServiceImpl&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(vertx)&lt;/span&gt;&lt;/span&gt;;
-  }
-}&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;First of all, look at the annotation &lt;code&gt;@WebApiServiceGen&lt;/code&gt;. This annotation will trigger the code generator that generates the event bus handler for this service. Each method has the same two last parameters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;OperationRequest context&lt;/code&gt;: this data object contains the headers and the parameters of the HTTP request&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Handler&amp;gt; resultHandler&lt;/code&gt;: this callback accepts an &lt;code&gt;OperationResponse&lt;/code&gt; data object that will encapsulate the body of the result, the status code, the status message and the headers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The generated handler receives only the &lt;code&gt;OperationRequest&lt;/code&gt; data object and extracts from it all operation parameters. For example, when the router receives a request at &lt;code&gt;getTransactionsList&lt;/code&gt;, it sends to &lt;code&gt;TransactionsManagerService&lt;/code&gt; the &lt;code&gt;OperationRequest&lt;/code&gt; containing the &lt;code&gt;RequestParameters&lt;/code&gt; map. From this map, the service generated handler extracts the &lt;code&gt;from&lt;/code&gt; parameter. &lt;/p&gt;
-&lt;p&gt;Therefore &lt;strong&gt;operation parameters names should match method parameter names&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;When you want to extract the body you must use &lt;code&gt;body&lt;/code&gt; keyword. For more details, please refer to the &lt;a href=&quot;https://vertx.io/docs/vertx-web-api-service/java/&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;implement-the-service&quot;&gt;Implement the service&lt;/h2&gt;
-&lt;p&gt;Now that you have your interface, you can implement the service:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-class&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;TransactionsManagerServiceImpl&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;TransactionsManagerService&lt;/span&gt; &lt;/span&gt;{
-
-  &lt;span class=&quot;hljs-keyword&quot;&gt;private&lt;/span&gt; Vertx vertx;
-
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;TransactionsManagerServiceImpl&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(Vertx vertx)&lt;/span&gt; &lt;/span&gt;{  &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.vertx = vertx;  }
-
-  &lt;span class=&quot;hljs-annotation&quot;&gt;@Override&lt;/span&gt;
-  &lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;getTransactionsList&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(List from, OperationRequest context, Handler&amp;gt; resultHandler)&lt;/span&gt;&lt;/span&gt;{
-    &lt;span class=&quot;hljs-comment&quot;&gt;// Write your business logic here&lt;/span&gt;
-    resultHandler.handle(Future.succeededFuture(OperationResult.completedWithJson(resultJson)));
-  }
-
-  &lt;span class=&quot;hljs-comment&quot;&gt;// Implement other operations&lt;/span&gt;
-
-}&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Check the &lt;code&gt;OperationResult&lt;/code&gt; documentation to look at various handy methods to create a complete response.&lt;/p&gt;
-&lt;h2 id=&quot;mount-the-service&quot;&gt;Mount the Service&lt;/h2&gt;
-&lt;p&gt;Now that you have your service interface and implementation, you can mount your service with &lt;code&gt;ServiceBinder&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;ServiceBinder serviceBinder = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; ServiceBinder(vertx);
-
-TransactionsManagerService transactionsManagerService = TransactionsManagerService.create(vertx);
-registeredConsumers.add(
-  serviceBinder
-    .setAddress(&lt;span class=&quot;hljs-string&quot;&gt;&quot;transactions_manager.myapp&quot;&lt;/span&gt;)
-    .register(TransactionsManagerService.class, transactionsManagerService)
-);&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;and-the-router-factory-&quot;&gt;And the Router Factory?&lt;/h2&gt;
-&lt;p&gt;The service is up and running, but we need to connect it to the &lt;code&gt;Router&lt;/code&gt; built by &lt;code&gt;OpenAPI3RouterFactory&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;OpenAPI3RouterFactory.create(&lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;.vertx, &lt;span class=&quot;hljs-string&quot;&gt;&quot;my_spec.yaml&quot;&lt;/span&gt;, openAPI3RouterFactoryAsyncResult -&amp;gt; {
-  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; (openAPI3RouterFactoryAsyncResult.succeeded()) {
-    OpenAPI3RouterFactory routerFactory = openAPI3RouterFactoryAsyncResult.result();
-    &lt;span class=&quot;hljs-comment&quot;&gt;// Mount services on event bus based on extensions&lt;/span&gt;
-    routerFactory.mountServicesFromExtensions(); &lt;span class=&quot;hljs-comment&quot;&gt;// &amp;lt;- Pure magic happens!&lt;/span&gt;
-    &lt;span class=&quot;hljs-comment&quot;&gt;// Generate the router&lt;/span&gt;
-    Router router = routerFactory.getRouter();
-    server = vertx.createHttpServer(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; HttpServerOptions().setPort(&lt;span class=&quot;hljs-number&quot;&gt;8080&lt;/span&gt;));
-    server.requestHandler(router).listen();
-    &lt;span class=&quot;hljs-comment&quot;&gt;// Initialization completed&lt;/span&gt;
-  } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
-    &lt;span class=&quot;hljs-comment&quot;&gt;// Something went wrong during router factory initialization&lt;/span&gt;
-  }
-});&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In our spec example we added an extension &lt;code&gt;x-vertx-event-bus&lt;/code&gt; to each operation that specifies the address of the service. Using this extension, you only need to call &lt;code&gt;OpenAPI3RouterFactory.mountServicesFromExtensions()&lt;/code&gt; to trigger a scan of all operations and mount all found service addresses. For each operation that contains &lt;code&gt;x-vertx-event-bus&lt;/code&gt;, the Router Factory instantiates an handler that routes the incoming requests to the address you specified.&lt;/p&gt;
-&lt;p&gt;This is one of the methods you can use to match services with router operation handlers. Check the documentation for all details.&lt;/p&gt;
-&lt;h2 id=&quot;more-examples&quot;&gt;More examples&lt;/h2&gt;
-&lt;p&gt;Check out the complete example in &lt;a href=&quot;https://github.com/vert-x3/vertx-examples/tree/master/web-api-service-example&quot;&gt;vertx-examples repo&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Thanks you for your time, stay tuned for more updates! And please provide feedback about this new package!&lt;/p&gt;
-&lt;/article&gt;</description>
-	<pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
 </item>
 
 </channel>
