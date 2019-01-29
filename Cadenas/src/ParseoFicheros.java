@@ -45,7 +45,7 @@ public class ParseoFicheros {
 					
 				}
 				
-				if (linea.toLowerCase().startsWith(dosCaracteres) && dosCaracteres.length() >= 2) {
+				if (dosCaracteres.length() >= 2 && linea.toLowerCase().startsWith(dosCaracteres)) {
 					
 					nombresCoincidentes.add(linea);
 					
