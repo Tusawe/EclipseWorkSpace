@@ -77,6 +77,19 @@
 		<section name="projects">
 		</section>
 	</section>
+	<section name="FatJarPackageWizard">
+		<item value="/home/matinal/eclipse-workspace/EclipseWorkSpace" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
+		<item value="ParseoFicheros - Cadenas" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="Cadenas/jar/parseo.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
+		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="Cadenas/jar/parseo.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value=".xml"/>
+		</list>
+	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="true" key="IgnoreDefault"/>
 		<item value="false" key="SynchronizedModifier"/>
