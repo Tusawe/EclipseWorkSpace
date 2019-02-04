@@ -8,6 +8,13 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Eclipse Announcements: Eclipse Foundation: 15 Years Young</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/vFXIGRTG3aE/eclipse-foundation-15-years-young</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/vFXIGRTG3aE/eclipse-foundation-15-years-young</link>
+	<description>Saturday, February 2, 2019 marks the 15th birthday of the Eclipse Foundation. That was the day that it was publicly and officially announced, and the opening day of the first ever EclipseCon conference.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/vFXIGRTG3aE&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 01 Feb 2019 15:00:00 +0000</pubDate>
+</item>
+<item>
 	<title>Mike Milinkovich: Eclipse Foundation: 15 Years Young</title>
 	<guid isPermaLink="false">http://eclipse-foundation.blog/?p=1483</guid>
 	<link>https://eclipse-foundation.blog/2019/02/01/eclipse-foundation-15-years-young/</link>
@@ -308,30 +315,6 @@ results in a lowering of the learning curve. &lt;/p&gt;
 	<description>&lt;p&gt;We are happy to announce that with the Eclipse Release 2018-12, we have also shipped  EMF Forms and EMF Client Platform...&lt;/p&gt;
 &lt;p&gt;The post &lt;a href=&quot;https://eclipsesource.com/blogs/2018/12/19/emf-forms-and-emf-client-platform-1-19-0-released/&quot; rel=&quot;nofollow&quot;&gt;EMF Forms and EMF Client Platform 1.19.0 released!&lt;/a&gt; appeared first on &lt;a href=&quot;https://eclipsesource.com&quot; rel=&quot;nofollow&quot;&gt;EclipseSource&lt;/a&gt;.&lt;/p&gt;</description>
 	<pubDate>Wed, 19 Dec 2018 14:08:31 +0000</pubDate>
-</item>
-<item>
-	<title>Wayne Beaton: Eclipse Development Process 2018</title>
-	<guid isPermaLink="false">http://waynebeaton.wordpress.com/?p=5475</guid>
-	<link>https://waynebeaton.wordpress.com/2018/12/19/eclipse-development-process-2018/</link>
-	<description>&lt;p&gt;On December 7/2018, the Eclipse Foundation’s Board of Directors approved a new edition of the &lt;a href=&quot;https://www.eclipse.org/projects/dev_process&quot;&gt;Eclipse Development Process&lt;/a&gt; (EDP) which introduces one particularly significant change, along with a small number of other useful changes. We rolled this new edition out on December 14/2018.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;Note that project teams who are familiar with the previous edition of the EDP can just keep doing what they’ve always done: all changes in this new edition are backwards compatible.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;The big change is the introduction of &lt;em&gt;&lt;a href=&quot;https://www.eclipse.org/projects/dev_process/#6_3_5_Progress_Review&quot;&gt;Progress Reviews&lt;/a&gt;&lt;/em&gt; and the recast of &lt;a href=&quot;https://www.eclipse.org/projects/dev_process/#6_3_3_Release_Review&quot;&gt;Release Reviews&lt;/a&gt; as a type of Progress Review. Progress Reviews are basically the same as Release Reviews with the exception that they can occur at any point in the project lifecycle (while the EDP doesn’t explicitly make any specific requirements, Release Reviews are generally accepted to be timed near the end of a release cycle). The basic idea is that a project team can opt to time a Progress Review at their convenience.&lt;/p&gt;
-&lt;p&gt;Progress Reviews are not in and of themselves interesting. What is interesting is that a project team can declare as many official releases as they’d like for an entire year following a successful Progress Review or Release Review. This should be especially interesting and valuable to projects that need to make very frequent releases.&lt;/p&gt;
-&lt;div class=&quot;wp-caption aligncenter&quot; id=&quot;attachment_5473&quot; style=&quot;width: 653px;&quot;&gt;&lt;img alt=&quot;lifecycle&quot; class=&quot; size-full wp-image-5473 aligncenter&quot; src=&quot;https://waynebeaton.files.wordpress.com/2018/12/lifecycle-1.png?w=640&quot; /&gt;&lt;p class=&quot;wp-caption-text&quot;&gt;The new release process looks a little something like this.&lt;/p&gt;&lt;/div&gt;
-&lt;p&gt;This change in the nature of how we do releases, required that the statement that “the IP Policy has been followed and all approvals have been received” be moved from being a requirement of a Release Review to being a requirement of a release. That is, the change in the nature of releases does not change the requirement the the &lt;a href=&quot;https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf&quot;&gt;Eclipse IP Policy&lt;/a&gt; be followed and that projects engage in the full &lt;a href=&quot;https://www.eclipse.org/projects/handbook/#ip&quot;&gt;Eclipse IP Due Diligence Process&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;Intellectual property must be properly accounted for and tracked at all times.&lt;/strong&gt; The project team must engage in the Eclipse IP Due Diligence Process on an ongoing basis. The IP Log review and approval that occurs at the time of either a Release Review or Progress Review should be regarded as a means of confirming that intellectual property is being properly managed and not as a trigger to engage in a last minute clean up.&lt;/p&gt;
-&lt;p&gt;Only intellectual property that has been been approved (or &lt;a href=&quot;https://waynebeaton.wordpress.com/2017/01/12/license-certification-due-diligence/&quot;&gt;license certified&lt;/a&gt;) by the Eclipse IP Team may be included in a release.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;In addition to the IP Policy, project teams are expected to continue to engage in the usual sorts of community building activities like open and transparent release planning.&lt;/p&gt;
-&lt;p&gt;The new edition also includes the following changes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A long-missing &lt;a href=&quot;https://www.eclipse.org/projects/dev_process/#edp-terms&quot;&gt;Terms and Definitions&lt;/a&gt; section has been added;&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&quot;https://www.eclipse.org/projects/dev_process/#6_4_Releases&quot;&gt;Releases section&lt;/a&gt; has been restructured and is (hopefully) more easily parsed;&lt;/li&gt;
-&lt;li&gt;The content is captured in Asciidoc and rendered using Asciidoctor; and&lt;/li&gt;
-&lt;li&gt;All anchors in the document are self-referential links (which make it easier to get links into the document).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A more comprehensive list of the changes is captured in the &lt;a href=&quot;https://www.eclipse.org/projects/dev_process/#changelog&quot;&gt;change log&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I’ll push out updates to the &lt;a href=&quot;https://www.eclipse.org/projects/handbook/&quot;&gt;Eclipse Project Handbook&lt;/a&gt; that support these changes later this week.&lt;/p&gt;</description>
-	<pubDate>Wed, 19 Dec 2018 13:12:23 +0000</pubDate>
 </item>
 
 </channel>

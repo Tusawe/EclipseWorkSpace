@@ -6,6 +6,147 @@
     <language>en</language>
      <atom:link href="http://marketplace.eclipse.org/rss.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>DBeaver</title>
+    <link>http://marketplace.eclipse.org/content/dbeaver</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/Community_icon.png&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2019-02-04 01:07&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Jkiss%22&quot;&gt;Jkiss&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sun, 2012-11-04 11:30&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/sriderdp1/listings&quot; title=&quot;Serge Rider&quot;&gt;Serge Rider&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;DBeaver is free universal SQL client/database tool for developers and database administrators. It can work with any database server which has JDBC or ODBC driver. It supports pluggable extensions. Includes extensions for: MySQL, MariaDB, Oracle, DB2, PostgreSQL, SQL Server, Sybase, Apache Hive, Drill, PrestoDB, Phoenix, Exasol, Informix, Teradata, Vertica, Netezza, Firebird, Derby, H2, WMI, Snowflake, Greenplum, AWS Redshift, AWS Athena, SAP HANA, NuoDB, MS Access, SQLite, CSV, DBF, Firebird, TimescaleDB, Yellowbrick, CockroachDB, OrientDB, MonetDB, Google BigQuery, Apache Hive/Impala/Spark, Apache Ignite, MapD, Azure SQL.&lt;/p&gt;
+&lt;p&gt;Features: database schema browser, metadata editor (tables, columns, keys, indexes), SQL statements/scripts execution, SQL highlighting, autocompletion, formatting; result set/table view/edit/search; BLOB/CLOB view/edit support; scrollable resultsets; transactions management; database metadata and full-text search; ER diagrams; server sessions management, transaction locks management, SSH/SOCKS support, mock data generator; automatic drivers download; stored procedures debugger; data import/export/migration; etc.&lt;/p&gt;
+&lt;p&gt;Supports Color Theme and Darkest Dark themes.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Standalone version download available on &lt;a href=&quot;https://dbeaver.io/download/&quot; rel=&quot;nofollow&quot;&gt;https://dbeaver.io/download/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Source code: &lt;a href=&quot;https://github.com/dbeaver/dbeaver&quot; rel=&quot;nofollow&quot;&gt;https://github.com/dbeaver/dbeaver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;User guide: &lt;a href=&quot;https://github.com/dbeaver/dbeaver/wiki&quot; rel=&quot;nofollow&quot;&gt;https://github.com/dbeaver/dbeaver/wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Sun, 04 Nov 2012 16:30:36 +0000</pubDate>
+ <dc:creator>sriderdp1</dc:creator>
+ <guid isPermaLink="false">507775 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/dbeaver#comments</comments>
+  </item>
+  <item>
+    <title>PyDev - Python IDE for Eclipse</title>
+    <link>http://marketplace.eclipse.org/content/pydev-python-ide-eclipse</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/pydev_banner_110_80.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sun, 2019-02-03 11:28&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Brainwy%20Software%22&quot;&gt;Brainwy Software&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2004-07-07 08:06&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/fzadroznyr0g/listings&quot; title=&quot;Fabio Zadrozny&quot;&gt;Fabio Zadrozny&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;PyDev is a plugin that enables Eclipse to be used as a Python IDE (supporting also Jython and IronPython). It uses advanced type inference techniques which allow it to provide things such as code completion and code analysis, besides providing a debugger, interactive console, refactoring, tokens browser, django integration, etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Homepage:&lt;/strong&gt;&lt;br /&gt;
+    &lt;a href=&quot;http://www.pydev.org&quot; rel=&quot;nofollow&quot;&gt;pydev.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Getting Started:&lt;/strong&gt;&lt;br /&gt;
+    &lt;a href=&quot;http://www.pydev.org/manual_101_root.html&quot; rel=&quot;nofollow&quot;&gt;Getting Started (read to make sure you can get most out of PyDev)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feature Matrix:&lt;/strong&gt;&lt;br /&gt;
+    &lt;a href=&quot;http://www.pydev.org/manual_adv_features.html&quot; rel=&quot;nofollow&quot;&gt;pydev.org/manual_adv_features.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;General questions:&lt;/strong&gt;&lt;br /&gt;
+    &lt;a href=&quot;http://stackoverflow.com/questions/tagged/pydev&quot; rel=&quot;nofollow&quot;&gt;StackOverflow (with the PyDev tag)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Report issues/features: &lt;/strong&gt;&lt;br /&gt;
+    &lt;a href=&quot;https://www.brainwy.com/tracker/PyDev/&quot; rel=&quot;nofollow&quot;&gt;Brainwy Tracker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Code questions:&lt;/strong&gt;&lt;br /&gt;
+    &lt;a href=&quot;http://lists.sourceforge.net/lists/listinfo/pydev-code&quot; rel=&quot;nofollow&quot;&gt;pydev-code list&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Source Code:&lt;/strong&gt;&lt;br /&gt;
+    &lt;a href=&quot;https://github.com/fabioz/Pydev&quot; rel=&quot;nofollow&quot;&gt;github.com/fabioz/Pydev&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Blog:&lt;/strong&gt;&lt;br /&gt;
+    &lt;a href=&quot;http://pydev.blogspot.com&quot; rel=&quot;nofollow&quot;&gt;pydev.blogspot.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Below are some of its highlighted features.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt;, &lt;strong&gt;Jython&lt;/strong&gt; and &lt;strong&gt;IronPython&lt;/strong&gt; support&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Django integration&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Django templates editor&lt;/strong&gt; (requires LiClipse)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code completion&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Debugger&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unittest integration&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interactive Console&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code analysis&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Go to definition (F3)&lt;/li&gt;
+&lt;li&gt;Find References (Ctrl+Shift+G)&lt;/li&gt;
+&lt;li&gt;Refactoring&lt;/li&gt;
+&lt;li&gt;Google App Engine integration&lt;/li&gt;
+&lt;li&gt;Syntax highlighting&lt;/li&gt;
+&lt;li&gt;Parser errors&lt;/li&gt;
+&lt;li&gt;Outline view&lt;/li&gt;
+&lt;li&gt;Tabs or spaces preferences&lt;/li&gt;
+&lt;li&gt;Smart indent / dedent&lt;/li&gt;
+&lt;li&gt;Comment / uncomment / comment blocks&lt;/li&gt;
+&lt;li&gt;Code folding&lt;/li&gt;
+&lt;li&gt;TODO tasks&lt;/li&gt;
+&lt;li&gt;Content Assistants (Ctrl+1)&lt;/li&gt;
+&lt;li&gt;Scripting with Jython&lt;/li&gt;
+&lt;li&gt;Mark Occurrences&lt;/li&gt;
+&lt;/ul&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Wed, 07 Jul 2004 12:06:36 +0000</pubDate>
+ <dc:creator>fzadroznyr0g</dc:creator>
+ <guid isPermaLink="false">114 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/pydev-python-ide-eclipse#comments</comments>
+  </item>
+  <item>
+    <title>Eclipse Zip Editor</title>
+    <link>http://marketplace.eclipse.org/content/eclipse-zip-editor</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/zip-icon.png&quot; width=&quot;48&quot; height=&quot;48&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sun, 2019-02-03 00:36&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Uwe%20Voigt%22&quot;&gt;Uwe Voigt&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2014-06-23 03:26&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/uvoigt/listings&quot; title=&quot;Uwe Voigt&quot;&gt;Uwe Voigt&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;This is a Zip archive editor for the Eclipse platform.&lt;br /&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;br /&gt;
+- Direct modification of files in archives using the editor itself.&lt;br /&gt;
+- Add and extract files also via drag &amp;amp; drop from within or from outside the platform.&lt;br /&gt;
+- Explore and extract files in archives using the Project Explorer.&lt;br /&gt;
+- Recursively search archives using the Eclipse search.&lt;/p&gt;
+&lt;p&gt;Wiki: &lt;a href=&quot;https://sourceforge.net/p/zipeditor/wiki/Home/&quot; rel=&quot;nofollow&quot;&gt;https://sourceforge.net/p/zipeditor/wiki/Home/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Currently, Eclipse ZipEditor supports files with the following compression/archive algorithms associated with their default file extensions:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;bzip&lt;/strong&gt; - bz2&lt;br /&gt;&lt;strong&gt;gzip&lt;/strong&gt; - gz&lt;br /&gt;&lt;strong&gt;tar&lt;/strong&gt; - tar&lt;br /&gt;&lt;strong&gt;bzip compressed tar&lt;/strong&gt; - tar.bz2, tbz&lt;br /&gt;&lt;strong&gt;gzip compressed tar&lt;/strong&gt; - tar.gz, tgz&lt;br /&gt;&lt;strong&gt;rpm&lt;/strong&gt; - rpm&lt;br /&gt;&lt;strong&gt;zip&lt;/strong&gt; - ear, jar, war, zip&lt;/p&gt;
+&lt;p&gt;Further extensions like aar or apk can be added using the Content Types preference page.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Mon, 23 Jun 2014 07:26:00 +0000</pubDate>
+ <dc:creator>uvoigt</dc:creator>
+ <guid isPermaLink="false">1760305 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/eclipse-zip-editor#comments</comments>
+  </item>
+  <item>
+    <title>KaiZen OpenAPI Editor</title>
+    <link>http://marketplace.eclipse.org/content/kaizen-openapi-editor</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/KaiZen%20Symbol%20%28v2%29.png&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sat, 2019-02-02 00:06&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22RepreZen%22&quot;&gt;RepreZen&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sat, 2017-05-06 00:51&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/tepsteinccr/listings&quot; title=&quot;Ted Epstein&quot;&gt;Ted Epstein&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;&lt;strong&gt;NOW WITH COMPLETE SUPPORT FOR OPEN API 3.0.2 spec, full compatibility with Eclipse Oxygen, Photon, and 2018 releases. &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/RepreZen/KaiZen-OpenAPI-Editor&quot; rel=&quot;nofollow&quot;&gt;KaiZen OpenAPI Editor&lt;/a&gt; is RepreZen&#039;s open source, Eclipse-based editor for the industry-standard &lt;a href=&quot;http://openapis.org/&quot; rel=&quot;nofollow&quot;&gt;OpenAPI Specification&lt;/a&gt; language, based on Swagger.  This is the same full-featured editor (formerly known as SwagEdit) that powers Swagger-OpenAPI in the popular &lt;a href=&quot;https://marketplace.eclipse.org/content/reprezen-api-studio&quot; rel=&quot;nofollow&quot;&gt;RepreZen API Studio&lt;/a&gt; solution.&lt;/p&gt;
+&lt;h2&gt;Swagger-OpenAPI Zen In Your Eclipse IDE&lt;/h2&gt;
+&lt;p&gt;Features Include:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;FULLY COMPATIBLE with OpenAPI 3.0.2&lt;/strong&gt;, the &lt;a href=&quot;http://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;newest version&lt;/a&gt; of the industry-standard API description language. Here&#039;s how you can &lt;a href=&quot;http://github.com/RepreZen/KaiZen-OpenAPI-Editor/blob/master/OPEN_API_V3_SUPPORT.md&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;get started with KaiZen and OpenAPI v3&lt;/a&gt;.&lt;br /&gt;
+	 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Full OpenAPI 2.0 (Swagger) compatibility&lt;/strong&gt;, the most widely used API description format. &lt;br /&gt;
+	 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Syntax highlighting&lt;/strong&gt; with configurable colors&lt;br /&gt;
+	 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content assist&lt;/strong&gt; with custom templates. Scope cycling makes it easy to insert references to definitions anywhere in the current file, project or workspace.&lt;br /&gt;
+	 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real-time validation&lt;/strong&gt;&lt;br /&gt;
+	 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-file support&lt;/strong&gt; with scope-cycling code assist on $ref properties&lt;br /&gt;
+	 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Outline view&lt;/strong&gt;&lt;br /&gt;
+	 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quick Outline navigation&lt;/strong&gt; with scope cycling, to navigate anywhere within the current file, project or workspace.&lt;br /&gt;
+	 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hyperlink navigation&lt;/strong&gt; through $ref properties&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Requires Eclipse Oxygen release or later.&lt;/p&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;h4&gt;KaiZen OpenAPI Editor on GitHub&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/RepreZen/KaiZen-OpenAPI-Editor&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Project Page on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RepreZen/KaiZen-OpenAPI-Editor/blob/master/GETTING_STARTED.md&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Getting Started Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RepreZen/KaiZen-OpenAPI-Editor/blob/master/TROUBLESHOOTING.md&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Troubleshooting Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RepreZen/KaiZen-OpenAPI-Editor/blob/master/DEVELOPERS_GUIDE.md&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Developer&#039;s Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;OpenAPI Specifications&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;Swagger-OpenAPI 2.0 Specification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;OpenAPI 3.0.2 Specification&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;Other Links&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;RepreZen Blog:&lt;br /&gt;&lt;a href=&quot;https://www.reprezen.com/blog/introducing-kaizen-openapi-editor-the-open-source-eclipse-editor-for-oas-v2-and-v3&quot; rel=&quot;nofollow&quot;&gt;Introducing KaiZen OpenAPI Editor: the open source Eclipse editor for OAS 2.0 &amp;amp; 3.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;InfoQ:&lt;br /&gt;&lt;a href=&quot;https://www.infoq.com/news/2017/06/reprezen-kaizen&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;RepreZen Releases KaiZen Open-Source Editor and Parser for Open API 3.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt; &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Sat, 06 May 2017 04:51:50 +0000</pubDate>
+ <dc:creator>tepsteinccr</dc:creator>
+ <guid isPermaLink="false">3429028 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/kaizen-openapi-editor#comments</comments>
+  </item>
+  <item>
+    <title>Eclipse Tomcat Plugin</title>
+    <link>http://marketplace.eclipse.org/content/eclipse-tomcat-plugin</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/start.gif&quot; width=&quot;16&quot; height=&quot;16&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2019-02-01 16:59&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Markus%20Keunecke%22&quot;&gt;Markus Keunecke&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2014-10-10 03:13&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mkeunecke/listings&quot; title=&quot;Markus Keunecke&quot;&gt;Markus Keunecke&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;The Eclipse Tomcat Plugin provides simple integration of a tomcat servlet container for the development of java web applications. This project is the successor of the original Sysdeo Tomcat Plugin. Bug reports should go to our project on GitHub: &lt;a href=&quot;https://github.com/tomcatplugin/tomcatplugin/issues/new&quot; rel=&quot;nofollow&quot;&gt;https://github.com/tomcatplugin/tomcatplugin/issues/new&lt;/a&gt; Feel free to join our IRC channel #tomcatplugin on Freenode. Please be patient when asking there, the devs might not be watching everyday. If in doubt, post a ticket.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+     <pubDate>Fri, 10 Oct 2014 07:13:45 +0000</pubDate>
+ <dc:creator>mkeunecke</dc:creator>
+ <guid isPermaLink="false">1963651 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/eclipse-tomcat-plugin#comments</comments>
+  </item>
+  <item>
     <title>cmake4eclipse</title>
     <link>http://marketplace.eclipse.org/content/cmake4eclipse</link>
     <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2019-01-31 17:56&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%2215knots%22&quot;&gt;15knots&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2015-05-01 12:21&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mweber0xe/listings&quot; title=&quot;Martin Weber&quot;&gt;Martin Weber&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;This Eclipse plugin automatically generates build-scripts for the Eclipse CDT managed build system from CMake scripts.&lt;/p&gt;
@@ -96,95 +237,6 @@
  <dc:creator>wachowicz</dc:creator>
  <guid isPermaLink="false">1169 at http://marketplace.eclipse.org</guid>
  <comments>http://marketplace.eclipse.org/content/eclipse-runner#comments</comments>
-  </item>
-  <item>
-    <title>GlassFish Tools</title>
-    <link>http://marketplace.eclipse.org/content/glassfish-tools</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/GlassFishToolsMarketplaceLogo_3.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2019-01-31 00:51&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Oracle%22&quot;&gt;Oracle&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2015-05-01 12:05&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/kkomissarchik/listings&quot; title=&quot;Konstantin Komissarchik&quot;&gt;Konstantin Komissarchik&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Tools for developing applications for GlassFish.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;Integrates with Eclipse Web Tools.&lt;/li&gt;
-&lt;li&gt;Supports open source GlassFish 5, 4 and 3.1.&lt;/li&gt;
-&lt;li&gt;Support the latest &lt;a href=&quot;https://projects.eclipse.org/projects/ee4j.glassfish&quot; rel=&quot;nofollow&quot;&gt;Eclipse GlassFish 5.1&lt;/a&gt;, the reference implementation of the Jakarta EE specification&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;Download latest Eclipse GlassFish Tools from: &lt;a href=&quot;https://projects.eclipse.org/projects/webtools.glassfish-tools&quot; rel=&quot;nofollow&quot;&gt;https://projects.eclipse.org/projects/webtools.glassfish-tools&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;These features are also part of &lt;a href=&quot;http://www.oracle.com/technetwork/developer-tools/eclipse/overview/index.html&quot; rel=&quot;nofollow&quot;&gt;Oracle Enterprise Pack for Eclipse (OEPE)&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;IMPORTANT: Please consult the following table regarding the minimum version of Java required to run GlassFish Tools.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;Photon - Java 8&lt;/li&gt;
-&lt;li&gt;Oxygen - Java 8&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Neon - &lt;/em&gt;Java 8&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Mars - &lt;/em&gt;Java 8&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Luna - &lt;/em&gt;Java 8&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Kepler - &lt;/em&gt;Java 7&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Juno - &lt;/em&gt;Java 6&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;Even if the correct version of Java is installed, Eclipse may find an earlier version upon launch, if it exists somewhere else on the system. To verify the version of Java that Eclipse is using, go to Help -&amp;gt; About -&amp;gt; Installation Details -&amp;gt; Configuration.&lt;/p&gt;
-&lt;p&gt;If you find that Eclipse is using a wrong Java install, edit eclipse.ini file and add the following two lines to the start of the file:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;-vm [path-to-jre]&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-     <pubDate>Fri, 01 May 2015 16:05:11 +0000</pubDate>
- <dc:creator>kkomissarchik</dc:creator>
- <guid isPermaLink="false">2318313 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/glassfish-tools#comments</comments>
-  </item>
-  <item>
-    <title>Groovy Development Tools</title>
-    <link>http://marketplace.eclipse.org/content/groovy-development-tools</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/groovy-logo-medium.png&quot; width=&quot;110&quot; height=&quot;55&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-01-30 16:23&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Pivotal%22&quot;&gt;Pivotal&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2012-07-04 13:05&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/aclement/listings&quot; title=&quot;Andrew Clement&quot;&gt;Andrew Clement&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;The Groovy Development Tools (GDT) provides Eclipse and Maven support for the &lt;a href=&quot;http://groovy-lang.org/&quot; rel=&quot;nofollow&quot;&gt;Apache Groovy&lt;/a&gt; programming language. GDT adds full-featured IDE support for Groovy including editors, wizards, content assist, debugging, refactoring and searching.&lt;/p&gt;
-&lt;p&gt;The GDT requires the &lt;a href=&quot;https://marketplace.eclipse.org/content/eclipse-java-development-tools-0&quot; rel=&quot;nofollow&quot;&gt;Eclipse Java Development Tools&lt;/a&gt; (JDT) as it builds upon Java/JVM support, including Java interoperability. If your Eclipse flavor does not include JDT, you must install it first.&lt;/p&gt;
-&lt;p&gt;GDT does not provide any direct support for &lt;a href=&quot;http://grails.org&quot; rel=&quot;nofollow&quot;&gt;Grails&lt;/a&gt;. If you want Grails tooling, then please consider &lt;a href=&quot;https://marketplace.eclipse.org/content/groovygrails-tool-suite-ggts-eclipse&quot; rel=&quot;nofollow&quot;&gt;Groovy-Grails Tools Suite&lt;/a&gt; or &lt;a href=&quot;https://marketplace.eclipse.org/content/spring-tools-aka-spring-ide-and-spring-tool-suite&quot; rel=&quot;nofollow&quot;&gt;Spring Tool Suite&lt;/a&gt; for your Grails projects.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-     <pubDate>Wed, 04 Jul 2012 17:05:41 +0000</pubDate>
- <dc:creator>aclement</dc:creator>
- <guid isPermaLink="false">321859 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/groovy-development-tools#comments</comments>
-  </item>
-  <item>
-    <title>jSparrow - Automatic Java Refactoring</title>
-    <link>http://marketplace.eclipse.org/content/jsparrow-automatic-java-refactoring</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/jSparrow_Fluegel_110x80.jpg&quot; width=&quot;110&quot; height=&quot;77&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-01-30 08:44&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Splendit%20IT-Consulting%20GmbH%22&quot;&gt;Splendit IT-Consulting GmbH&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2017-06-20 11:34&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mprehofer/listings&quot; title=&quot;Michaela Prehofer&quot;&gt;Michaela Prehofer&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;&lt;strong&gt;jSparrow 3.1.0 has been thoroughly tested and is now ready for Eclipse 2018-12.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;jSparrow &lt;/strong&gt;detects and replaces bugs and code smells in Java sources with a rule based approach automatically. It improves your Java code and &lt;strong&gt;transforms &lt;/strong&gt;it to Java 8/9/10 user-guided and safe.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Refactor your Java code. Improve the code quality. Apply the latest Java features. All automatically.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;
-jSparrow has a set of&lt;strong&gt; 53 rules &lt;/strong&gt;now, which are grouped into seven categories,which are designed for applying coding conventions, removing code smells, improving readability and modernising your Java codebase.&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Removal &lt;/strong&gt;of potential &lt;strong&gt;bugs and code smells&lt;/strong&gt; is one of the main purposes of jSparrow. jSparrow is very efficient in disposing of these threats with its rules. You can group the profiles into individual &lt;strong&gt;rule profiles&lt;/strong&gt;, which also can be &lt;strong&gt;exported &lt;/strong&gt;and &lt;strong&gt;imported &lt;/strong&gt;to share them within your development team.&lt;/p&gt;
-&lt;p&gt;Being up to date with the latest Java standards is normally requiring a lot of manual software maintenance work. &lt;strong&gt;jSparrow upgrades &lt;/strong&gt;old code-artifacts to new state-of-the-art programming practices. The usage of jSparrow´s &lt;strong&gt;full version&lt;/strong&gt; allows you to save a lot of valuable time, while offering the option of &lt;strong&gt;automatically upgrading&lt;/strong&gt; to the latest version of Java within minutes in a safe way.&lt;/p&gt;
-&lt;p&gt;You can then decide if you want to use the jSparrow Free version, as usual, or the new features of jSparrow Starter for automatic refactoring.&lt;/p&gt;
-&lt;p&gt;With jSparrow Starter you will be able to apply 15 rules free of charge. After a short registration, you will get a license key, allowing you to apply the rules on your projects.&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Don´t lose time with tedious and repetitive work - let jSparrow do it!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Documentation: &lt;a href=&quot;https://jsparrow.github.io/&quot; rel=&quot;nofollow&quot;&gt;https://jsparrow.github.io/&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Next Major Release: 21.06.2019&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;LATEST VERSION:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;jSparrow Release 3.1.0&lt;/p&gt;
-&lt;p&gt;jSparrow Maven PlugIn 1.0.0&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;OUR RELEASE POLICY IS AS FOLLOWS:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Two major releases&lt;/strong&gt; per year&lt;/p&gt;
-&lt;p&gt;    21st June – Midsummer Release&lt;br /&gt;
- &lt;strong&gt;  &lt;/strong&gt; 21st December – Winter solstice Release&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Monthly Rule releases&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;If we developed new rules, they will be released on the 21st of each month - (if the 21st isn’t an Austrian working day- the release will be postponed one month)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Weekly Bugfix &lt;/strong&gt;releases&lt;/p&gt;
-&lt;p&gt;Bugfixes will be released each Tuesday&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Hotfix Releases &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Hotfix Releases can be deployed any time (hopefully not necessary)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-     <pubDate>Tue, 20 Jun 2017 15:34:11 +0000</pubDate>
- <dc:creator>mprehofer</dc:creator>
- <guid isPermaLink="false">3503691 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/jsparrow-automatic-java-refactoring#comments</comments>
-  </item>
-  <item>
-    <title>CVS Version Tree</title>
-    <link>http://marketplace.eclipse.org/content/cvs-version-tree</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-01-30 07:59&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Jan%20Karstens%2C%20Andre%20Langhorst%2C%20Konrad%20Hubner%2C%20Dmitry%20Mitskevich%2C%20Andrew%20Gvozdev%22&quot;&gt;Jan Karstens, Andre Langhorst, Konrad Hubner, Dmitry Mitskevich, Andrew Gvozdev&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2010-10-22 08:29&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/dmitskevich/listings&quot; title=&quot;Dmitry Mitskevich&quot;&gt;Dmitry Mitskevich&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Eclipse Version Tree Plugin is an easy to use, graphical version tree for project artifacts hosted in a CVS repository. It is a graphical replacment for Eclipse resource history. Supports different layout styles, customization and convenience features.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-     <pubDate>Fri, 22 Oct 2010 12:29:04 +0000</pubDate>
- <dc:creator>dmitskevich</dc:creator>
- <guid isPermaLink="false">16379 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/cvs-version-tree#comments</comments>
-  </item>
-  <item>
-    <title>YEdit</title>
-    <link>http://marketplace.eclipse.org/content/yedit</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2019-01-30 07:58&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22-%22&quot;&gt;-&lt;/a&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2009-06-15 09:22&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/otorget/listings&quot; title=&quot;Øystein Torget&quot;&gt;Øystein Torget&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;YEdit is an Eclipse editor for editing YAML files. It has the following features: * Syntax highlighting * Syntax checking * Content outline * Templates * Various text editing support like auto-indenting and toggling of comments. * Symfony compatibility mode. * Source formatting (experimental)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-     <pubDate>Mon, 15 Jun 2009 13:22:05 +0000</pubDate>
- <dc:creator>otorget</dc:creator>
- <guid isPermaLink="false">949 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/yedit#comments</comments>
   </item>
   </channel>
 </rss>
