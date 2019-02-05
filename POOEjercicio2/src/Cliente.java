@@ -6,7 +6,7 @@
 public class Cliente {
 
 	private String nombre;
-	private String sexo;
+	private boolean sexo; // True es mujer, fasle es hombre.
 	private String dni;
 	
 	public int edad;
@@ -16,8 +16,8 @@ public class Cliente {
 	public Cliente() {
 		
 		nombre = "";
-		sexo = "";
-		dni = "";
+		sexo = true;
+		dni = generarDNI();
 		
 		edad = 0;
 		peso = 0.0f;
@@ -30,7 +30,7 @@ public class Cliente {
 	 * @param sexo
 	 * @param dni
 	 */
-	public Cliente(String nombre, String sexo, String dni) {
+	public Cliente(String nombre, boolean sexo, String dni) {
 		
 		this.nombre = nombre;
 		this.sexo = sexo;
@@ -50,10 +50,10 @@ public class Cliente {
 	 * @param peso
 	 * @param altura
 	 */
-	public Cliente(String nombre, String sexo, String dni, int edad, float peso, float altura) {
+	public Cliente(String nombre, boolean sexo, int edad, float peso, float altura) {
 		this.nombre = nombre;
 		this.sexo = sexo;
-		this.dni = dni;
+		this.dni = generarDNI();
 		this.edad = edad;
 		this.peso = peso;
 		this.altura = altura;
@@ -76,14 +76,14 @@ public class Cliente {
 	/**
 	 * @return the sexo
 	 */
-	public String getSexo() {
+	public boolean getSexo() {
 		return sexo;
 	}
 
 	/**
 	 * @param sexo the sexo to set
 	 */
-	public void setSexo(String sexo) {
+	public void setSexo(boolean sexo) {
 		this.sexo = sexo;
 	}
 
@@ -136,20 +136,12 @@ public class Cliente {
 		
 	}
 	
-	private void comprobarSexo() {
+	private boolean comprobarSexo(boolean sexo) {
 		
-		if (sexo.equalsIgnoreCase("mujer")) {
-			
-			setSexo(sexo);
-			
-		} else {
-			
-			setSexo("hombre");
-			
-		}
+		return sexo == this.sexo;
 		
 	}
-	
+		
 	private String generarDNI() {
 		
 		String juegoCaracteres="TRWAGMYFPDXBNJZSQVHLCKE";

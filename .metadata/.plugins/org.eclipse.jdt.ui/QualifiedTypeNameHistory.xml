@@ -11,8 +11,13 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.operations.Equals"/>
     <fullyQualifiedTypeName name="CordenadasErroneasExcepcion"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="Ejercicio1.IlegalTriangleException"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="Ejercicio2.IlegalFormatForBinaryNumber"/>
+    <fullyQualifiedTypeName name="sun.security.util.Length"/>
+    <fullyQualifiedTypeName name="Ejercicio2.BinaryNumber"/>
+    <fullyQualifiedTypeName name="Ejercicio2.HexadecimalNumber"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
