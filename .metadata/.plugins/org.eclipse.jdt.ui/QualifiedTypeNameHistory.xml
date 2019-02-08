@@ -20,4 +20,6 @@
     <fullyQualifiedTypeName name="Ejercicio2.BinaryNumber"/>
     <fullyQualifiedTypeName name="Ejercicio2.HexadecimalNumber"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="ClaseExterna"/>
+    <fullyQualifiedTypeName name="ClaseExterna.ClaseInterna"/>
 </qualifiedTypeNameHistroy>
