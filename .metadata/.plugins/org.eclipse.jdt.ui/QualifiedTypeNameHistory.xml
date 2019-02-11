@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="cafetera.Consumible"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="com.opencsv.CSVReader"/>
@@ -22,4 +21,11 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="ClaseExterna"/>
     <fullyQualifiedTypeName name="ClaseExterna.ClaseInterna"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="teoria.ClaseExternaStatic"/>
+    <fullyQualifiedTypeName name="teoria.ClaseExternaStatic.ClaseInternaEstatica"/>
+    <fullyQualifiedTypeName name="java.time.Period"/>
+    <fullyQualifiedTypeName name="ClasesLocales.Persona"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>

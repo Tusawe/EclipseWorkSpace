@@ -1,4 +1,3 @@
-
 public class TestClasesAnidadas {
 
 	public static void main(String[] args) {
