@@ -8,6 +8,13 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>InfoQ Eclipse feed: Eclipse Releases GlassFish 5.1 Certified as Compatible with Java EE 8</title>
+	<guid isPermaLink="true">https://www.infoq.com/news/2019/02/eclipse-releases-glassfish-5.1?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
+	<link>https://www.infoq.com/news/2019/02/eclipse-releases-glassfish-5.1?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
+	<description>&lt;img src=&quot;https://www.infoq.com/styles/i/logo_bigger.jpg&quot; /&gt;&lt;p&gt;Eclipse has achieved another GlassFish milestone with the anticipated GA release of version 5.1. A year in the making, this milestone included previous GlassFish milestones such as the full migration of source code and open-sourcing the Java EE TCK (September 2018), the RC1 release of GlassFish 5.1 (October 2018), and the integration of EclipseLink and Eclipse Jersey in GlassFish (December 2018).&lt;/p&gt; &lt;i&gt;By Michael Redlich&lt;/i&gt;</description>
+	<pubDate>Tue, 19 Feb 2019 09:00:00 +0000</pubDate>
+</item>
+<item>
 	<title>Donald Raab: As a matter of Factory — Part 3 (Method Chaining)</title>
 	<guid isPermaLink="false">https://medium.com/p/224217074d31</guid>
 	<link>https://medium.com/@donraab/as-a-matter-of-factory-part-3-method-chaining-224217074d31?source=rss-df39b86e9f04------2</link>
@@ -272,45 +279,6 @@ data object support.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&quot;https://waynebeaton.wordpress.com/2019/01/21/eclipse-specification-process-iv-the-specification-committee-votes/&quot;&gt;Specification Committee Votes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 	<pubDate>Mon, 21 Jan 2019 17:40:50 +0000</pubDate>
-</item>
-<item>
-	<title>JBoss Tools Team: We are hiring</title>
-	<guid isPermaLink="true">https://tools.jboss.org/blog/we-are-hiring - again.html</guid>
-	<link>https://tools.jboss.org/blog/we-are-hiring - again.html</link>
-	<description>&lt;div&gt;&lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The Developer Experience and Tooling group, of which JBoss Tools team is part,
-      is looking for an awesome developer. We are looking to continue
-      improving the usability for developers around various IDEs including Eclipse, VSCode and IntelliJ and around the Red Hat product line, including JBoss Middleware.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Topics range from Java to JavaScript, application servers to containers, source code tinkering to full blown CI/CD setups.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;If you are into making developers life easier and like to be able to get involved in many different technologies and get them to work great together then do apply.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;You can also ping me (&lt;a href=&quot;mailto:jeffmaury@redhat.com&quot;&gt;jeffmaury@redhat.com&lt;/a&gt;) for questions.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The current list of openings are:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ulist&quot;&gt;
-      &lt;ul&gt;
-      &lt;li&gt;
-      &lt;p&gt;&lt;a href=&quot;https://global-redhat.icims.com/jobs/66514/software-engineer---jboss-and-openshift-tooling/job&quot;&gt;Sofware engineer&lt;/a&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Note: the job postings do list a specific location, but for the right candidate we are happy to consider many locations worldwide (anywhere there is a Red Hat office), as well as working from home.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Have fun!&lt;br /&gt;
-      Jeff Maury&lt;br /&gt;
-      &lt;a href=&quot;http://twitter.com/jeffmaury&quot;&gt;@jeffmaury&lt;/a&gt;
-      &lt;a href=&quot;http://twitter.com/jbosstools&quot;&gt;@jbosstools&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;&lt;/div&gt;</description>
-	<pubDate>Thu, 17 Jan 2019 13:31:32 +0000</pubDate>
 </item>
 
 </channel>
