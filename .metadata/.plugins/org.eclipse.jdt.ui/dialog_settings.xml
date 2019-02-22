@@ -17,7 +17,7 @@
 	</section>
 	<section name="SourceActionDialog.constructors">
 		<item value="false" key="SynchronizedModifier"/>
-		<item value="false" key="Comments"/>
+		<item value="true" key="Comments"/>
 		<item value="1" key="VisibilityModifier"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
@@ -124,7 +124,7 @@
 	<section name="SourceActionDialog.methods">
 		<item value="true" key="IgnoreDefault"/>
 		<item value="false" key="SynchronizedModifier"/>
-		<item value="false" key="Comments"/>
+		<item value="true" key="Comments"/>
 		<item value="1" key="VisibilityModifier"/>
 		<item value="0" key="StringStyle"/>
 		<item value="0" key="ToStringTemplateSelected"/>
