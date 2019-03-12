@@ -116,23 +116,23 @@ public class Person {
 		return true;
 	}
 	
-	public static void main(String[] args) {
-		
-		Person p1 = new Person("fisrtName","lastName",Gender.Female,"email",LocalDate.now(),"country");
-		System.out.println("p1 -> " + p1);
-		
-		Person p2 = new Person("fisrtName","lastName",Gender.Male,"email123",LocalDate.now(),"country");
-		System.out.println("p2 -> " + p2);
-		System.out.println("¿Es igual p1 a p2? " + p1.equals(p2));
-		
-		Person p3 = new Person("fisrtName","lastName");
-		System.out.println("p3 -> " + p3);
-		System.out.println("¿Es igual p1 a p3? " + p1.equals(p3));
-		
-		Person p4 = new Person("fisrtName2","lastName2",Gender.Other,"email",LocalDate.now(),"country");
-		System.out.println("p4 -> " + p4);
-		System.out.println("¿Es igual p1 a p4? " + p1.equals(p4));
-		
-	}
+//	public static void main(String[] args) {
+//		
+//		Person p1 = new Person("fisrtName","lastName",Gender.Female,"email",LocalDate.now(),"country");
+//		System.out.println("p1 -> " + p1);
+//		
+//		Person p2 = new Person("fisrtName","lastName",Gender.Male,"email123",LocalDate.now(),"country");
+//		System.out.println("p2 -> " + p2);
+//		System.out.println("¿Es igual p1 a p2? " + p1.equals(p2));
+//		
+//		Person p3 = new Person("fisrtName","lastName");
+//		System.out.println("p3 -> " + p3);
+//		System.out.println("¿Es igual p1 a p3? " + p1.equals(p3));
+//		
+//		Person p4 = new Person("fisrtName2","lastName2",Gender.Other,"email",LocalDate.now(),"country");
+//		System.out.println("p4 -> " + p4);
+//		System.out.println("¿Es igual p1 a p4? " + p1.equals(p4));
+//		
+//	}
 	
 }

@@ -1,7 +1,6 @@
 package ejercicio;
 
 import java.time.LocalDate;
-import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -91,17 +90,13 @@ public class Staff {
 		
 	}
 	
-	public int peopleWithAge(int age) {
+	public int getNumberOfPeopleByAge(int age) {
 		
 		int peopleWithAge = 0;
-		int personAge = 0;
 		
 		for (Person person : people) {
-		
-			Period periodo = Period.between(person.getBirthday(), LocalDate.now());
-			personAge = periodo.getYears();
 			
-			if (personAge > age) {
+			if (Helper.getYearsOfPeriod(person.getBirthday()) > age) {
 				
 				peopleWithAge++;
 				
@@ -113,7 +108,7 @@ public class Staff {
 		
 	}
 	
-	public boolean changeEmailOfAPerson(Person newPerson, String email) {
+	public boolean updatePersonByEmail(Person newPerson, String email) {
 		
 		for (Person person : people) {
 			
@@ -129,5 +124,20 @@ public class Staff {
 		return false;
 		
 	}
+	
+//	public static void main(String[] args) {
+//		
+//		Person p1 = new Person("Manuel","García",Gender.Male,"magar@gmail.com",LocalDate.of(2000, 3, 13),"Spain");
+//		Person p2 = new Person("Paco","Pérez",Gender.Other,"paper@gmail.com",LocalDate.of(2000, 3, 12),"Mongolia");
+//		Person p3 = new Person("Carmen","Rodríguez",Gender.Female,"carod@gmail.com",LocalDate.of(2000, 2, 16),"Rusa");
+//		Person p4 = new Person("Carol","Rodríguez",Gender.Female,"carod2@gmail.com",LocalDate.of(2000, 2, 16),"Rusa");
+//		
+//		List<Person> list = new ArrayList<>();
+//		list.add(p1); list.add(p2); list.add(p3); list.add(p4);
+//		
+//		Staff staff = new Staff(list);
+//		System.out.println(staff.getNumberOfPeopleByAge(18));
+//		
+//	}
 	
 }
