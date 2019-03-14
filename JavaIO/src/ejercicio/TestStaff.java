@@ -8,61 +8,97 @@ public class TestStaff {
 	
 	public static void main(String[] args) {
 		
-		int opcion = 0;
+		
+		
+		int iOption = 0;
+		String sOption;
+		boolean menu = false;
+		
 		do {
 			
-			showMenu();
+			showMenu(menu);
+			menu = true;
 			
-			opcion = sc.nextInt();
+			sOption = sc.next();
+			while(!sOption.matches("[0-7]")) {
+				
+				System.out.println("ERROR: This option is not posible.");
+				showMenu(menu);
+				sOption = sc.next();
+				
+			}
 			
-			switch (opcion) {
+			iOption = Integer.parseInt(sOption);
+			
+			switch (iOption) {
 				case 0:
 					System.out.println("Hasta luego Mari Carmen");
 					return;
 					
 				case 1:
+					removePerson();
 					break;
 					
 				case 2:
+					getPeopleByCountry();
 					break;
 					
 				case 3:
+					getPeopleByGender();
 					break;
 					
 				case 4:
+					removePersonByEmail();
 					break;
 					
 				case 5:
+					getNumberOfPeopleByAge();
 					break;
 					
 				case 6:
+					addPerson();
 					break;
 					
 				case 7:
+					updatePersonByEmail();
 					break;
 					
-				default:
-					System.out.println("ERROR: Opción erronea.");
-					break;
 			}
-		
-			System.out.println("------------------------------");
 			
-		} while(opcion != 0);
+		} while(iOption != 0);
 		
 	}
 	
-	public static void showMenu() {
+	private static void showMenu(boolean menu) {
 		
-		System.out.println("ELIGE UNA OPCIÓN:");
-		System.out.println("(0) Salir de la aplicación.");
-		System.out.println("(1) Borrar una persona.");
-		System.out.println("(2) Mostrar personas por país.");
-		System.out.println("(3) Mostrar personas por genero.");
-		System.out.println("(4) Borrar persona por email.");
-		System.out.println("(5) Numero de personas mayores de una cierta edad.");
-		System.out.println("(6) Añadir una persona");
-		System.out.println("(7) Actualizar email de una persona");
+		if (menu) {
+			
+			System.out.println("------------------------------");
+			System.out.println("\n\n------------ MENU ------------");
+			System.out.println("(0) Exit.");
+			System.out.println("(1) Delete a person.");
+			System.out.println("(2) List by country.");
+			System.out.println("(3) List by gender.");
+			System.out.println("(4) Delete by email.");
+			System.out.println("(5) Get number of people by age.");
+			System.out.println("(6) Add a person");
+			System.out.println("(7) Update the email of person");
+			System.out.print("Choose option: ");
+		
+		} else {
+			
+			System.out.println("------------ MENU ------------");
+			System.out.println("(0) Exit.");
+			System.out.println("(1) Delete a person.");
+			System.out.println("(2) List by country.");
+			System.out.println("(3) List by gender.");
+			System.out.println("(4) Delete by email.");
+			System.out.println("(5) Get number of people by age.");
+			System.out.println("(6) Add a person");
+			System.out.println("(7) Update the email of person");
+			System.out.print("Choose option: ");
+			
+		}
 		
 	}
 	

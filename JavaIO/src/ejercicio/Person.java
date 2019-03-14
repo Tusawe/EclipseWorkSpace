@@ -7,16 +7,16 @@ public class Person {
 
 	private String firstName;
 	private String lastName;
-	private Gender gender;
 	private String email;
+	private Gender gender;
 	private LocalDate birthday;
 	private String country;
 	
-	public Person(String firstName, String lastName, Gender gender, String email, LocalDate birthday, String country) {
+	public Person(String firstName, String lastName, String email, Gender gender, LocalDate birthday, String country) {
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.gender = gender;
 		this.email = email;
+		this.gender = gender;
 		this.birthday = birthday;
 		this.country = country;
 	}
@@ -43,14 +43,6 @@ public class Person {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
-	public Gender getGender() {
-		return gender;
-	}
-
-	public void setGender(Gender gender) {
-		this.gender = gender;
-	}
 	
 	public String getEmail() {
 		return email;
@@ -58,6 +50,14 @@ public class Person {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
 	}
 
 	public LocalDate getBirthday() {
@@ -79,10 +79,10 @@ public class Person {
 	@Override
 	public String toString() {
 		if (birthday != null) {
-		return String.format("%s,%s,%s,%s,%s,%s", firstName, lastName, gender, email, 
+		return String.format("%n%s,%s,%s,%s,%s,%s", firstName, lastName, email, gender, 
 				birthday.format(DateTimeFormatter.ofPattern("yyyy/MM/dd")), country);
 		}
-		return String.format("%s,%s,%s,%s,%s,%s", firstName, lastName, gender, email, birthday, country);
+		return String.format("%n%s,%s,%s,%s,%s,%s", firstName, lastName, email, gender, birthday, country);
 	}
 
 	@Override
@@ -115,24 +115,5 @@ public class Person {
 			return false;
 		return true;
 	}
-	
-//	public static void main(String[] args) {
-//		
-//		Person p1 = new Person("fisrtName","lastName",Gender.Female,"email",LocalDate.now(),"country");
-//		System.out.println("p1 -> " + p1);
-//		
-//		Person p2 = new Person("fisrtName","lastName",Gender.Male,"email123",LocalDate.now(),"country");
-//		System.out.println("p2 -> " + p2);
-//		System.out.println("¿Es igual p1 a p2? " + p1.equals(p2));
-//		
-//		Person p3 = new Person("fisrtName","lastName");
-//		System.out.println("p3 -> " + p3);
-//		System.out.println("¿Es igual p1 a p3? " + p1.equals(p3));
-//		
-//		Person p4 = new Person("fisrtName2","lastName2",Gender.Other,"email",LocalDate.now(),"country");
-//		System.out.println("p4 -> " + p4);
-//		System.out.println("¿Es igual p1 a p4? " + p1.equals(p4));
-//		
-//	}
 	
 }
