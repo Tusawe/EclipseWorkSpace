@@ -3,7 +3,7 @@ package ejercicio;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
+// import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
@@ -45,13 +45,13 @@ public class Helper {
 		
 	}
 	
-	public static void main(String[] args) throws IOException {
-		
+//	public static void main(String[] args) throws IOException {
+//		
 //		System.out.println(getYearsOfPeriod(LocalDate.of(2000, 3, 12)));
-		Path path = Paths.get("Datos", "personal.csv");
-		
-		System.out.println(readCSV(path));
-		
-	}
+//		Path path = Paths.get("Datos", "personal.csv");
+//		
+//		System.out.println(readCSV(path));
+//		
+//	}
 	
 }

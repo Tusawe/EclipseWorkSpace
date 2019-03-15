@@ -1,18 +1,37 @@
 package ejercicio;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 import java.util.Scanner;
 
 public class TestStaff {
 
-	static Scanner sc = new Scanner(System.in);
+	private static Scanner sc = new Scanner(System.in);
+	private static Staff staff;
 	
 	public static void main(String[] args) {
-		
-		
 		
 		int iOption = 0;
 		String sOption;
 		boolean menu = false;
+		Path pathCSV;
+		
+		do {
+			System.out.println("Enter filename:");
+			String filename = sc.next();
+			pathCSV = Paths.get("Datos", filename);
+		} while (!Files.exists(pathCSV));
+		
+		try {
+			List<Person> list = Helper.readCSV(pathCSV);
+			staff = new Staff(list);
+		} catch (IOException e) {
+			System.err.println("ERROR I/O");
+			// e.printStackTrace();
+		}
 		
 		do {
 			
@@ -104,19 +123,35 @@ public class TestStaff {
 	
 	private static void removePerson() {
 		
-		System.out.println("Te borro la life payaso");
+		// System.out.println("Te borro la life payaso");
+		System.out.println("Enter de name of a person:");
+		System.out.println("Enter the last name of a person");
+		
 		
 	}
 	
 	private static void getPeopleByCountry() {
 		
-		System.out.println("To' la peña del country pa'");
+		// System.out.println("To' la peña del country pa'");
+		System.out.println("Enter the country:");
+		String country = sc.next();
+		staff.showListByCountry(country);
 		
 	}
 
 	private static void getPeopleByGender() {
 	
-	System.out.println("To' la peña del gender pa'");
+		// System.out.println("To' la peña del gender pa'");
+		System.out.println("Enter the gender (Male or Female):");
+		String sGender = sc.next();
+		
+		Gender gender;
+		if (sGender.equals("Male"))
+			gender = Gender.Male;
+		else
+			gender = Gender.Female;
+		
+		staff.showListByGender(gender);
 	
 	}
 	
