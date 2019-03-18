@@ -125,7 +125,11 @@ public class TestStaff {
 		
 		// System.out.println("Te borro la life payaso");
 		System.out.println("Enter de name of a person:");
+		String name = sc.next();
 		System.out.println("Enter the last name of a person");
+		String lastName = sc.next();
+		Person person = new Person(name, lastName);
+		if(staff.removePerson(person)) System.out.println("Person removed.");
 		
 		
 	}
@@ -142,14 +146,20 @@ public class TestStaff {
 	private static void getPeopleByGender() {
 	
 		// System.out.println("To' la peña del gender pa'");
-		System.out.println("Enter the gender (Male or Female):");
-		String sGender = sc.next();
+		String sGender;
+		do {
+			System.out.println("Enter the gender (Male,Female or Other  ):");
+			sGender = sc.next();
+		} while (!sGender.matches("(Male|Female|Other)"));
 		
 		Gender gender;
 		if (sGender.equals("Male"))
 			gender = Gender.Male;
-		else
+		else if (sGender.equals("Female"))
 			gender = Gender.Female;
+		else
+			gender = Gender.Other;
+		
 		
 		staff.showListByGender(gender);
 	
@@ -157,13 +167,26 @@ public class TestStaff {
 	
 	private static void removePersonByEmail() {
 		
-		System.out.println("Te borro la life payaso, que berga de email");
+		String email;
+		do {
+			System.out.println("Enter a email of a person:");
+			email = sc.next();
+		} while (!email.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$"));
+		if (staff.removePersonByEmail(email)) System.out.println("Person removed by email.");
+		else System.out.println("Person not removed.");
 		
 	}
 	
 	private static void getNumberOfPeopleByAge() {
 		
-		System.out.println("Que lo que, ya tu sabeh, observa la people a full de years.");
+		String sAge;
+		do {
+			System.out.println("Enter a age:");
+			sAge = sc.next();
+		} while (!sAge.matches("[0-9]{2}"));
+		int age = Integer.parseInt(sAge);
+		
+		System.out.println("The number of people older than " + age + " is " + staff.getNumberOfPeopleByAge(age));
 		
 	}
 	
@@ -175,7 +198,20 @@ public class TestStaff {
 	
 	private static void updatePersonByEmail() {
 		
-		System.out.println("Cambia esa berga de email, pelotudo niño pinga.");
+		// System.out.println("Cambia esa berga de email, pelotudo niño pinga.");
+		
+		System.out.println("Enter de name of a person:");
+		String name = sc.next();
+		System.out.println("Enter the last name of the person");
+		String lastName = sc.next();
+		String email;
+		do {
+			System.out.println("Enter the new email of the person:");
+			email = sc.next();
+		} while (!email.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$"));
+		Person person = new Person(name, lastName);
+		
+		if(staff.updatePersonByEmail(person, email)) System.out.println("Email updated");
 		
 	}
 	
