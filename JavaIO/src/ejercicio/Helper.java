@@ -11,7 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Helper {
-
+	
+	public static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+	
 	public static int getYearsOfPeriod(LocalDate lDate) {
 		
 		int years = 0;
@@ -31,7 +33,7 @@ public class Helper {
 		
 		for (String line : lines) {
 			String[] person = line.split(",");
-			LocalDate birthday = LocalDate.parse(person[4], DateTimeFormatter.ofPattern("yyyy/MM/dd"));
+			LocalDate birthday = LocalDate.parse(person[4], formatter);
 			if (person[3].equals("Male"))
 				people.add(new Person(person[0], person[1], person[2], Gender.Male, birthday, person[5])); 
 			else if (person[3].equals("Female"))
@@ -42,6 +44,17 @@ public class Helper {
 		}
 		
 		return people;
+		
+	}
+	
+	public static void writeCSV(Staff staff, String file) {
+		
+		// Creamos un nuevo Path con fileName + fecha (LocalDateTime.now8).toString()).
+		// Obtener List<Person> del atributo staff, mediante getter.
+		// Recorremos la lista y añadimos person + \n a un StringBuilder
+		// Quitar el ultimo salto de linea.
+		// Usar bufferedwriter que proporciona el metodo BufferedWriter de la clase Files.
+		// Usadno el metodo print(String) lo volcamos al fichero.
 		
 	}
 	

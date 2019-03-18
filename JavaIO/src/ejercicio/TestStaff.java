@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
 
@@ -85,6 +86,8 @@ public class TestStaff {
 			}
 			
 		} while(iOption != 0);
+		sc.close();
+		System.out.println("Bye bye :)");
 		
 	}
 	
@@ -192,8 +195,47 @@ public class TestStaff {
 	
 	private static void addPerson() {
 		
-		System.out.println("Que bacanería, otro corito sano.");
+		// System.out.println("Que bacanería, otro corito sano.");
 		
+		System.out.println("Enter de name of a person:");
+		String name = sc.next();
+		System.out.println("Enter the last name of the person:");
+		String lastName = sc.next();
+		
+		String email;
+		do {
+			System.out.println("Enter the new email of the person:");
+			email = sc.nextLine();
+		} while (!email.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$"));
+		
+		String sGender;
+		do {
+			System.out.println("Enter the gender (Male,Female or Other  ):");
+			sGender = sc.nextLine();
+		} while (!sGender.matches("(Male|Female|Other)"));
+		
+		Gender gender;
+		if (sGender.equals("Male"))
+			gender = Gender.Male;
+		else if (sGender.equals("Female"))
+			gender = Gender.Female;
+		else
+			gender = Gender.Other;
+		
+		String sBirthday;
+		do {
+			System.out.println("Enter the birthday:");
+			sBirthday = sc.nextLine();
+		} while(!sBirthday.matches("\\d{4}/\\d{2}/\\d{2}"));
+		LocalDate birthday = LocalDate.parse(sBirthday, Helper.formatter);
+		
+		System.out.println("Enter the coutnry of the person");
+		String country = sc.nextLine();
+		
+		Person person = new Person(name, lastName, email, gender, birthday, country);
+		
+		if(staff.addPerson(person)) System.out.println("Person added.");
+		else System.out.println("Problem with add a person.");
 	}
 	
 	private static void updatePersonByEmail() {
