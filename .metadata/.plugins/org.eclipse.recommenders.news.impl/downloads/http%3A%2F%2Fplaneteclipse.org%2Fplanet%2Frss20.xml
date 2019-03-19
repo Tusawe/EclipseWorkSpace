@@ -8,6 +8,71 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Tanja Obradovic: How to participate in advancing Jakarta EE Specification</title>
+	<guid isPermaLink="false">https://blogs.eclipse.org/6681 at https://blogs.eclipse.org</guid>
+	<link>https://blogs.eclipse.org/post/tanja-obradovic/how-participate-advancing-jakarta-ee-specification</link>
+	<description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p dir=&quot;ltr&quot;&gt;&lt;strong&gt;&lt;img src=&quot;https://lh6.googleusercontent.com/-RJUHEiTKNyuHlMqrNX3WVVPAc8UmO2d9s0rhRGkP4wvhFx9cTSH0CSPlwSApS5mGQmT1k5DWmmLyaC394jcHZ1MQ7Lvsq6QTRYXCYT31Hc6E4DfrJPa-9ZFnNUjiFHzvZdUjigB&quot; style=&quot;height: 219px; width: 624px;&quot; /&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir=&quot;ltr&quot;&gt; &lt;/p&gt;
+
+&lt;p dir=&quot;ltr&quot;&gt;It is March already, and excitement for Jakarta EE is growing. The migration to Jakarta EE is almost complete! In the wake of the successful launch of the Java EE 8-compatible Eclipse GlassFish 5.1 in January, we are keeping our sights set firmly forward. We will continue to work towards the full transition from Java EE and JCP to Jakarta EE and the new specification process. All projects related to Jakarta EE will need to be examined and established into new Eclipse Foundation Specification projects, but it’s important that we agree on specifications and project names and ensure each has a well-documented project scope before we can begin advancing the specifications.&lt;/p&gt;
+
+&lt;p&gt;Yes, it’s set to be another busy year for the Eclipse Foundation. Having welcomed aboard new specification proposals such as Jakarta EE NoSQL and Jakarta Batch, we’re going to need all hands on deck! I’ve created this blog post with the aim of making it easier for individuals to contribute to the Jakarta EE Specification.&lt;/p&gt;
+
+&lt;p dir=&quot;ltr&quot;&gt;&lt;strong&gt; The Scope of the Work&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir=&quot;ltr&quot;&gt;All of this can be daunting for people who are just starting to take interest in Jakarta EE and open source, but everyone can contribute in some easy ways to streamline the ongoing transition and advancement of the technology. If you are wondering what you can do to participate, this blog series will outline some areas where involvement is needed. I will group the work in the three major groups:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir=&quot;ltr&quot;&gt;
+	&lt;p dir=&quot;ltr&quot;&gt;Marketing&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir=&quot;ltr&quot;&gt;
+	&lt;p dir=&quot;ltr&quot;&gt;Technical&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir=&quot;ltr&quot;&gt;
+	&lt;p dir=&quot;ltr&quot;&gt;Collateral&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir=&quot;ltr&quot;&gt;In the next couple of weeks, please expect more details on each.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Committer and Contributors  paperwork&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir=&quot;ltr&quot;&gt;Before you start the work please ensure all agreements are executed&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir=&quot;ltr&quot;&gt;
+	&lt;p dir=&quot;ltr&quot;&gt;Contributors:&lt;/p&gt;
+
+	&lt;ul&gt;
+		&lt;li dir=&quot;ltr&quot;&gt;
+		&lt;p dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://www.eclipse.org/legal/ECA.php&quot;&gt;Eclipse Contributor Agreement&lt;/a&gt;&lt;/p&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li dir=&quot;ltr&quot;&gt;
+	&lt;p dir=&quot;ltr&quot;&gt;Committers:&lt;/p&gt;
+
+	&lt;ul&gt;
+		&lt;li dir=&quot;ltr&quot;&gt;
+		&lt;p dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://www.eclipse.org/org/documents/eclipse_membership_agreement.pdf&quot;&gt;Eclipse Foundation Membership Agreement&lt;/a&gt;&lt;/p&gt;
+		&lt;/li&gt;
+		&lt;li dir=&quot;ltr&quot;&gt;
+		&lt;p dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://www.eclipse.org/legal/#CommitterAgreements&quot;&gt;Member Committer and Contributor Agreement&lt;/a&gt; or &lt;a href=&quot;https://www.eclipse.org/legal/committer_process/EclipseIndividualCommitterAgreement.pdf&quot;&gt;Individual Committer Agreement&lt;/a&gt;&lt;/p&gt;
+		&lt;/li&gt;
+		&lt;li dir=&quot;ltr&quot;&gt;
+		&lt;p dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://www.eclipse.org/org/workinggroups/IWG_Participation_Agreement.pdf&quot;&gt;Working Group Participation Agreement&lt;/a&gt;&lt;/p&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir=&quot;ltr&quot;&gt; &lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-blog-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Tags: &lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/jakartaee&quot;&gt;#JakartaEE&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/participate&quot;&gt;#Participate&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/opensource&quot;&gt;#OpenSource&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/javaee&quot;&gt;#JavaEE&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 18 Mar 2019 16:04:32 +0000</pubDate>
+</item>
+<item>
 	<title>Eclipse Announcements: Incubation in the Eclipse Development Process</title>
 	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/35IWfgzH8M0/incubation-eclipse-development-process</guid>
 	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/35IWfgzH8M0/incubation-eclipse-development-process</link>
@@ -561,122 +626,6 @@ October 22 - 24: Conference
 	<link>https://www.infoq.com/news/2019/02/eclipse-release-microprofile-22?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
 	<description>&lt;img src=&quot;https://www.infoq.com/styles/i/logo_bigger.jpg&quot; /&gt;&lt;p&gt;The Eclipse foundation recently released MicroProfile 2.2, helping developers to create microservices on top of EE 8. This release comes at the same time that Eclipse is taking over as steward of Java EE and rebranding it to Jakarta EE.&lt;/p&gt; &lt;i&gt;By Erik Costlow&lt;/i&gt;</description>
 	<pubDate>Fri, 22 Feb 2019 06:30:00 +0000</pubDate>
-</item>
-<item>
-	<title>Jens Reimann: Integrating Eclipse IoT</title>
-	<guid isPermaLink="false">https://dentrassi.de/?p=4107</guid>
-	<link>https://dentrassi.de/2019/02/20/integrating-eclipse-iot/</link>
-	<description>&lt;p&gt;The Eclipse IoT project is a top level project at the Eclipse Foundation. It currently consists of around 40 projects, which focus on different aspects of IoT. This may either be complete solutions, like the &lt;a href=&quot;https://www.eclipse.org/smarthome/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Eclipse SmartHome&lt;/a&gt; project, the PLC runtime and IDE, &lt;a href=&quot;https://www.eclipse.org/4diac/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Eclipse 4DIAC&lt;/a&gt;. Or it may be building block projects, like the MQTT libraries of &lt;a href=&quot;https://www.eclipse.org/paho/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Eclipse Paho&lt;/a&gt;, or the cloud scale IoT messaging infrastructure of &lt;a href=&quot;https://www.eclipse.org/hono/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Eclipse Hono&lt;/a&gt;. I can only encourage you to have a look at the &lt;a href=&quot;https://iot.eclipse.org/projects/&quot;&gt;list of projects&lt;/a&gt; and do a bit of exploring.&lt;/p&gt;
-
-
-
-&lt;p&gt;And while it is great to a have a diverse set of projects, covering &lt;a href=&quot;https://iot.eclipse.org/white-papers/iot-architectures/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;the three tiers of IoT &lt;/a&gt;(Device, Gateway and Cloud), it can be a challenge to explain people, how all of those projects can create something, which is bigger than the individual projects. Because having 40 different IoT projects is great, but imagine the possibilities of having a whole IoT ecosystem of projects. Mixing and matching, building your IoT solution as you see fit.&lt;/p&gt;
-
-
-
-&lt;span id=&quot;more-4107&quot;&gt;&lt;/span&gt;
-
-
-
-&lt;h3&gt;IoT means different things to different people&lt;/h3&gt;
-
-
-
-&lt;p&gt;Everyone sees something different in the “Internet of Things”. Looking at the introduction on Wikipedia, you may understand why:&lt;/p&gt;
-
-
-
-&lt;blockquote class=&quot;wp-block-quote&quot;&gt;&lt;p&gt;The Internet of things (IoT) is the network of devices such as vehicles, and home appliances that contain electronics, software, sensors, actuators, and connectivity which allows these things to connect, interact and exchange data&lt;/p&gt;&lt;cite&gt;Wikipedia – “Internet of Things”&lt;/cite&gt;&lt;/blockquote&gt;
-
-
-
-&lt;p&gt;While it is absolutely valid, it is also rather vague and covers quite a few use cases. This is also being reflected by the different projects of Eclipse IoT. Different projects cover different areas, sometimes they overlap, but sometimes they don’t. Sometimes to follow similar principles, and sometimes they don’t. Most people are caught up in their daily work, contributing to the projects you focus on. But it might be beneficial for everyone, to look a bit over the fence and try to establish a common ground, creating a more integrated Eclipse IoT experience&lt;/p&gt;
-
-
-
-&lt;h3&gt;Let’s draw a map&lt;/h3&gt;
-
-
-
-&lt;p&gt;One of the biggest problems, and not only when you are a newcomer to Eclipse IoT, is to understand what is already there, and how it works together. Because, yes it does work together! Finding out “how” can however be challenging. Many projects already have some kind of documentation on how to set up project X with project Y. In most cases such information stored in the project’s Git repository, some blog post or only lives in a forum or mailing list.&lt;/p&gt;
-
-
-
-&lt;p&gt;So we tried to find a format on how to bring this all together, and also motivate projects to actively contribute to that format. A single person cannot know and understand how all those different projects work together, but the committers on each project know their projects and existing integration points best. And they can also easily point you to the necessary documentation. The result, that resonated quite well with people is a simple, interactive map of the integrated projects:&lt;/p&gt;
-
-
-
-&lt;figure class=&quot;wp-block-image is-resized&quot;&gt;&lt;a href=&quot;https://ctron.github.io/eclipse-iot-integration-map/&quot; rel=&quot;&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;wp-image-4121&quot; height=&quot;647&quot; src=&quot;https://dentrassi.de/wp-content/uploads/Selection_583.png&quot; width=&quot;824&quot; /&gt;&lt;/a&gt;Eclipse IoT integration map – &lt;a href=&quot;https://ctron.github.io/eclipse-iot-integration-map/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;https://ctron.github.io/eclipse-iot-integration-map/&lt;/a&gt;&lt;/figure&gt;
-
-
-
-&lt;p&gt;This map represents a condensed view on the current state of &lt;a href=&quot;https://ctron.github.io/eclipse-iot-integration-map/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Eclipse IoT integration&lt;/a&gt;, to the best of my knowledge. But please fix that latter part, by using the “&lt;a href=&quot;https://github.com/ctron/eclipse-iot-integration-map&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Fork me!&lt;/a&gt;” button. Adding a new project to that map is only one pull request away. And if you are new to Eclipse IoT, then go ahead and explore the map.&lt;/p&gt;
-
-
-
-&lt;h3&gt;Get started quickly&lt;/h3&gt;
-
-
-
-&lt;p&gt;Getting started still is hard. Yes, most projects do have some kind of “quick start” tutorial, which gets you started within a few minutes. However, the more components and projects you add, the more complex and time consuming it gets. Mostly because you need to figure out the integration part yourself:&lt;/p&gt;
-
-
-
-&lt;blockquote class=&quot;wp-block-quote&quot;&gt;&lt;p&gt;Getting us started with Eclipse IoT took us four months. On the other hand we don’t want to reinvent the wheel, especially when it comes to a complex piece of infrastructure like an IoT platform. Our target market requires being able to run on-premise, ruling out the majority of IoT platforms offered in the cloud. Using and actively participating in an open source IoT platform and exposing open API’s to our customers for integrating the IoT platform aligns perfectly with our vision.&lt;/p&gt;&lt;cite&gt;Bob Claerhout – &lt;a href=&quot;http://www.aloxy.io/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Aloxy&lt;/a&gt;&lt;/cite&gt;&lt;/blockquote&gt;
-
-
-
-&lt;p&gt;I was really glad that I joined the &lt;a href=&quot;https://wiki.eclipse.org/IoT/M2MIWG/Weekly_call_minutes&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;bi-weekly Eclipse IoT community call&lt;/a&gt; that day. Because hearing that feedback, from someone who just started to look into the ecosystem, confirmed two things: Eclipse IoT can be a pretty valuable asset for the IoT solution you are building. But I think we should make it way easier to consume those projects, or at least to get people started quicker. Just a little bit later, a first, small PR from Bob landed in the Eclipse Hono project, proving that the open source approach works just fine.&lt;/p&gt;
-
-
-
-&lt;p&gt;But not everyone is that persistent and keeps trying that hard. What we need is good starting point, a super-opinionated deployment. Showing the basics of each of the projects, in some kind of integrated deployment. You will never take this out into production, but it should help you to get started, and allow you to explore what is already there. See how it works, let you play around with a running instance of the components you chose to deploy.&lt;/p&gt;
-
-
-
-&lt;h3&gt;We are close&lt;/h3&gt;
-
-
-
-&lt;p&gt;And actually we are pretty close to that target. It just needs a bit of polish, and we have a nice starting point. Over the last year or so, we have built a kind of “example”, “demo setup”, whatever you will call it. It all started with a simple deployment of Eclipe Hono, including an IoT gateway simulator and a “Demo Gauge”, which acts as a web frontend, showing the simulated data in a web browser.&lt;/p&gt;
-
-
-
-&lt;p&gt;Over the time we extended this and now have an example of telemetry data ingestion, using &lt;a href=&quot;https://www.eclipse.org/kura/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Eclipse Kura&lt;/a&gt; as an IoT gateway, connecting to &lt;a href=&quot;https://eclipse.org/hono/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Eclipse Hono&lt;/a&gt; and &lt;a href=&quot;http://enmasse.io/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;EnMasse&lt;/a&gt; as the IoT messaging layer. Pushing data via &lt;a href=&quot;https://camel.apache.org/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Apache Camel&lt;/a&gt; to &lt;a href=&quot;https://kafka.apache.org/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Apache Kafka&lt;/a&gt;, and then running the “&lt;a href=&quot;https://github.com/ctron/hono-example-demo-gauge&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Demo Gauge&lt;/a&gt;” application to show the data. Alongside we deploy &lt;a href=&quot;https://www.eclipse.org/che/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Eclipse Che&lt;/a&gt;, to show how you can start developing on the same cloud infrastructure that the IoT stack is deployed to. All of that is running on Kubernetes based &lt;a href=&quot;https://www.okd.io/&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;OKD&lt;/a&gt;, using a source-to-image, devops style deployment model.&lt;/p&gt;
-
-
-
-&lt;p&gt;Like the integration map, it is right here on GitHub: &lt;a href=&quot;https://github.com/redhat-iot/iot-cloud-stack-ece2018&quot;&gt;https://github.com/redhat-iot/iot-cloud-stack-ece2018&lt;/a&gt;. A hand full of people already contributes to that effort over time. But, compared to the integration map, this “Tutorial” repository needs a bit of cleanup. And instead of running through it sequentially, it might be better to approach this from a feature based perspective. Deploying a core infrastructure, and then allowing for a few choices, of what you would like to deploy in addition.&lt;/p&gt;
-
-
-
-&lt;h3&gt;Gathering recipes&lt;/h3&gt;
-
-
-
-&lt;p&gt;So let’s simply start with a fresh repository. Name it “&lt;a href=&quot;https://github.com/ctron/eclipse-iot-recipes&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;Eclipse IoT recipes&lt;/a&gt;“, for the time being, and re-organize the content a little bit: &lt;a href=&quot;https://github.com/ctron/eclipse-iot-recipes&quot; rel=&quot;noreferrer noopener&quot; target=&quot;_blank&quot;&gt;https://github.com/ctron/eclipse-iot-recipes&lt;/a&gt; … that wasn’t too difficult &lt;img alt=&quot;🙂&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/11.2.0/72x72/1f642.png&quot; style=&quot;height: 1em;&quot; /&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;The goal should be, that within a few hours, you have a system up and running. A system which allows you to play at least with the basics. And everyone who would like to add something, can easily do that with a PR. And “adding” might also be to provide an alternative path. Replace the IoT gateway, replace the messaging layer, … whatever you have in mind.&lt;/p&gt;
-
-
-
-&lt;p&gt;I still think it is helpful to have some manual steps, with a little bit of explanation, rather than a fully automated script. From my experience, you learn a lot more when you do things yourself, rather than watching a script doing things for you.&lt;/p&gt;
-
-
-
-&lt;h3&gt;Play with it … and contribute!&lt;/h3&gt;
-
-
-
-&lt;p&gt;Now it is up to you, to test this, play with it, and contribute. Provide feedback, make suggestions, or fork it and turn it upside down.&lt;/p&gt;
-
-
-
-&lt;p&gt;Or just explore what Eclipse IoT has to offer.&lt;/p&gt;
-&lt;p&gt;The post &lt;a href=&quot;https://dentrassi.de/2019/02/20/integrating-eclipse-iot/&quot; rel=&quot;nofollow&quot;&gt;Integrating Eclipse IoT&lt;/a&gt; appeared first on &lt;a href=&quot;https://dentrassi.de&quot; rel=&quot;nofollow&quot;&gt;ctron's blog&lt;/a&gt;.&lt;/p&gt;</description>
-	<pubDate>Wed, 20 Feb 2019 12:28:51 +0000</pubDate>
 </item>
 
 </channel>

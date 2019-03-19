@@ -79,10 +79,10 @@ public class Person {
 	@Override
 	public String toString() {
 		if (birthday != null) {
-		return String.format("%n%s,%s,%s,%s,%s,%s", firstName, lastName, email, gender, 
+		return String.format("%n%s;%s;%s;%s;%s;%s", firstName, lastName, email, gender, 
 				birthday.format(DateTimeFormatter.ofPattern("yyyy/MM/dd")), country);
 		}
-		return String.format("%n%s,%s,%s,%s,%s,%s", firstName, lastName, email, gender, birthday, country);
+		return String.format("%n%s;%s;%s;%s;%s;%s", firstName, lastName, email, gender, birthday, country);
 	}
 
 	@Override

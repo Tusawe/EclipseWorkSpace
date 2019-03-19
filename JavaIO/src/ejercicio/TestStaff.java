@@ -12,6 +12,7 @@ public class TestStaff {
 
 	private static Scanner sc = new Scanner(System.in);
 	private static Staff staff;
+	private static boolean fileChanged;
 	
 	public static void main(String[] args) {
 		
@@ -52,8 +53,8 @@ public class TestStaff {
 			
 			switch (iOption) {
 				case 0:
-					System.out.println("Hasta luego Mari Carmen");
-					return;
+					if (fileChanged) exit();
+					break;
 					
 				case 1:
 					removePerson();
@@ -86,6 +87,7 @@ public class TestStaff {
 			}
 			
 		} while(iOption != 0);
+		
 		sc.close();
 		System.out.println("Bye bye :)");
 		
@@ -132,7 +134,10 @@ public class TestStaff {
 		System.out.println("Enter the last name of a person");
 		String lastName = sc.next();
 		Person person = new Person(name, lastName);
-		if(staff.removePerson(person)) System.out.println("Person removed.");
+		if(staff.removePerson(person)) {
+			System.out.println("Person removed.");
+			fileChanged = true;
+		}
 		
 		
 	}
@@ -142,7 +147,7 @@ public class TestStaff {
 		// System.out.println("To' la peña del country pa'");
 		System.out.println("Enter the country:");
 		String country = sc.next();
-		staff.showListByCountry(country);
+		System.out.println(staff.showListByCountry(country));
 		
 	}
 
@@ -164,7 +169,7 @@ public class TestStaff {
 			gender = Gender.Other;
 		
 		
-		staff.showListByGender(gender);
+		System.out.println(staff.showListByGender(gender));
 	
 	}
 	
@@ -175,7 +180,10 @@ public class TestStaff {
 			System.out.println("Enter a email of a person:");
 			email = sc.next();
 		} while (!email.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$"));
-		if (staff.removePersonByEmail(email)) System.out.println("Person removed by email.");
+		if (staff.removePersonByEmail(email)) {
+			System.out.println("Person removed by email.");
+			fileChanged = true;
+		}
 		else System.out.println("Person not removed.");
 		
 	}
@@ -205,13 +213,13 @@ public class TestStaff {
 		String email;
 		do {
 			System.out.println("Enter the new email of the person:");
-			email = sc.nextLine();
-		} while (!email.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$"));
+			email = sc.next();
+		} while (!email.matches("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,6}$"));
 		
 		String sGender;
 		do {
 			System.out.println("Enter the gender (Male,Female or Other  ):");
-			sGender = sc.nextLine();
+			sGender = sc.next();
 		} while (!sGender.matches("(Male|Female|Other)"));
 		
 		Gender gender;
@@ -225,17 +233,21 @@ public class TestStaff {
 		String sBirthday;
 		do {
 			System.out.println("Enter the birthday:");
-			sBirthday = sc.nextLine();
+			sBirthday = sc.next();
 		} while(!sBirthday.matches("\\d{4}/\\d{2}/\\d{2}"));
 		LocalDate birthday = LocalDate.parse(sBirthday, Helper.formatter);
 		
 		System.out.println("Enter the coutnry of the person");
-		String country = sc.nextLine();
+		String country = sc.next();
 		
 		Person person = new Person(name, lastName, email, gender, birthday, country);
 		
-		if(staff.addPerson(person)) System.out.println("Person added.");
+		if(staff.addPerson(person)) {
+			System.out.println("Person added.");
+			fileChanged = true;
+		}
 		else System.out.println("Problem with add a person.");
+		
 	}
 	
 	private static void updatePersonByEmail() {
@@ -250,10 +262,25 @@ public class TestStaff {
 		do {
 			System.out.println("Enter the new email of the person:");
 			email = sc.next();
-		} while (!email.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$"));
+		} while (!email.matches("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,6}$"));
 		Person person = new Person(name, lastName);
 		
-		if(staff.updatePersonByEmail(person, email)) System.out.println("Email updated");
+		if(staff.updatePersonByEmail(person, email)) {
+			System.out.println("Email updated");
+			fileChanged = true;
+		}
+		
+	}
+	
+	private static void exit() {
+		
+		System.out.println("Enter filename:");
+		String fileName = sc.next();
+		try {
+			Helper.writeCSV(staff, fileName);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
