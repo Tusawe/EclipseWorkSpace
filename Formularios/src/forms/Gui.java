@@ -7,8 +7,11 @@ public class Gui {
 //		SecondForm segundo = new SecondForm();
 //		segundo.setVisible(true);
 		
-		FirstForm primero = new FirstForm();
-		primero.setVisible(true);
+//		FirstForm primero = new FirstForm();
+//		primero.setVisible(true);
+		
+		Plantilla plantilla = new Plantilla();
+		plantilla.setVisible(true);
 
 	}
 
