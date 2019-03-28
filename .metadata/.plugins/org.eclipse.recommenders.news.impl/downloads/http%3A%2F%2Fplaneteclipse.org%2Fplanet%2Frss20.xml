@@ -8,6 +8,55 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Eclipse Ditto: Announcing Ditto Milestone 0.9.0-M1</title>
+	<guid isPermaLink="true">https://www.eclipse.org/ditto/2019-03-28-milestone-announcement-090-M1.html</guid>
+	<link>https://www.eclipse.org/ditto/2019-03-28-milestone-announcement-090-M1.html</link>
+	<description>&lt;p&gt;Today the Ditto team is happy to announce the first milestone of the upcoming release 
+&lt;a href=&quot;https://projects.eclipse.org/projects/iot.ditto/releases/0.9.0&quot;&gt;0.9.0&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Have a look at the Milestone &lt;a href=&quot;https://www.eclipse.org/ditto/release_notes_090-M1.html&quot;&gt;0.9.0-M1 release notes&lt;/a&gt; for what changed in detail.&lt;/p&gt;
+
+&lt;p&gt;The main changes and new features since the last release &lt;a href=&quot;https://www.eclipse.org/ditto/release_notes_080.html&quot;&gt;0.8.0&lt;/a&gt; are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;memory optimizations when working with millions of digital twins&lt;/li&gt;
+  &lt;li&gt;enhance connectivity to also be able to establish connections to Apache Kafka&lt;/li&gt;
+  &lt;li&gt;providing more detailed metrics for connections&lt;/li&gt;
+  &lt;li&gt;cluster bootstrapping stability improvements&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;artifacts&quot;&gt;Artifacts&lt;/h2&gt;
+
+&lt;p&gt;The new Java artifacts have been published at the &lt;a href=&quot;https://repo.eclipse.org/content/repositories/ditto/&quot;&gt;Eclipse Maven repository&lt;/a&gt;
+as well as &lt;a href=&quot;https://repo1.maven.org/maven2/org/eclipse/ditto/&quot;&gt;Maven central&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Docker images have been pushed to Docker Hub:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-policies/&quot;&gt;eclipse/ditto-policies&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-things/&quot;&gt;eclipse/ditto-things&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-things-search/&quot;&gt;eclipse/ditto-things-search&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-gateway/&quot;&gt;eclipse/ditto-gateway&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-connectivity/&quot;&gt;eclipse/ditto-connectivity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-concierge/&quot;&gt;eclipse/ditto-concierge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img alt=&quot;Ditto&quot; class=&quot;docimage&quot; src=&quot;https://www.eclipse.org/ditto/images/ditto.svg&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;–&lt;br /&gt;
+The Eclipse Ditto team&lt;/p&gt;</description>
+	<pubDate>Thu, 28 Mar 2019 04:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Fabio Zadrozny: LiClipse 5.2.2 released</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-7855001383687474475.post-5274877453732983738</guid>
+	<link>http://liclipse.blogspot.com/2019/03/liclipse-522-released.html</link>
+	<description>This version does an updated of the main dependencies of LiClipse.&lt;br /&gt;&lt;br /&gt;It's now based on:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Eclipse 4.11 (also named 2019-03)&lt;/li&gt;&lt;li&gt;PyDev (5.2.2) &lt;/li&gt;&lt;li&gt;EGit (5.3.0)&lt;/li&gt;&lt;/ul&gt;As a note, it seems I haven't updated this blog as often as I should (I end up putting more effort into announcing the PyDev updates) but just to note, LiClipse is always updated whenever PyDev is updated.&lt;br /&gt;&lt;br /&gt;Enjoy! &lt;br /&gt;&lt;br /&gt;</description>
+	<pubDate>Wed, 27 Mar 2019 13:46:27 +0000</pubDate>
+	<author>noreply@blogger.com (Fabio Zadrozny)</author>
+</item>
+<item>
 	<title>Thabang Mashologu: Thank You for Taking the Jakarta EE 2019 Developer Survey!</title>
 	<guid isPermaLink="false">https://blogs.eclipse.org/6684 at https://blogs.eclipse.org</guid>
 	<link>https://blogs.eclipse.org/post/thabang-mashologu/thank-you-taking-jakarta-ee-2019-developer-survey</link>
@@ -607,93 +656,6 @@ The Eclipse Ditto team&lt;/p&gt;</description>
 	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/JQv1iSBVyC8/2019-jakarta-ee-developer-survey-underway</link>
 	<description>The Jakarta EE Working Group is launching the Jakarta EE Developer Survey for 2019!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/JQv1iSBVyC8&quot; width=&quot;1&quot; /&gt;</description>
 	<pubDate>Tue, 05 Mar 2019 15:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>itemis: Xtext 2.17 – The Java 11 release</title>
-	<guid isPermaLink="true">https://blogs.itemis.com/en/xtext-2-17-the-java-11-release</guid>
-	<link>https://blogs.itemis.com/en/xtext-2-17-the-java-11-release</link>
-	<description>&lt;p&gt;The Xtext team is proud to announce release version 2.17 of the famous Language Engineering framework. 16 individual contributors have fixed almost 100 issues and 250 pull requests with ~600 commits – and that’s just in 3 months! Xtext 2.17 participates in the Eclipse Simultaneous Release 2019-03 and is still one of the most active projects at Eclipse.&lt;/p&gt; 
-&lt;h2&gt;Full Java 11 support&lt;/h2&gt; 
-&lt;p&gt;Of course this release has a special focus on Java 11 support. With the previous version, we laid the foundation for Java 11. Full support was not possible at that time, because Xtext builds on top of various frameworks that themselves had to ship being fully enabled for Java 11 before, like Eclipse JDT, Eclipse Tycho, Eclipse EMF, Maven, Gradle, and any plugins used by them. That’s quite a bunch! But now we are happy to have them all together integrated and made ready ourselves to support the latest and greatest Java version.&lt;/p&gt; 
-&lt;h2&gt;Upgrades, upgrades, upgrades&lt;/h2&gt; 
-&lt;p&gt;We are constantly reviewing the technology stack Xtext builds upon. Everything has been updated to the latest release: Eclipse 2019-03, Gradle 5.2.1, Maven 3.6, EMF 2.15, Tycho 1.3, Eclipse MWE 2.10, ASM 7, JDT, Ace Editor 1.3.3, CodeMirror 5.41.0, Orion 17, and some more.&lt;/p&gt; 
-&lt;h2&gt;Maven BOM&lt;/h2&gt; 
-&lt;p&gt;For clients building Xtext-based applications the most noticeable change is a new artifact: A Maven &lt;em&gt;&lt;a href=&quot;https://www.javabullets.com/maven-bill-of-materialsbom/&quot;&gt;bill of materials&lt;/a&gt;&lt;/em&gt; (BOM). With help of the BOM, all third-party dependencies that Xtext relies on are managed in one central artifact. Clients do not have to care about specific versions of Eclipse Platform, EMF, Guava, etc. libraries. They just use the BOM for managing these dependencies.&lt;/p&gt; 
-&lt;p&gt;The BOM can be used for Maven and Gradle builds natively. After declaring the usage of the BOM, dependencies can be used without specifying a version. All managed libraries have been tested to work with Xtext.&lt;/p&gt; 
-&lt;h3&gt;Maven: Include BOM&lt;/h3&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;&amp;lt;dependencyManagement&amp;gt;
-  &amp;lt;dependencies&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.eclipse.xtext&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;xtext-dev-bom&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;${xtext.version}&amp;lt;/version&amp;gt;
-      &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;
-    &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-  &amp;lt;/dependencies&amp;gt;
-&amp;lt;/dependencyManagement&amp;gt;&lt;/pre&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;h3&gt;Maven: Use managed dependencies&lt;/h3&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;&amp;lt;dependencies&amp;gt;
-  &amp;lt;dependency&amp;gt;
-    &amp;lt;groupId&amp;gt;org.junit.jupiter&amp;lt;/groupId&amp;gt;
-    &amp;lt;artifactId&amp;gt;junit-jupiter-api&amp;lt;/artifactId&amp;gt;
-    &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
-  &amp;lt;/dependency&amp;gt;
-  &amp;lt;dependency&amp;gt;
-    &amp;lt;groupId&amp;gt;org.junit.jupiter&amp;lt;/groupId&amp;gt;
-    &amp;lt;artifactId&amp;gt;junit-jupiter-engine&amp;lt;/artifactId&amp;gt;
-    &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
-  &amp;lt;/dependency&amp;gt;
-&amp;lt;/dependencies&amp;gt;&lt;/pre&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;h3&gt;Gradle: Include BOM&lt;/h3&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;dependencies {
-  compile platform(&quot;org.eclipse.xtext:xtext-dev-bom:${xtextVersion}&quot;)
-}&lt;/pre&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;h3&gt;Gradle: Use managed dependencies&lt;/h3&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;dependencies {
-  testCompile 'org.junit.jupiter:junit-jupiter-api'
-  testRuntime 'org.junit.jupiter:junit-jupiter-engine'
-}&lt;/pre&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;h2&gt;Some love for the Maven plugins&lt;/h2&gt; 
-&lt;p&gt;We have polished all Maven plugins shipped with Xtext. Everything has been updated to the latest Maven API and refactored to use the &lt;a href=&quot;https://maven.apache.org/plugin-tools/maven-plugin-tools-annotations/index.html&quot;&gt;annotation API&lt;/a&gt; internally. All plugins used by the plugins themselves for the build have been updated to their latest recommended version. The usage of deprecated API has been resolved and changed to also use the recommended API now.&lt;/p&gt; 
-&lt;p&gt;Also an internal but for us nonetheless important refactoring was cleaning up the plugins’ integration tests. The test cases have grown wildly over the time, and we also used here the new BOM and recommended patterns, e.g., proper plugin management and consolidation of common code in the integration tests’ parents. This helps us adding more relevant test cases, and it lowers maintenance costs.&lt;/p&gt; 
-&lt;p&gt;The plugins benefit from BOM usage with a slight performance gain, so there's a positive effect on clients, too.&lt;/p&gt; 
-&lt;h2&gt;JUnit 5 is now recommended&lt;/h2&gt; 
-&lt;p&gt;Since its introduction with Xtext 2.14 (Eclipse Photon, June 2018), the new JUnit 5 support API has been kept a restricted API. Clients using these classes experienced access restriction warnings. We now felt that the API is stable enough to open it up as public API.&lt;/p&gt; 
-&lt;p&gt;The &lt;em&gt;New Project Wizard&lt;/em&gt; will now default to JUnit 5 for selection of testing support.&lt;/p&gt; 
-&lt;h2&gt;Xtend supports static member favorites&lt;/h2&gt; 
-&lt;p&gt;A nice and maybe not well known feature of JDT is the definition of &lt;a href=&quot;https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Feditor%2Fref-preferences-content-assist-favorites.htm&quot;&gt;favorites for adding static imports&lt;/a&gt;. The types considered for importing static methods are configured for Java in &lt;em&gt;Java → Editor → Content Assist → Favorites&lt;/em&gt;.&lt;/p&gt; 
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img alt=&quot;Xtext 2.17 Release: Static Member Favorites Preference Page&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog%20(2019)/Software%20Development/Xtext%202.17%20-%20The%20Java%2011%20Release/xtext-2.17-release-static-member-favorites-preference-page.png?width=600&amp;amp;name=xtext-2.17-release-static-member-favorites-preference-page.png&quot; style=&quot;width: 600px; display: block; margin: 0px auto;&quot; width=&quot;600&quot; /&gt;&lt;em&gt;Static member favorites preference page&lt;/em&gt;&lt;/p&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;p&gt;Good news! Xtend does now also evaluates this preference and allows automatically adding static method imports by using its content assist facility. Try it out and use it (also in Java ;-) ).&lt;/p&gt; 
-&lt;h2&gt;Good-bye Maven Android archetype &amp;amp; GWT library support&lt;/h2&gt; 
-&lt;p&gt;It was time to clean up some more. Features that are typically no longer used anymore are the Maven archetype to create Android applications and the GWT support bundles &lt;em&gt;org.eclipse.xtend.lib.gwt&lt;/em&gt; and &lt;em&gt;org.eclipse.xtext.xbase.lib.gwt&lt;/em&gt;. Any objections? Then please get in touch with us and raise your voice! We will listen.&lt;/p&gt; 
-&lt;h2&gt;Improved release speed&lt;/h2&gt; 
-&lt;p&gt;With this release, we participated in all three milestones of the &lt;a href=&quot;https://wiki.eclipse.org/SimRel/2019-03/Simultaneous_Release_Plan&quot;&gt;Eclipse Simultaneous Release&lt;/a&gt; for the first time. Until now, it is still a surprisingly high effort to get a release shipped. We mainly struggle with flaky tests and the build infrastructure. Unfortunately, this hits us especially on release dates when builds are especially slow. We are not the only project on the machine that is doing release builds at this time.&lt;/p&gt; 
-&lt;p&gt;Slowly our invests in the automation of creating release branches are paying off. With each milestone, the scripts were improved, and we are able to create release branches with a single click. In the best case, this means just waiting several hours for all the builds to complete. But as said, things do not always go smoothly, and failing UI tests (that worked totally fine on the master branch before) force us to retrigger builds, which take hours to complete again, and that several times. Our focus therefore in on making test execution more reliable.&lt;/p&gt; 
-&lt;p&gt;We further plan to participate in the full Eclipse simultaneous release cycle, which means four releases each three months, i.e. three milestones and the final release.&lt;/p&gt; 
-&lt;h2&gt;Behind the scenes&lt;/h2&gt; 
-&lt;p&gt;Most of the work happens on code that is not visible to most users. Fixing bugs is always included, and we are fixing several of them with each release. Most of these bugs, users won’t even notice. Xtext can be considered rather stable and mature nowadays.&lt;/p&gt; 
-&lt;p&gt;We have worked quite a lot on the implementation of UI tests, mainly to reduce the risk of flaky tests, which is, as mentioned above, still a sore point. Also, speeding up tests was in focus. The UI tests take the lion's share of our build time. And for each combination of project setup and build configuration the wizard can produce, we have added an integration test. Quite likely, we will dedicate a separate blog post to our testing efforts.&lt;/p&gt; 
-&lt;p&gt;Major effort is also put into build and release engineering tasks. We are preparing to move the build infrastructure to the Common Build Infrastructure (CBI). With Xtext, we were one of the guinea pig projects for that infrastructure. We are still not fully done here and are still struggling with getting our builds, including UI tests, to run under CBI. In the past, the new infrastructure felt unstable like a Jenga tower built by 20 drunk teenagers. Nonetheless, the Eclipse CBI team is very responsive and helpful, and we are working together to get our builds to run reliably on CBI. Again, worth another blog post or more to share our experience.&lt;/p&gt; 
-&lt;p&gt;Everything we need to build Xtext has been updated to its latest state (see “upgrades” section above), and we cleaned up the code base. The number of warnings and of usages of deprecated or restricted APIs has reached a new minimum.&lt;/p&gt; 
-&lt;h2&gt;Summary&lt;/h2&gt; 
-&lt;p&gt;Xtext 2.17 and the technology stack below it is now supporting Java 11 completely. All third-party components have been lifted to their latest states, respectively. Besides that, the technical debt has been reduced by internal refactorings and revised UI tests. The new Maven BOM facilitates the dependency management for Maven and Gradle build configurations and reduces the risk of misconfiguration or build build problems. The release cadence is now fully in sync with the new Eclipse rolling releases.&lt;/p&gt; 
-&lt;p&gt;Do you want to know more? Have a look at the &lt;a href=&quot;https://www.eclipse.org/Xtext/releasenotes.html#/releasenotes/2019/03/05/version-2-17-0&quot;&gt;release notes for Xtext&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://www.eclipse.org/xtend/releasenotes.html#/releasenotes/2019/03/05/version-2-17-0&quot;&gt;Xtend&lt;/a&gt;.&lt;/p&gt;  
-&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://track.hubspot.com/__ptq.gif?a=761475&amp;amp;k=14&amp;amp;r=https%3A%2F%2Fblogs.itemis.com%2Fen%2Fxtext-2-17-the-java-11-release&amp;amp;bu=https%253A%252F%252Fblogs.itemis.com&amp;amp;bvt=rss&quot; style=&quot;width: 1px!important;&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Mon, 04 Mar 2019 19:45:37 +0000</pubDate>
-	<author>thoms@itemis.de (Karsten Thoms)</author>
-</item>
-<item>
-	<title>Eclipse Announcements: Jakarta EE - What's New in 2019?</title>
-	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/E90K3ynkcSw/</guid>
-	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/E90K3ynkcSw/</link>
-	<description>Check out what's new in 2019 for Jakarta EE!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/E90K3ynkcSw&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Mon, 04 Mar 2019 13:00:00 +0000</pubDate>
 </item>
 
 </channel>
