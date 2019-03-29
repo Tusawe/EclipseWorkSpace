@@ -84,4 +84,42 @@ public class PersonaDAO {
 		
 	}
 	
+	public boolean actualizarEmail(int id, String email) {
+		
+		String sql = "UPDATE persona SET email = ? WHERE id = ?;";
+		int rsSet = 0;
+		try(PreparedStatement preStatement = conexion.prepareStatement(sql);) {
+			preStatement.setString(1, email);
+			preStatement.setInt(2, id);
+			rsSet = preStatement.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rsSet != 0;
+		
+	}
+	
+	public boolean insertarPersona(int id, String firstName, String lastName, String email) {
+		
+		String sql = "INSERT INTO persona VALUES (?,?,?,?);";
+		int rsSet = 0;
+		
+		try(PreparedStatement preStatement = conexion.prepareStatement(sql);) {
+			preStatement.setInt(1, id);
+			preStatement.setString(2, firstName);
+			preStatement.setString(3, lastName);
+			preStatement.setString(4, email);
+			rsSet = preStatement.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return rsSet != 0;
+		
+	}
+	
 }

@@ -26,14 +26,32 @@ public class PersonaDAOTest {
 //				.equals(new Persona("Jabez","Virgoe")));
 //	}
 	
+//	@Test
+//	public void testBorrarPersona() {
+//		
+//		PersonaDAO personaDAO = new PersonaDAO();
+//		assertTrue(personaDAO.obtenerPersonaPorEmail("jvirgoerq@woothemes.com")
+//				.equals(new Persona("Jabez","Virgoe")));
+//		assertTrue(personaDAO.borrarPersona("jvirgoerq@woothemes.com"));
+//		
+//	}
+	
+//	@Test
+//	public void testActualizarEmail() {
+//		
+//		PersonaDAO personaDAO = new PersonaDAO();
+//		assertTrue(personaDAO.obtenerPersonaPorEmail("hola@gmail.com")
+//				.equals(new Persona("Nonah","Kondratovich")));
+//		assertTrue(personaDAO.actualizarEmail(998,"nkondratovichrp@cnbc.com"));
+//		
+//	}
+	
 	@Test
-	public void testBorrarPersona() {
-		
-		PersonaDAO personaDAO = new PersonaDAO();
-		assertTrue(personaDAO.obtenerPersonaPorEmail("jvirgoerq@woothemes.com")
-				.equals(new Persona("Jabez","Virgoe")));
-		assertTrue(personaDAO.borrarPersona("jvirgoerq@woothemes.com"));
-		
+	public void testInsertarPersona() {
+			
+			PersonaDAO personaDAO = new PersonaDAO();
+			assertTrue(personaDAO.insertarPersona(999,"Jose","Gomez","wllingtonquiw@quebacaneria.com"));
+			
 	}
 
 }
