@@ -116,11 +116,12 @@ public class StaffDAO {
 	
 	public boolean updateEmailOfAPerson(Person person, String newEmail) {
 		
-		String sql = "UPDATE person SET email = ? WHERE email = ?;";
+		String sql = "UPDATE person SET email = ? WHERE first_name = ? AND last_name = ?;";
 		int rsSet = 0;
 		try(PreparedStatement preStatement = connection.prepareStatement(sql);) {
 			preStatement.setString(1, newEmail);
-			preStatement.setString(2, person.getEmail());
+			preStatement.setString(2, person.getFirstName());
+			preStatement.setString(3, person.getLastName());
 			rsSet = preStatement.executeUpdate();
 			
 		} catch (SQLException e) {
