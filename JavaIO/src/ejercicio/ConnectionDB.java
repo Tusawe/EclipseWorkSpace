@@ -21,7 +21,7 @@ private static Connection conecction = null; // objeto de instancia unica.
 			//Creamos conexion
 			// String url = "jdbc:sqlite:db/database.db";
 			Properties propiedades = new Properties();
-			propiedades.load(new FileReader("config.properties"));
+			propiedades.load(new FileReader("Datos/config.properties"));
 			String DRIVER = propiedades.getProperty("DRIVER");
 			String URL = propiedades.getProperty("URL");
 			conecction = DriverManager.getConnection(DRIVER + URL);

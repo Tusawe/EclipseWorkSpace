@@ -8,6 +8,528 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>JBoss Tools Team: JBoss Tools and Red Hat CodeReady Studio for Eclipse 2019-03</title>
+	<guid isPermaLink="true">https://tools.jboss.org/blog/12.11.0.ga.html</guid>
+	<link>https://tools.jboss.org/blog/12.11.0.ga.html</link>
+	<description>&lt;div&gt;&lt;div id=&quot;preamble&quot;&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://tools.jboss.org/downloads/jbosstools/2019-03/4.11.0.Final.html&quot;&gt;JBoss Tools 4.11.0&lt;/a&gt; and &lt;a href=&quot;https://tools.jboss.org/downloads/devstudio/2019-03/12.11.0.GA.html&quot;&gt;Red Hat CodeReady Studio 12.11&lt;/a&gt; for Eclipse 2019-03 are here waiting for you. Check it out!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;crstudio12&quot; src=&quot;https://tools.jboss.org/blog/images/crstudio12.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#installation&quot;&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Red Hat CodeReady Studio comes with everything pre-bundled in its installer. Simply download it from our &lt;a href=&quot;https://developers.redhat.com/products/devstudio/overview/&quot;&gt;Red Hat CodeReady product page&lt;/a&gt; and run it like this:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;literalblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;pre&gt;java -jar devstudio-&amp;lt;installername&amp;gt;.jar&lt;/pre&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Tools or Bring-Your-Own-Eclipse (BYOE) CodeReady Studio require a bit more:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;This release requires at least Eclipse 4.11 (2019-03) but we recommend
+      using the latest &lt;a href=&quot;http://www.eclipse.org/downloads/packages/release/2019-03/r/eclipse-ide-java-ee-developers&quot;&gt;Eclipse 4.11 2019-03 JEE Bundle&lt;/a&gt; since then you get most of the dependencies preinstalled.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Once you have installed Eclipse, you can either find us on the Eclipse Marketplace under &quot;JBoss Tools&quot; or &quot;Red Hat CodeReady Studio&quot;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;For JBoss Tools, you can also use our update site directly.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;literalblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;pre&gt;http://download.jboss.org/jbosstools/photon/stable/updates/&lt;/pre&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-is-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-new&quot;&gt;&lt;/a&gt;What is new?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Our main focus for this release was improvements for container based development and bug fixing.
+      Eclipse 2019-03 itself has a lot of new cool stuff but let me highlight just a few updates in both Eclipse 2019-03 and JBoss Tools plugins that I think are worth mentioning.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;openshift-3&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#openshift-3&quot;&gt;&lt;/a&gt;OpenShift 3&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;new-openshift-connection-helper&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#new-openshift-connection-helper&quot;&gt;&lt;/a&gt;New OpenShift connection helper&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When you need to defined a new OpenShift connection, you need to provide the following information:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;cluster URL&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;username and password or token&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;If you’ve already logged in your cluster through the OpenShift Web Console, you can copy an &lt;code&gt;oc&lt;/code&gt; command
+      in the clipboard that contains both the cluster URL and your token.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;So, from now, there is a new option that allows you to initialize the wizard fields from the copied &lt;code&gt;oc&lt;/code&gt;
+      command:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;connection wizard paste&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/connection-wizard-paste.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Click on the &lt;code&gt;Paste Login Command&lt;/code&gt; button and the fields will be initialized:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;connection wizard paste1&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/connection-wizard-paste1.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;server-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#server-tools&quot;&gt;&lt;/a&gt;Server tools&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;eap-7-2-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#eap-7-2-server-adapter&quot;&gt;&lt;/a&gt;EAP 7.2 Server Adapter&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A server adapter has been added to work with EAP 7.2.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;wildfly-15-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#wildfly-15-server-adapter&quot;&gt;&lt;/a&gt;Wildfly 15 Server Adapter&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A server adapter has been added to work with Wildfly 15. It adds support for Java EE 8.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;p&gt;Related JIRA: &lt;a href=&quot;https://issues.jboss.org/browse/JBIDE-26502&quot;&gt;JBIDE-26502&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;wildfly-16-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#wildfly-16-server-adapter&quot;&gt;&lt;/a&gt;Wildfly 16 Server Adapter&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A server adapter has been added to work with Wildfly 16. It adds support for Java EE 8.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;hibernate-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#hibernate-tools&quot;&gt;&lt;/a&gt;Hibernate Tools&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;new-runtime-provider&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#new-runtime-provider&quot;&gt;&lt;/a&gt;New Runtime Provider&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The new Hibernate 5.4 runtime provider has been added. It incorporates Hibernate Core version 5.4.1.Final and Hibernate Tools version 5.4.1.Final&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;runtime-provider-updates&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#runtime-provider-updates&quot;&gt;&lt;/a&gt;Runtime Provider Updates&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Hibernate 5.3 runtime provider now incorporates Hibernate Core version 5.3.9.Final and Hibernate Tools version 5.3.9.Final.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Hibernate 5.2 runtime provider now incorporates Hibernate Core version 5.2.18.Final and Hibernate Tools version 5.2.12.Final.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;maven&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#maven&quot;&gt;&lt;/a&gt;Maven&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;maven-support-updated-to-m2e-1-11&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#maven-support-updated-to-m2e-1-11&quot;&gt;&lt;/a&gt;Maven support updated to M2E 1.11&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Maven support is based on Eclipse M2E 1.11&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;platform&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#platform&quot;&gt;&lt;/a&gt;Platform&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;views-dialogs-and-toolbar&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#views-dialogs-and-toolbar&quot;&gt;&lt;/a&gt;Views, Dialogs and Toolbar&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;user-defined-resource-filters-in-project-explorer&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#user-defined-resource-filters-in-project-explorer&quot;&gt;&lt;/a&gt;User defined resource filters in Project Explorer&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The &lt;strong&gt;Filters and Customization…​&lt;/strong&gt; menu in &lt;strong&gt;Project Explorer&lt;/strong&gt; now shows an additional &lt;strong&gt;User filters&lt;/strong&gt;
+      tab which can be used to exclude some resources from Project Explorer based on their name.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Full name and regular expressions are supported.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;user filters&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/user-filters.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;error-log-view-added-to-platform&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#error-log-view-added-to-platform&quot;&gt;&lt;/a&gt;Error Log view added to Platform&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The &lt;strong&gt;Error Log&lt;/strong&gt; view has been moved from the PDE project to the Platform project. See
+      &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=50517&quot;&gt;bug 50517&lt;/a&gt; for details.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;copy-to-clipboard-in-installation-details&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#copy-to-clipboard-in-installation-details&quot;&gt;&lt;/a&gt;Copy to clipboard in Installation Details&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A copy to clipboard action has been added to all tabs of the &lt;strong&gt;Installation Details&lt;/strong&gt; dialog.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;copy installation details&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/copy-installation-details.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;copy-paste-of-environment-variables&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#copy-paste-of-environment-variables&quot;&gt;&lt;/a&gt;Copy &amp;amp; paste of Environment Variables&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The &lt;strong&gt;Environment&lt;/strong&gt; tab in a &lt;strong&gt;Launch configuration&lt;/strong&gt; dialog supports copy &amp;amp; paste actions now. The environment
+      variables are transferred as text data, so it is not only possible to copy &amp;amp; paste between two different
+      launch configurations, but also between the launch configuration and e.g. some text editor or the command line.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;env var copy paste&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/env-var-copy-paste.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;This feature is available in all launch configurations which use the common &lt;strong&gt;Environment&lt;/strong&gt; tab.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;useful-links-to-add-projects-to-empty-workspace&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#useful-links-to-add-projects-to-empty-workspace&quot;&gt;&lt;/a&gt;Useful links to add projects to empty workspace&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When Eclipse IDE is started for the first time or with a new workspace, it may not be intuitive for new users
+      on how to proceed. To help the users in getting started, the following useful links have been provided to add
+      a project to the workspace:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;Perspective specific project creation wizard&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;Generic New Project wizard&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;Import projects wizard&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;ProjectExplorer&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/ProjectExplorer.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;new-mnemonics-in-error-log-view&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#new-mnemonics-in-error-log-view&quot;&gt;&lt;/a&gt;New mnemonics in Error Log view&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;New mnemonics have been added for &lt;strong&gt;Export Entry…​&lt;/strong&gt; and &lt;strong&gt;Event Detail&lt;/strong&gt; entries in the context menu of &lt;strong&gt;Error Log&lt;/strong&gt; view.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;mneumonics&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/mneumonics.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;themes-and-styling&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#themes-and-styling&quot;&gt;&lt;/a&gt;Themes and Styling&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;improved-dark-theme-for-mac&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#improved-dark-theme-for-mac&quot;&gt;&lt;/a&gt;Improved Dark theme for Mac&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Dark theme for Mac has been improved to use the colors from the macOS system dark appearance. Some of the
+      notable changes in Eclipse IDE are the dark window title bar, menus, file dialogs, combos and buttons.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Note: This change is available on macOS Mojave and later.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Before:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;darktheme before&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/darktheme-before.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;After:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;darktheme after&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/darktheme-after.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;improved-dark-theme-for-windows&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#improved-dark-theme-for-windows&quot;&gt;&lt;/a&gt;Improved Dark theme for Windows&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The drawing operations have been improved in Windows so the custom drawn icons look better now.
+      For example, check the close icon below.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Before:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;closebutton before&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/closebutton_before.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;After:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;closebutton after&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/closebutton_after.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;general-updates&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#general-updates&quot;&gt;&lt;/a&gt;General Updates&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;performance-improvements&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#performance-improvements&quot;&gt;&lt;/a&gt;Performance improvements&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The startup and interactive performance of multiple operations has been improved again in this release.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;java-developement-tools-jdt&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#java-developement-tools-jdt&quot;&gt;&lt;/a&gt;Java Developement Tools (JDT)&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;java-12-support&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#java-12-support&quot;&gt;&lt;/a&gt;Java 12 Support&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;java-12&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#java-12&quot;&gt;&lt;/a&gt;Java 12&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://jdk.java.net/12/&quot;&gt;Java 12&lt;/a&gt; is out and Eclipse JDT supports Java 12 for 4.11 via
+      &lt;a href=&quot;https://marketplace.eclipse.org/content/java-12-support-eclipse-2019-03-411&quot;&gt;Marketplace&lt;/a&gt;. The release
+      notably includes the following Java 12 feature:
+      &lt;a href=&quot;http://openjdk.java.net/jeps/325&quot;&gt;JEP 325: Switch Expressions (Preview)&lt;/a&gt;. Please note that this is a
+      &lt;a href=&quot;http://openjdk.java.net/jeps/12&quot;&gt;preview language feature&lt;/a&gt; and hence enable preview option should be on.
+      For an informal introduction of the support, please refer to
+      &lt;a href=&quot;https://wiki.eclipse.org/Java12/Examples&quot;&gt;Java 12 Examples wiki&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;junit&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#junit&quot;&gt;&lt;/a&gt;JUnit&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;junit-5-4&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#junit-5-4&quot;&gt;&lt;/a&gt;JUnit 5.4&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://junit.org/junit5/docs/5.4.0/release-notes/&quot;&gt;JUnit 5.4&lt;/a&gt; is here and Eclipse JDT has been
+      updated to use this version.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;test-factory-template&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#test-factory-template&quot;&gt;&lt;/a&gt;Test factory template&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JUnit Jupiter now allows test factory methods to return a single &lt;code&gt;&lt;code&gt;DynamicNode&lt;/code&gt;&lt;/code&gt;. The &lt;code&gt;&lt;code&gt;test_factory&lt;/code&gt;&lt;/code&gt;
+      template has been updated to include &lt;code&gt;&lt;code&gt;DynamicNode&lt;/code&gt;&lt;/code&gt; in the return type.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;junit test template&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/junit-test-template.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;java-editor&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#java-editor&quot;&gt;&lt;/a&gt;Java Editor&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;default-and-constant-values-in-content-assist-information-pop-up&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#default-and-constant-values-in-content-assist-information-pop-up&quot;&gt;&lt;/a&gt;Default and constant values in content assist information pop-up&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The additional information pop-up of a content assist proposal now shows the default value
+      of an annotation type element:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;default value annotation type elelemt&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/default-value-annotation-type-elelemt.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;and the value of a constant:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;constant value&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/constant-value.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;create-service-provider-method&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#create-service-provider-method&quot;&gt;&lt;/a&gt;Create service provider method&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;If a service defined in a &lt;code&gt;&lt;code&gt;module-info.java&lt;/code&gt;&lt;/code&gt; file has an invalid service provider implementation,
+      a &lt;strong&gt;Quick Fix (Ctrl + 1)&lt;/strong&gt; is now available to create the new provider method:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;service provider proposal&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/service-provider-proposal.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;service provider linked proposal&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/service-provider-linked-proposal.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;java-formatter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#java-formatter&quot;&gt;&lt;/a&gt;Java Formatter&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;line-wrapping-settings-for-binary-operators&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#line-wrapping-settings-for-binary-operators&quot;&gt;&lt;/a&gt;Line wrapping settings for binary operators&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Instead of a single line wrapping setting for binary expressions, there’s now a whole section of settings
+      for various kinds of &lt;strong&gt;binary operators&lt;/strong&gt; (multiplicative, additive, logical, etc.). There are settings
+      for &lt;em&gt;relational&lt;/em&gt; (including equality) and &lt;em&gt;shift&lt;/em&gt; operators, which were not covered by the old setting.
+      Also, &lt;em&gt;string concatenation&lt;/em&gt; can now be treated differently from arithmetic sum.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The settings can be found in the Profile Editor (&lt;strong&gt;Preferences &amp;gt; Java &amp;gt; Code Style &amp;gt; Formatter &amp;gt; Edit…​&lt;/strong&gt;)
+      under the &lt;strong&gt;Line Wrapping &amp;gt; Wrapping settings &amp;gt; Binary expressions&lt;/strong&gt; subsection.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;formatter wrap binary expressions&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/formatter-wrap-binary-expressions.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;white-space-settings-for-binary-operators&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#white-space-settings-for-binary-operators&quot;&gt;&lt;/a&gt;White space settings for binary operators&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The white space around operators in &lt;strong&gt;binary expressions&lt;/strong&gt; can now be controlled separately for different groups
+      of operators, consistent with the line wrapping settings.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The new &lt;strong&gt;Binary operators&lt;/strong&gt; sub-section has been added under White Space &amp;gt; Expressions in the Formatter
+      profile editor.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;formatter spaces binary expressions&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/formatter-spaces-binary-expressions.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;wrapping-setting-for-chained-conditional-expressions&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#wrapping-setting-for-chained-conditional-expressions&quot;&gt;&lt;/a&gt;Wrapping setting for chained conditional expressions&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A chain of &lt;em&gt;nested conditional expressions&lt;/em&gt; (using ternary operator) can be now wrapped as a single group,
+      with all of them indented at the same level. It’s only possible for right-sided nesting.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Find the &lt;strong&gt;Chained conditionals&lt;/strong&gt; setting in the Profile Editor under the
+      &lt;strong&gt;Line Wrapping &amp;gt; Wrapping settings &amp;gt; Other expressions&lt;/strong&gt; subsection.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;formatter wrap chained conditionals&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/formatter-wrap-chained-conditionals.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;indent-javadoc-tag-descriptions&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#indent-javadoc-tag-descriptions&quot;&gt;&lt;/a&gt;Indent Javadoc tag descriptions&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Formatter Profile has a new setting that indents wrapped Javadoc tag descriptions.
+      It’s called &lt;em&gt;Indent other tag descriptions when wrapped&lt;/em&gt;, in contrast to the preexisting &lt;em&gt;Indent wrapped
+      @param/@throws descriptions&lt;/em&gt; setting. It affects tags like &lt;code&gt;&lt;code&gt;@return&lt;/code&gt;&lt;/code&gt; or &lt;code&gt;&lt;code&gt;@deprecated&lt;/code&gt;&lt;/code&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The settings can be found in the Profile Editor (&lt;strong&gt;Preferences &amp;gt; Java &amp;gt; Code Style &amp;gt; Formatter &amp;gt; Edit…​&lt;/strong&gt;)
+      under the &lt;strong&gt;Comments &amp;gt; Javadocs&lt;/strong&gt; section.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;formatter indent tags&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/formatter-indent-tags.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;debug&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#debug&quot;&gt;&lt;/a&gt;Debug&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;history-for-expressions-in-the-variables-view&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#history-for-expressions-in-the-variables-view&quot;&gt;&lt;/a&gt;History for expressions in the Variables view&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The &lt;strong&gt;Variables&lt;/strong&gt; view now stores a history of the expressions used in the &lt;strong&gt;Detail&lt;/strong&gt; pane. You can choose
+      a &lt;em&gt;previously entered expression&lt;/em&gt; for a variable from the new drop-down menu. The expression will be
+      copied to the &lt;strong&gt;Detail&lt;/strong&gt; pane where you can select it to perform various actions present in the context menu.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;expressions history&quot; src=&quot;https://www.eclipse.org/eclipse/news/4.11/images/expressions-history.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;and-more&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#and-more&quot;&gt;&lt;/a&gt;And more…​&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can find more noteworthy updates in on &lt;a href=&quot;https://tools.jboss.org/documentation/whatsnew/jbosstools/4.11.0.Final.html&quot;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-is-next&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-next&quot;&gt;&lt;/a&gt;What is next?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Having JBoss Tools 4.11.0 and Red Hat CodeReady Studio 12.11 out we are already working on the next release for Eclipse 2019-06.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Enjoy!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Jeff Maury&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 01 Apr 2019 20:35:27 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Welcome Gabriela!</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/Ar_6mKh1Spw/welcome-gabriela</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/Ar_6mKh1Spw/welcome-gabriela</link>
+	<description>We'd like to welcome Gabriela Motroc to the Eclipse Foundation as a Content Marketing Specialist based in Germany!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/Ar_6mKh1Spw&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 01 Apr 2019 14:40:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Thank You for Taking the Jakarta EE 2019 Developer Survey!</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/q90YGK_0yag/thank-you-taking-jakarta-ee-2019-developer-survey</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/q90YGK_0yag/thank-you-taking-jakarta-ee-2019-developer-survey</link>
+	<description>The survey wrapped up at midnight on Monday, March 25, with over 1,770 responses from developers around the globe.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/q90YGK_0yag&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 01 Apr 2019 13:40:00 +0000</pubDate>
+</item>
+<item>
+	<title>Thabang Mashologu: Welcome Gabriela!</title>
+	<guid isPermaLink="false">https://blogs.eclipse.org/6687 at https://blogs.eclipse.org</guid>
+	<link>https://blogs.eclipse.org/post/thabang-mashologu/welcome-gabriela</link>
+	<description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;I am happy to announce that Gabriela Motroc has joined the Eclipse Foundation as a Content Marketing Specialist based in Germany.&lt;/p&gt;
+
+&lt;p&gt;Gabriela joins us from the Software &amp;amp; Support Media Group, where she was an editor of &lt;a href=&quot;http://jaxenter.com/&quot;&gt;JAXenter.com&lt;/a&gt; and JAX Magazine. She is well known to many in the Eclipse community and recently spearheaded JAXenter’s excellent &lt;a href=&quot;https://jaxenter.com/understanding-jakarta-ee-series-little-150668.html&quot;&gt;Understanding Jakarta EE Series&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Gabriela holds a Master’s degree in International Communication Management and a B.A. Journalism. Her knowledge and experience will be great assets in developing and sharing updates, news, and content that motivates, educates, and inspires the engagement of our community.&lt;/p&gt;
+
+&lt;p&gt;Please join me in welcoming Gabriela to the Eclipse Foundation marketing team.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-blog-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Tags: &lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/eclipse-foundation&quot;&gt;Eclipse Foundation&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/marketing-0&quot;&gt;Marketing&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/jakarta-ee&quot;&gt;Jakarta EE&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 01 Apr 2019 13:12:24 +0000</pubDate>
+</item>
+<item>
+	<title>Maximilian and Jonas: Single-sourcing web &amp; mobile forms with JSON Forms</title>
+	<guid isPermaLink="false">https://eclipsesource.com/?p=41130</guid>
+	<link>https://eclipsesource.com/blogs/2019/04/01/single-sourcing-web-mobile-forms-with-json-forms/</link>
+	<description>&lt;p&gt;JSON Forms is a framework for efficiently developing form-based UIs based on JSON Schema. It provides a simple declarative JSON based...&lt;/p&gt;
+&lt;p&gt;The post &lt;a href=&quot;https://eclipsesource.com/blogs/2019/04/01/single-sourcing-web-mobile-forms-with-json-forms/&quot; rel=&quot;nofollow&quot;&gt;Single-sourcing web &amp;amp; mobile forms with JSON Forms&lt;/a&gt; appeared first on &lt;a href=&quot;https://eclipsesource.com&quot; rel=&quot;nofollow&quot;&gt;EclipseSource&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Mon, 01 Apr 2019 09:32:35 +0000</pubDate>
+</item>
+<item>
 	<title>Donald Raab: Our journey to 1000 GitHub stars and commits</title>
 	<guid isPermaLink="false">https://medium.com/p/efa442bf3603</guid>
 	<link>https://medium.com/@donraab/our-journey-to-1000-github-stars-and-commits-efa442bf3603?source=rss-df39b86e9f04------2</link>
@@ -413,257 +935,6 @@ The Eclipse Ditto team&lt;/p&gt;</description>
 &lt;/ul&gt;
 &lt;p&gt;In practice, this takes the form of a few extra sentences in the documentation associated with the review (after, of course, actually learning the ropes and stabilizing the content quality).&lt;/p&gt;</description>
 	<pubDate>Fri, 15 Mar 2019 16:33:01 +0000</pubDate>
-</item>
-<item>
-	<title>Eclipse Ditto: Connectivity to Apache Kafka in Eclipse Ditto</title>
-	<guid isPermaLink="true">https://www.eclipse.org/ditto/2019-03-13-kafka-connectivity.html</guid>
-	<link>https://www.eclipse.org/ditto/2019-03-13-kafka-connectivity.html</link>
-	<description>&lt;p&gt;Today we added connectivity to &lt;a href=&quot;https://kafka.apache.org/&quot;&gt;Apache Kafka&lt;/a&gt;. In a first step, it is possible to publish
-&lt;em&gt;twin events&lt;/em&gt;, &lt;em&gt;messages&lt;/em&gt;, &lt;em&gt;live commands and events&lt;/em&gt; to Kafka topics.&lt;/p&gt;
-
-&lt;p&gt;Since the last addition to Ditto’s connectivity which &lt;a href=&quot;https://www.eclipse.org/ditto/2018-10-16-example-mqtt-bidirectional.html&quot;&gt;added MQTT connectivity&lt;/a&gt;,
-the connectivity feature got a lot of stabilization and new smaller features, e.g. the recent addition of 
-&lt;a href=&quot;https://www.eclipse.org/ditto/basic-placeholders.html#function-expressions&quot;&gt;placeholder functions&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Returning to the Kafka integration Ditto can now, for example, whenever a &lt;a href=&quot;https://www.eclipse.org/ditto/intro-digitaltwins.html&quot;&gt;Digital Twin&lt;/a&gt; is 
-changed (e.g. a device updated some state data), publish a &lt;em&gt;twin event&lt;/em&gt; to a Kafka topic.&lt;/p&gt;
-
-&lt;p&gt;If you already rely on Apache Kafka as a source for your data lake or analytics, integrating Ditto and its Digital Twins
-is now super easy.&lt;/p&gt;
-
-&lt;p&gt;Find out more at our &lt;a href=&quot;https://www.eclipse.org/ditto/connectivity-protocol-bindings-kafka2.html&quot;&gt;Kafka documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;figure&gt;&lt;img alt=&quot;Ditto&quot; class=&quot;docimage&quot; src=&quot;https://www.eclipse.org/ditto/images/ditto.svg&quot; /&gt;&lt;/figure&gt;
-
-&lt;p&gt;–&lt;br /&gt;
-The Eclipse Ditto team&lt;/p&gt;</description>
-	<pubDate>Wed, 13 Mar 2019 04:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>itemis: Eclipse Xtext goes shopping - The new Bill of Materials</title>
-	<guid isPermaLink="true">https://blogs.itemis.com/en/eclipse-xtext-goes-shopping-the-new-bill-of-materials</guid>
-	<link>https://blogs.itemis.com/en/eclipse-xtext-goes-shopping-the-new-bill-of-materials</link>
-	<description>&lt;p&gt;With the new 2.17 version, Xtext starts shipping a new artifact: A Maven &lt;em&gt;Bill of Materials (a.k.a. BOM)&lt;/em&gt;. Learn about our motivation and how your projects can benefit from it.&lt;/p&gt; 
-&lt;p&gt;Right on the same date as the Eclipse Photon simultaneous release on June 27th 2018, Xtext users and especially users of &lt;em&gt;xtend-maven-plugin&lt;/em&gt; were unpleasantly &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1231&quot;&gt;surprised by a suddenly arising SecurityException in their builds&lt;/a&gt;, which perfectly worked the day before. Since this broke quite some builds, including our own, analysis was immediately initiated.&lt;/p&gt; 
-&lt;p&gt;On the same day, the problem was identified as a problem with the plugin’s dependencies. The plugin used version ranges, which left it to Maven’s dependency resolution mechanism to compute the actual versions of artifacts that are added to the plugin’s classpath realm. Unfortunately, this might result into resolving incompatible Eclipse core libraries. Luckily, dependencies of a Maven plugin can be overridden or extended by configuration, so users could help themselves using the instructions in the &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1231#issuecomment-401125569&quot;&gt;issue comments&lt;/a&gt;.&lt;/p&gt; 
-&lt;p&gt;Of course, we do not want users to implement workarounds, nor do we want to have any workarounds in Xtext’s code base. So streamlining dependencies was the logical task. &lt;a href=&quot;https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management&quot;&gt;Maven’s dependency mechanism&lt;/a&gt; allows declaration of managed dependencies through a &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; section. The most common way is to declare such a section in a parent POM and inherit it from there. A less-known possibility is the &lt;em&gt;Bill of Materials&lt;/em&gt;.&lt;/p&gt; 
-&lt;h2&gt;About Maven Bill of Materials and Xtext’s BOM&lt;/h2&gt; 
-&lt;p&gt;A Maven BOM is basically a simple &lt;em&gt;pom.xml&lt;/em&gt; file with packaging type &lt;em&gt;pom&lt;/em&gt;, which in its core contains a &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; section. The Xtext BOM declares all third-party dependencies that Xtext uses in Maven or Gradle builds. To gain an overview of the used artifact versions on first sight, the BOM declares version properties and uses them in the managed dependencies below. Here's the contents of &lt;a href=&quot;https://github.com/eclipse/xtext-lib/blob/v2.17.0.M2/releng/org.eclipse.xtext.dev-bom/pom.xml&quot;&gt;Xtext’s BOM&lt;/a&gt;:&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;&amp;lt;project ...&amp;gt;
-  &amp;lt;groupId&amp;gt;org.eclipse.xtext&amp;lt;/groupId&amp;gt;
-  &amp;lt;artifactId&amp;gt;xtext-dev-bom&amp;lt;/artifactId&amp;gt;
-  &amp;lt;version&amp;gt;[XTEXT_VERSION]&amp;lt;/version&amp;gt;
-  &amp;lt;packaging&amp;gt;pom&amp;lt;/packaging&amp;gt;
-  ...
-  &amp;lt;properties&amp;gt;
-  &amp;lt;!-- ======== --&amp;gt;
-  &amp;lt;!-- Versions --&amp;gt;
-  &amp;lt;!-- ======== --&amp;gt;
-  &amp;lt;!-- 3rd party --&amp;gt;
-  &amp;lt;antlr-runtime-version&amp;gt;3.2&amp;lt;/antlr-runtime-version&amp;gt;
-  &amp;lt;args4j-version&amp;gt;2.33&amp;lt;/args4j-version&amp;gt;
-  &amp;lt;asm-version&amp;gt;7.0&amp;lt;/asm-version&amp;gt;
-
-  &amp;lt;error_prone_annotations-version&amp;gt;2.0.15&amp;lt;/error_prone_annotations-version&amp;gt;
-  &amp;lt;guava-version&amp;gt;21.0&amp;lt;/guava-version&amp;gt;
-  &amp;lt;guice-version&amp;gt;3.0&amp;lt;/guice-version&amp;gt;
-  &amp;lt;icu4j-version&amp;gt;52.1&amp;lt;/icu4j-version&amp;gt;
-  &amp;lt;javax.annotation-api-version&amp;gt;1.3.2&amp;lt;/javax.annotation-api-version&amp;gt;
-  &amp;lt;jsr305-version&amp;gt;3.0.2&amp;lt;/jsr305-version&amp;gt;
-  &amp;lt;junit-version&amp;gt;4.12&amp;lt;/junit-version&amp;gt;
-  &amp;lt;junit5-version&amp;gt;5.1.0&amp;lt;/junit5-version&amp;gt;
-  ...
-  &amp;lt;/properties&amp;gt;
-  &amp;lt;dependencyManagement&amp;gt;
-  &amp;lt;dependencies&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;args4j&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;args4j&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;${args4j-version}&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;com.google.code.findbugs&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;jsr305&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;${jsr305-version}&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;com.google.errorprone&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;error_prone_annotations&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;${error_prone_annotations-version}&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    ...
-  &amp;lt;/dependencies&amp;gt;
-  &amp;lt;/dependencyManagement&amp;gt;
-&amp;lt;/project&amp;gt;&lt;/pre&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;h2&gt;Using the Xtext Bill of Materials&lt;/h2&gt; 
-&lt;p&gt;To use the BOM, clients have to declare it as a dependency in their &lt;code&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/code&gt; section with scope &lt;em&gt;import:&lt;/em&gt;&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;&amp;lt;dependencyManagement&amp;gt;
-  &amp;lt;dependencies&amp;gt;
-  &amp;lt;dependency&amp;gt;
-    &amp;lt;groupId&amp;gt;org.eclipse.xtext&amp;lt;/groupId&amp;gt;
-    &amp;lt;artifactId&amp;gt;xtext-dev-bom&amp;lt;/artifactId&amp;gt;
-    &amp;lt;version&amp;gt;${xtext.version}&amp;lt;/version&amp;gt;
-    &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;
-    &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;
-  &amp;lt;/dependency&amp;gt;
-  &amp;lt;/dependencies&amp;gt;
-&amp;lt;/dependencyManagement&amp;gt;&lt;/pre&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;p&gt;Once this is done, all artifacts managed by the BOM can be used without needing to specify a version. For example, if clients want to use JUnit 5 dependencies, they simply declare their dependencies as follows. Please note: Specification of a scope different from the default is still needed. We may evaluate to declare also scopes, e.g., &lt;em&gt;test&lt;/em&gt;&lt;code&gt;&lt;/code&gt; for testing libraries, and exclusions for transitive dependencies, e.g., &lt;em&gt;log4j&lt;/em&gt;, in future versions.&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;&amp;lt;dependencies&amp;gt;
-  &amp;lt;dependency&amp;gt;
-  &amp;lt;groupId&amp;gt;org.junit.jupiter&amp;lt;/groupId&amp;gt;
-  &amp;lt;artifactId&amp;gt;junit-jupiter-api&amp;lt;/artifactId&amp;gt;
-  &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
-  &amp;lt;/dependency&amp;gt;
-  &amp;lt;dependency&amp;gt;
-  &amp;lt;groupId&amp;gt;org.junit.jupiter&amp;lt;/groupId&amp;gt;
-  &amp;lt;artifactId&amp;gt;junit-jupiter-engine&amp;lt;/artifactId&amp;gt;
-  &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
-  &amp;lt;/dependency&amp;gt;
-  ...
-&amp;lt;/dependencies&amp;gt;&lt;/pre&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;p&gt;So, clients do no longer carefully revise each and every dependency, which thus lowers maintenance efforts. Also, clients can be sure that the managed versions of all libraries have been tested to work properly with Xtext and with each other. Of course, in the unlikely case of an incompatibility, clients still have the option to override BOM-managed dependencies by explicit versions.&lt;/p&gt; 
-&lt;h2&gt;Using the BOM with Gradle&lt;/h2&gt; 
-&lt;p&gt;Although a BOM is a Maven artifact, Gradle builds can also use it. First attempts to integrate BOMs for dependency management with Gradle have been done by the Spring framework with their &lt;a href=&quot;https://spring.io/blog/2015/02/23/better-dependency-management-for-gradle&quot;&gt;dependency-management-plugin&lt;/a&gt;. Now, with Gradle 5, direct support of BOMs have been &lt;a href=&quot;https://docs.gradle.org/5.0/userguide/managing_transitive_dependencies.html#sec:bom_import&quot;&gt;added to the Gradle framework&lt;/a&gt;.&lt;/p&gt; 
-&lt;p&gt;When we started exploring and using our BOM, we stumbled over some open bugs and incompatibilities, so we sticked with the Spring variant for 2.17.0.M1. But after upgrading to Gradle 5.2.1, things got easier for us and seem to be stable now. To use the Xtext BOM in Gradle builds, declare a &lt;em&gt;platform&lt;/em&gt; dependency:&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;dependencies {
-  compile platform(&quot;org.eclipse.xtext:xtext-dev-bom:${xtextVersion}&quot;)
-}&lt;/pre&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;p&gt;As with Maven, it is not necessary to specify explicit versions if using dependencies that are managed within the BOM:&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;dependencies {
-  testCompile 'org.junit.jupiter:junit-jupiter-api'
-  testRuntime 'org.junit.jupiter:junit-jupiter-engine'
-  ...
-}&lt;/pre&gt; 
-&lt;p&gt; &lt;/p&gt; 
-&lt;h2&gt;A note on Guava&lt;/h2&gt; 
-&lt;p&gt;With introduction of the BOM, we decided to pin all dependency versions. One important dependency here is the Google Guava library, which Xtext supported in the range from version 14.0 to 21.0, which has been pinned to 21.0 now.&lt;/p&gt; 
-&lt;p&gt;As a positive side effect, build times could be reduced, since fewer dependency combinations have to be resolved and evaluated, especially for clients of &lt;em&gt;xtend-maven-plugin&lt;/em&gt;.&lt;/p&gt; 
-&lt;h2&gt;New &amp;amp; existing projects&lt;/h2&gt; 
-&lt;p&gt;As always, we polished Xtext’s &lt;em&gt;New Project Wizard&lt;/em&gt; to reflect the latest state of development. So, when you create new Xtext projects with the wizard for the build system of your choice, you can immediately benefit from using the BOM.&lt;/p&gt; 
-&lt;p&gt;For existing projects, we recommend to refactor them, remove the &lt;a href=&quot;https://github.com/eclipse/xtext/issues/1231#issuecomment-401125569&quot;&gt;workaround&lt;/a&gt; mentioned above and get rid off any unnecessary dependency version. A freshly-created project can serve as a good blueprint for the changes you should apply.&lt;/p&gt; 
-&lt;h2&gt;Conclusion&lt;/h2&gt; 
-&lt;p&gt;The new Xtext BOM manages all third-party dependencies of Xtext. All existing code has been refactored to make use of the BOM, and it is recommended to upgrade your projects to do the same.&lt;/p&gt; 
-&lt;p&gt;The BOM can be used from Maven and Gradle build configurations. It reduces maintenance efforts for upgrading Xtext projects and can speed up the build process slightly. Most importantly, there is no space for dependency problems if properly using managed dependencies.&lt;/p&gt;  
-&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://track.hubspot.com/__ptq.gif?a=761475&amp;amp;k=14&amp;amp;r=https%3A%2F%2Fblogs.itemis.com%2Fen%2Feclipse-xtext-goes-shopping-the-new-bill-of-materials&amp;amp;bu=https%253A%252F%252Fblogs.itemis.com&amp;amp;bvt=rss&quot; style=&quot;width: 1px!important;&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Tue, 12 Mar 2019 15:00:00 +0000</pubDate>
-	<author>thoms@itemis.de (Karsten Thoms)</author>
-</item>
-<item>
-	<title>Eclipse Announcements: That's A Wrap, Folks! Thank You for Participating in Our 2019 IoT Developer Survey!</title>
-	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/YpWWc_7xinc/thats-wrap-folks-thank-you-participating-our-2019-iot-developer-survey</guid>
-	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/YpWWc_7xinc/thats-wrap-folks-thank-you-participating-our-2019-iot-developer-survey</link>
-	<description>We are proud to announce that our 2019 IoT Developer Survey, organized by the Eclipse IoT Working Group, was a huge success with over 1,700 responses!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/YpWWc_7xinc&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Mon, 11 Mar 2019 18:40:00 +0000</pubDate>
-</item>
-<item>
-	<title>Eclipse Announcements: Eclipse Foundation Specification Process Step-by-Step</title>
-	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/CIFO137l5as/eclipse-foundation-specification-process-step-step</guid>
-	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/CIFO137l5as/eclipse-foundation-specification-process-step-step</link>
-	<description>The Eclipse Foundation Specification Process (EFSP) provides a framework and governance model for developers engaged in the process of developing specifications.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/CIFO137l5as&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Fri, 08 Mar 2019 18:30:00 +0000</pubDate>
-</item>
-<item>
-	<title>Wayne Beaton: Eclipse Foundation Specification Process Step-by-Step</title>
-	<guid isPermaLink="false">http://waynebeaton.wordpress.com/?p=5516</guid>
-	<link>https://waynebeaton.wordpress.com/2019/03/08/eclipse-foundation-specification-process-step-by-step/</link>
-	<description>&lt;p&gt;&lt;em&gt;Scientific progress goes “boink”? – Hobbes&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&quot;https://www.eclipse.org/projects/efsp/&quot;&gt;Eclipse Foundation Specification Process&lt;/a&gt; (EFSP) provides a framework and governance model for developers engaged in the process of developing specifications.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Specification&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;: A specification is a collection of related artifacts.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step1.png&quot; class=&quot;alignnone size-full wp-image-5541&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step1.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The EFSP defines a specification as a “collection of Application Programming Interface (API) definitions, descriptions of semantic behavior, data formats, protocols, and/or other referenced specifications, along with its TCK, intended to enable the development and testing of independent Compatible Implementations.” A specification project is, then, an Eclipse open source project concerned with the creation and maintenance of one or more specifications.&lt;/p&gt;
-&lt;p&gt;As a matter of practice, we tend to have a one-to-one mapping between specification projects and specifications. But there are examples of specification projects that play host to multiple specifications. The &lt;a href=&quot;https://projects.eclipse.org/projects/ee4j.jakartaee-stable&quot;&gt;Eclipse Project for Stable Jakarta EE APIs&lt;/a&gt;, for example, is the host project for a handful of specifications that are considered stable and in long term maintenance (and not expected to continue to evolve).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Specification Project&lt;/strong&gt;: A specification project is the composition of a team of committers dedicated to the creation and maintenance of one or more specifications, along with the resources required to create those specifications.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step.png&quot; class=&quot;alignnone size-full wp-image-5521&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-4.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Resources assigned to a specification project include one or more software repositories that serve as the collaboration point for the development of specification documents and corresponding technical artifacts. A specification project has other resources assigned to it, including space on a download server, build resources, and mailing lists.&lt;/p&gt;
-&lt;p&gt;A specification project may also be responsible for other related functionality, including TCKs. It’s considered a best practice to keep implementations of a specification separate from the specification itself, but there is no rule that prevents this sort of coupling.&lt;/p&gt;
-&lt;p&gt;A specification project has one or more project leads who are typically also committers. Project leads have no special powers or authority with regard to development and delivery of specifications. Rather, they are the primary liaison between the project team and the Eclipse Foundation, and form the first link in the leadership chain which includes the Project Management Committee (PMC) and Eclipse Management Organization (EMO). Primarily, project leads are responsible for ensuring that the project team (i.e. the committers) are following the rules.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Specification Versions&lt;/strong&gt;: A specification project produces versions of a specification, which the EFSP refers to as specification versions. Once ratified, a specification version becomes a final specification.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (1).png&quot; class=&quot;alignnone size-full wp-image-5522&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-1-1.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The differences between a specification version and a final specification are subtle. A specification version is the output from the open source project. While a final build of a specification version can be said to be complete, it cannot be used as the basis for an implementation. The intellectual property rights that are required to implement a specification flow through the final specification (a bit more on this later).&lt;/p&gt;
-&lt;p&gt;No specific packaging or means of distribution are prescribed by the EFSP, but one can think of a final specification as a complete package that combines a read-only version of the specification document, technical artifacts (e.g. APIs), a TCK, and one or more compatible implementations. Again, the EFSP makes no specific requirements regarding how everything is packaged, so, for example, the TCK and compatible implementations may manifest as pointers.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The Specification Project Persists&lt;/strong&gt;: A specification project is formed around the idea of producing and maintaining a specification in the general sense. The same specification project will produce multiple versions of a specification. After the final and complete version of a specification is released, the project team will begin the development cycle for the next release.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (2).png&quot; class=&quot;alignnone size-full wp-image-5523&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-2-1.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Members of the team (i.e. the committers and project Leads) may come and go, but the team remains.&lt;/p&gt;
-&lt;p&gt;A specification project has a well-defined scope that defines the boundaries of their activity. All versions of specifications produced by the project must fall within the scope.&lt;/p&gt;
-&lt;p&gt;The EFSP does not prescribe how resources associated with specification projects are structured, beyond a requirement that the specification project must be the home for the specification document. For technologies like Java® that have technical artifacts (e.g. interfaces) it is convenient, but not necessary to have the source for those technical artifacts maintained as part of the project.&lt;/p&gt;
-&lt;p&gt;Strictly speaking, a specification project can also be the home for a TCK and compatible implementation. As mentioned earlier, it is considered a best practice to keep compatible implementations separate (it may even be considered a bad practice to couple an implementation with the specification).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The Project Management Committee&lt;/strong&gt;: Top-level projects are managed by a Project Management Committee (PMC). A PMC has one or more PMC leads and zero or more PMC members. Together the PMC provides oversight and overall leadership for the projects that fall under their top-level project.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (3).png&quot; class=&quot;alignnone size-full wp-image-5538&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-3-1.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Under the &lt;a href=&quot;https://www.eclipse.org/projects/dev_process&quot;&gt;Eclipse Development Process&lt;/a&gt; (EDP) open source projects are organized hierarchically. A special type of project, top-level Projects, sit at the top of the hierarchy. Every top-level project contains one or more projects (which are sometime referred to as “subprojects”). As a general rule, top-level projects are primarily an organizational construct, and all real work occurs in subprojects.&lt;/p&gt;
-&lt;p&gt;Every top-level project has a PMC that supervises the projects under their purview to ensure that they are all working under the rules defined by the EDP, EFSP, and the Eclipse Foundation’s &lt;a href=&quot;https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf&quot;&gt;Intellectual Property Policy&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The Specification Committee&lt;/strong&gt;: A committee of a working group established to manage the EFSP for technologies within the scope of its working group.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step.png&quot; class=&quot;alignnone size-full wp-image-5539&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-6.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Open source projects are the means by which developers collaborate at the Eclipse Foundation. working groups are a means for companies to work together. The Jakarta EE Working Group, for example, brings companies together to collaborate on marketing, ecosystem development, governance, and (of course) open source software and specification development. As part of their governance activities, a working group must establish a specification committee to define and manage a specification process on behalf of the working group.&lt;/p&gt;
-&lt;p&gt;The specification committee is responsible for ensuring that that the specification teams keep within their defined scope, and generally ensure that the specification versions created by the specification project are implementable and serve the purposes of the working group.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Overview of the Process&lt;/strong&gt;: the EFSP extends the EDP by adding a few extra checks and balances.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (5).png&quot; class=&quot;alignnone size-full wp-image-5524&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-5.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Each iteration through the development cycle starts with a plan. For the first iteration, the project proposal serves as the plan and the creation review as the approval.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Specification Project Proposal&lt;/strong&gt;: Specification projects start with a proposal.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (7).png&quot; class=&quot;alignnone size-full wp-image-5525&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-7.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;A project proposal describes the specification project that will be created. Proposals set out the scope and provide a description of the project and the specifications that the project will produce.&lt;/p&gt;
-&lt;p&gt;The Eclipse Foundation has a web form for defining project proposals. While a proposal is being drafted, the author and anybody designated as a project lead is able to edit the document. Everybody listed as an initial member of the specification team (i.e. committers) are able to view the document. The proposal becomes publicly accessible after it is opened for community review.&lt;/p&gt;
-&lt;p&gt;According to the EDP, the proposal must be open for community review for a minimum of two weeks to provide the community and key stakeholders to provide feedback and improve the proposal. The proposal can be modified during the community review period.&lt;/p&gt;
-&lt;p&gt;While open for community review, the EMO will investigate and approve trademarks associated with the project, which Eclipse Foundation holds on behalf of the project team and community. During this period the EMO will also work to get approval of other exceptions. This includes specification project licensing schemes that fall outside of the pre-approved licensing schemes for the top-level project.&lt;/p&gt;
-&lt;p&gt;When everything is in place (trademarks, licensing approval when required, identification of a mentor, and the minimum two week community review), the EMO will schedule a creation review.&lt;/p&gt;
-&lt;p&gt;Creation reviews run for a minimum of one week. The EMO schedules two review periods each month. Reviews are grouped together; they are scheduled according to their end dates which occur on the first and third Wednesdays of every month.&lt;/p&gt;
-&lt;p&gt;The proposal is locked down during the creation review period and no changes are possible. The creation review period is the last opportunity for the community and stakeholders to provide feedback. The specification committee and the membership-at-large of the Eclipse Foundation can intervene with the creation process. The membership can, should they find cause, request that the EMO fail a creation review and require that the proposal author either make additional changes and restart the review process, or withdraw the proposal completely (for what it’s worth, this has never happened).&lt;/p&gt;
-&lt;p&gt;Upon successful completion of the creation review, the Eclipse Foundation will engage in a provisioning process to turn the proposal into a live specification project. Provisioning starts with the authorization of committers which is initiated via email requests to all committers listed on the proposal to engage in our paperwork process. The provisioning process is kept on hold until the Eclipse Foundation’s records team has the necessary paperwork from at least one committer.&lt;/p&gt;
-&lt;p&gt;The proposal document serves as the plan for the first development iteration. Subsequent iterations through the process rely on the creation of a release plan and plan review.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Release Planning&lt;/strong&gt;: The project team assembles the plan for each release cycle.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (8).png&quot; class=&quot;alignnone size-full wp-image-5526&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-8.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Again, note that the proposal and creation review serve as the plan and plan review for the first release.&lt;/p&gt;
-&lt;p&gt;The plan must be in-scope (i.e. all new work must fall within the bounds defined by the specification project’s scope) and must be developed in consideration of the concerns of stakeholders. It must, for example, take into consideration overarching plans of the PMC or associated working group. It’s worth noting that the concerns of the project team must also be taken into consideration when creating an overarching plan. We’re all in this together.&lt;/p&gt;
-&lt;p&gt;The plan is delivered to the specification committee via a plan review. The specification committee must vote to approve: a two-thirds majority of positive votes are required to succeed. How the individual members of the specification committee decide to vote varies; but at a minimum, by voting yes, members affirm that they believe that the planned work fits within the project’s scope and that sufficient consultation with the community and stakeholders has occurred.&lt;/p&gt;
-&lt;p&gt;All reviews, including plan reviews, run for a minimum of one week. They start with the delivery of review materials, and end with the conclusion of the voting period. For a plan review, materials include the plan itself along with a concise description (executive summary) of the plan. For progress and release reviews (which will be discussed shortly), the review materials include a milestone or release candidate build of the project content.&lt;/p&gt;
-&lt;p&gt;All reviews are run in the open. In addition to the approvals that are required, reviews offer an opportunity for the community and adopters to make their concerns known. As the entire process is run in the open, reviews should be considered as a final opportunity to express concern: parties who have a stake or interest in a specification process should engage early and often via project-specific open channels.&lt;/p&gt;
-&lt;p&gt;In the event that a review fails, the project team must regroup, incorporate feedback, and re-engage in a new review. The EFSP makes no requirement regarding the timing of re-engagement.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Committers Develop Specifications&lt;/strong&gt;: Committers have the power and responsibility to push content into the specification project’s Git repositories. Committers hold most of the power and responsibility in the process.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (9).png&quot; class=&quot;alignnone size-full wp-image-5527&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-9.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Committer power must be used wisely. Committers have awesome power, but they also have awesome responsibility and are expected to work to the benefit of the community and ecosystem.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Committers Accept Contributions&lt;/strong&gt;: Committers accept contributions from non-committers. In the GitHub world, this takes the form of committers reviewing and accepting pull requests.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (10).png&quot; class=&quot;alignnone size-full wp-image-5529&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-10.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Committers are responsible to ensure that the accepted content is within scope and release plan, and that the Eclipse Foundation’s Intellectual Property Policy is observed and the &lt;a href=&quot;https://www.eclipse.org/projects/handbook/#ip&quot;&gt;IP Due Diligence Process&lt;/a&gt; is followed.&lt;/p&gt;
-&lt;p&gt;Contributors must sign the &lt;a href=&quot;https://www.eclipse.org/legal/ECA.php&quot;&gt;Eclipse Contributor Agreement&lt;/a&gt; (ECA).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Technology Compatibility Kit (TCK)&lt;/strong&gt;: While the specification project committers are developing the specification resources, TCK project committers and contributors assemble the TCK.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (11).png&quot; class=&quot;alignnone size-full wp-image-5531&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-11-1.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The EFSP does not make any requirements regarding where the TCK lives. It may be a part of the corresponding specification project, or it may be separate.&lt;/p&gt;
-&lt;p&gt;When separate, a TCK project is a traditional Eclipse open source software project. Committers and contributors work on a Eclipse open source software project in much the same way they do on a specification project: committers can push directly to the project’s Git repositories, and must review and accept contributions from non-committer contributors.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Produce Milestone Builds&lt;/strong&gt;: The project team will produce milestone builds.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (12).png&quot; class=&quot;alignnone size-full wp-image-5530&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-12.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;A milestone build is a pre-release build of a version of the specification (“Specification Version”). Milestone builds are intended for a use only by a limited audience (generally the project team themselves, committers working on candidate compatible implementations, and other early adopters).&lt;/p&gt;
-&lt;p&gt;All efforts should be undertaken to ensure that a milestone build is technically correct, though it may be incomplete. A compatible implementation cannot be based on a milestone build of a Specification.&lt;/p&gt;
-&lt;p&gt;Later builds may be labeled as “release candidates”. For the purposes of the EFSP and EDP, the terms “release candidate” and “milestone’ are different only in intent.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Progress Review&lt;/strong&gt;: The specification project team must engage in at least one progress review during their release cycle.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (13).png&quot; class=&quot;alignnone size-full wp-image-5532&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-13.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Progress reviews are a notion that is inherited from the EDP. The intent of a progress review is to ensure that the work is in-scope; that a project is making progress towards a release that will be approved; and that the EDP, EFSP, and Eclipse Foundation Intellectual Property Policy are being followed.&lt;/p&gt;
-&lt;p&gt;The project’s record of intellectual property contributions (&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#ip-iplog&quot;&gt;IP Log&lt;/a&gt;) must be submitted to the EMO for review and approval before engaging in the review. Supporting materials for a review, including a concise description (executive summary) of the progress made to-date and a milestone build of the project content must be submitted before the start of the one week (minimum) review period. The progress review must be approved by simple +1 from a PMC representative, and by positive two-thirds super-majority vote of the specification committee.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Implementing the Specification&lt;/b&gt;: While the specification project’s committers work on the specification content, other teams may work on implementing them.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (14).png&quot; class=&quot;alignnone size-full wp-image-5533&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-14.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;An implementation cannot be referred to as a compatible implementation until after the particular version of the specification is ratified and declared a final specification (and—of course—fulfills all of the requirements of the TCK associated with the final specification).&lt;/p&gt;
-&lt;p&gt;The EFSP makes no requirement regarding timing. In a code-first world, the implementation may exist before the specification. In this hypothetical case, an implementation project’s team would instead make refinements to their implementation based on the work-in-progress. It’s expected that implementation teams will interact regularly (via open channels) with the specification project’s team to provide feedback and ask questions.&lt;/p&gt;
-&lt;p&gt;In order to be declared final, a specification needs to have at least one compatible implementation that implements all aspects of the specification (including any optional parts) and released under one of the open source licenses listed in the EFSP (more below).&lt;/p&gt;
-&lt;p&gt;This introduces a bit of a “chicken and egg” problem: we can’t have a final specification without a compatible implementation and we can’t have a compatible implementation without a final specification. The specification project, TCK project, and implementation teams need to work together so that at least one implementation will be available and complete in time to be officially released and declared a compatible implementation at the time the final specification is ratified.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Release Review&lt;/strong&gt;: The specification project team must engage in a release review at the end of their release cycle.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (15).png&quot; class=&quot;alignnone size-full wp-image-5534&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-15.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;At least one compatible implementation must be distributed under one of the open source licenses specified by the EFSP: EPL-2.0, EDL-1.0 (BSD-3-Clause), Apache-2.0.&lt;/p&gt;
-&lt;p&gt;As is required for a progress review, the project’s record of intellectual property contributions (&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#ip-iplog&quot;&gt;IP Log&lt;/a&gt;) must be submitted to the EMO for review and approval before engaging in the release review, the review must be approved by simple +1 from a PMC representative, and by positive two-thirds super-majority vote of the specification committee.&lt;/p&gt;
-&lt;p&gt;Following a successful release review the specification version &lt;span title=&quot;boink&quot;&gt;transmogrifies&lt;/span&gt; into a final specification.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Final Specification&lt;/strong&gt;: With the successful completion of a release review, including approval of the specification committee by a super-majority vote, a specification version is considered ratified and the associated artifacts are promoted and distributed by the specification committee as a final specification.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (16).png&quot; class=&quot;alignnone size-full wp-image-5535&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-16.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;All versions of specifications that are referenced by a ratified final specification must themselves be ratified. The release review for related specification versions may be run concurrently.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Final Specification Licenses&lt;/strong&gt;: Final Specifications and their associated artifacts are distributed under specific licenses.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (17).png&quot; class=&quot;alignnone size-full wp-image-5536&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-17.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The Specification Document for the Final Specification must be distributed as read-only text under the &lt;a href=&quot;https://www.eclipse.org/legal/efsl.php&quot;&gt;Eclipse Foundation Specification License&lt;/a&gt;. The Ratified TCK in composite is distributed under the &lt;a href=&quot;https://www.eclipse.org/legal/tck.php&quot;&gt;Eclipse Foundation TCK License&lt;/a&gt;. Other technical artifacts must be distributed under an open source license (normally the specification project’s license).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Compatible Implementations&lt;/strong&gt;: Implementations may only claim compatibility with a final specification.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;EFSP Step-by-step (18).png&quot; class=&quot;alignnone size-full wp-image-5537&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/efsp-step-by-step-18.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;As discussed earlier, there must exist at least one compatible implementation of a specification version under one of the designated open source licenses before it can be ratified as a final specification. Other compatible implementations may be created from the final specification and distributed under other licensing terms (as determined by respective vendors).&lt;/p&gt;
-&lt;p&gt;The intellectual property rights required to build a compatible implementation flow from the final specification. That is, in order to be considered a compatible implementation and benefit from the intellectual property protections provided by the Eclipse Foundation Specification Agreement, an implementation must be based on a final specification. No claims regarding compatibility may be made for an implementation milestone build or unratified specification version.&lt;/p&gt;</description>
-	<pubDate>Fri, 08 Mar 2019 13:52:51 +0000</pubDate>
 </item>
 
 </channel>
