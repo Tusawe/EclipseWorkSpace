@@ -8,6 +8,295 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>vert.x project: Eclipse Vert.x 3.7.0 released!</title>
+	<guid isPermaLink="true">https://vertx.io/blog/eclipse-vert-x-3-7-0-released</guid>
+	<link>https://vertx.io/blog/eclipse-vert-x-3-7-0-released</link>
+	<description>&lt;article&gt;&lt;p&gt;We are extremely pleased to announce that the Eclipse Vert.x version 3.7.0 has been released.&lt;/p&gt;
+&lt;p&gt;It is an exciting milestone for a couple of reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;it comes with great new features like the &lt;a href=&quot;http://vertx.io/feed.xml#vertx-web-graphql&quot;&gt;GraphQL extension for Vert.x Web&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;this is the last minor version before Vert.x 4! &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Before we go throught the most notable new features, we would like to thank all the contributors.
+Your participation has been essential to this achievement.&lt;/p&gt;
+&lt;h4 id=&quot;-a-id-vertx-web-graphql-vert-x-web-graphql-a-&quot;&gt;&lt;a id=&quot;vertx-web-graphql&quot;&gt;Vert.x Web GraphQL&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Vert.x Web GraphQL extends Vert.x Web with the &lt;a href=&quot;https://www.graphql-java.com&quot;&gt;GraphQL-Java&lt;/a&gt; library so that you can build a GraphQL server.&lt;/p&gt;
+&lt;p&gt;To use this new module, add the following to the &lt;em&gt;dependencies&lt;/em&gt; section of your Maven POM file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;io.vertx&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;vertx-web-graphql&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;3.7.0&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or, if you use Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'io.vertx:vertx-web-graphql:3.7.0'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then create a Vert.x Web &lt;code&gt;Route&lt;/code&gt; and a &lt;code&gt;GraphQLHandler&lt;/code&gt; for it:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// Setup the GraphQL-Java object&lt;/span&gt;
+GraphQL graphQL = setupGraphQLJava();
+&lt;span class=&quot;hljs-comment&quot;&gt;// Use it to handle requests on a Vert.x Web route &lt;/span&gt;
+router.route(&lt;span class=&quot;hljs-string&quot;&gt;&quot;/graphql&quot;&lt;/span&gt;).handler(GraphQLHandler.create(graphQL));&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The GraphQL handler supports out of the box:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;query context customization&lt;/li&gt;
+&lt;li&gt;GraphQL-Java data loaders&lt;/li&gt;
+&lt;li&gt;batching on &lt;code&gt;POST&lt;/code&gt; requests (compatible with the &lt;a href=&quot;https://www.apollographql.com/docs/link/links/batch-http.html&quot;&gt;&lt;code&gt;apollo-link-batch-http&lt;/code&gt;&lt;/a&gt; transport)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For detailed usage instructions, please refer to the &lt;a href=&quot;http://vertx.io/docs/vertx-web-graphql/java/&quot;&gt;Vert.x Web GraphQL documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;vert-x-cassandra-client&quot;&gt;Vert.x Cassandra Client&lt;/h4&gt;
+&lt;h5 id=&quot;object-mapper-support&quot;&gt;Object mapper support&lt;/h5&gt;
+&lt;p&gt;Vert.x Cassandra Client now supports the &lt;a href=&quot;https://github.com/datastax/java-driver/tree/3.x/manual/object_mapper&quot;&gt;cassandra-driver-mapping&lt;/a&gt; module.&lt;/p&gt;
+&lt;p&gt;To enable this feature, you need to update your classpath by adding:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;com.datastax.cassandra&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;cassandra-driver-mapping&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;3.7.1&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then for a given entity: &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-annotation&quot;&gt;@Table&lt;/span&gt;(keyspace = &lt;span class=&quot;hljs-string&quot;&gt;&quot;test&quot;&lt;/span&gt;, name = &lt;span class=&quot;hljs-string&quot;&gt;&quot;users&quot;&lt;/span&gt;)
+&lt;span class=&quot;hljs-class&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;User&lt;/span&gt; &lt;/span&gt;{
+  &lt;span class=&quot;hljs-annotation&quot;&gt;@PartitionKey&lt;/span&gt; String name;
+  &lt;span class=&quot;hljs-comment&quot;&gt;// ... other fields and methods &lt;/span&gt;
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can retrieve a mapper and execute CRUD operations:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;VertxMappingManager manager = VertxMappingManager.create(cassandraClient);
+VertxMapper mapper = manager.mapper(User.class, vertx);
+mapper.save(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; User(&lt;span class=&quot;hljs-string&quot;&gt;&quot;john&quot;&lt;/span&gt;, hander -&amp;gt; {}));&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;collector-api&quot;&gt;Collector API&lt;/h5&gt;
+&lt;p&gt;The feature allows to use Java &lt;a href=&quot;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collector.html&quot;&gt;collectors&lt;/a&gt; for query results:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// Create a collector projecting a row set to a string in the form (last_name_1,last_name_2,...)&lt;/span&gt;
+Collector collector = Collectors.mapping(
+    row -&amp;gt; row.getString(&lt;span class=&quot;hljs-string&quot;&gt;&quot;last_name&quot;&lt;/span&gt;),
+    Collectors.joining(&lt;span class=&quot;hljs-string&quot;&gt;&quot;,&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;(&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;)&quot;&lt;/span&gt;)
+);
+
+&lt;span class=&quot;hljs-comment&quot;&gt;// Run the query with the collector&lt;/span&gt;
+client.execute(&lt;span class=&quot;hljs-string&quot;&gt;&quot;SELECT * FROM users&quot;&lt;/span&gt;, collector, ar -&amp;gt; {
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; (ar.succeeded()) {
+    &lt;span class=&quot;hljs-comment&quot;&gt;// Result in the form (last_name_1,last_name_2,...)&lt;/span&gt;
+    String result = ar.result();
+  } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
+    System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Failure: &quot;&lt;/span&gt; + ar.cause().getMessage());
+  }
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;cursor-api&quot;&gt;Cursor API&lt;/h5&gt;
+&lt;p&gt;The &lt;code&gt;ResultSet&lt;/code&gt; object has been enhanced with &lt;code&gt;ResultSet#several&lt;/code&gt; method, allowing you to obtain several rows at once:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;resultSet.several(&lt;span class=&quot;hljs-number&quot;&gt;30&lt;/span&gt;, ar -&amp;gt; {
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; (ar.succeeded()) {
+    List result = ar.result();
+  } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
+    System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Failure: &quot;&lt;/span&gt; + ar.cause().getMessage());
+  }
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A very useful feature for result batch iterations without resorting to streaming or fetching all rows in memory.&lt;/p&gt;
+&lt;h5 id=&quot;client-lifecyle&quot;&gt;Client lifecyle&lt;/h5&gt;
+&lt;p&gt;The client lifecyle has been revisited in 3.7.&lt;/p&gt;
+&lt;p&gt;Previously users expected to &lt;code&gt;connect&lt;/code&gt; manually before sending requests. It was also possible to &lt;code&gt;disconnect&lt;/code&gt; a shared client
+thus failing requests sent from another verticle or part of the application.&lt;/p&gt;
+&lt;p&gt;Now it is no longer required to manually connect a client (in fact, the method has been removed).&lt;/p&gt;
+&lt;p&gt;As soon as you retrieve an instance you can start using it, the lifecyle is automatically managed:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;CassandraClientOptions options = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; CassandraClientOptions()
+  .addContactPoint(&lt;span class=&quot;hljs-string&quot;&gt;&quot;node1.address&quot;&lt;/span&gt;)
+  .addContactPoint(&lt;span class=&quot;hljs-string&quot;&gt;&quot;node2.address&quot;&lt;/span&gt;)
+  .addContactPoint(&lt;span class=&quot;hljs-string&quot;&gt;&quot;node3.address&quot;&lt;/span&gt;)
+  .setKeyspace(&lt;span class=&quot;hljs-string&quot;&gt;&quot;my_keyspace&quot;&lt;/span&gt;);
+CassandraClient sharedClient = CassandraClient.createShared(vertx, &lt;span class=&quot;hljs-string&quot;&gt;&quot;sharedClientName&quot;&lt;/span&gt;, options);
+&lt;span class=&quot;hljs-comment&quot;&gt;// Start sending requests to Cassandra with the client instance&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Similarly, when the new &lt;code&gt;close&lt;/code&gt; method is invoked on a shared client, only the last active instance will actually disconnect from Cassandra:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// Disconnects only if this is the last running instance of the shared client&lt;/span&gt;
+sharedClient.close();&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;vert-x-redis-client&quot;&gt;Vert.x Redis Client&lt;/h4&gt;
+&lt;p&gt;The Vert.x Redis client has been reworked internally and provides now a new (more evolution friendly) API.&lt;/p&gt;
+&lt;p&gt;The current API had the limitation of being manually crafted after the redis API and involved many non controlable features
+such as auto reconnect, unlimited buffering of requests, etc… The new API offers a more &lt;em&gt;vert.x-y&lt;/em&gt; experience.&lt;/p&gt;
+&lt;p&gt;It just exposes the base client:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;Redis
+  .createClient(vertx, inetSocketAddress(&lt;span class=&quot;hljs-number&quot;&gt;7006&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;127.0.0.1&quot;&lt;/span&gt;))
+  .connect(create -&amp;gt; {
+    &lt;span class=&quot;hljs-keyword&quot;&gt;final&lt;/span&gt; Redis redis = create.result();
+
+    redis.send(Request.cmd(Command.PING), send -&amp;gt; {
+      &lt;span class=&quot;hljs-comment&quot;&gt;// ... should reply with PONG&lt;/span&gt;
+    });
+  });&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This has the benefits that you can now connect to Redis in any of it’s operation modes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Single server&lt;/li&gt;
+&lt;li&gt;HA mode&lt;/li&gt;
+&lt;li&gt;Cluster mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The API is decoupled from the handcrafted commands, which means that you can use new features such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://redis.io/commands#stream&quot;&gt;streams&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://redis.io/commands#hyperloglog&quot;&gt;hyperloglog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/RedisLabsModules&quot;&gt;any extension module&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A generated helper &lt;code&gt;RedisAPI&lt;/code&gt; is available that can wrap the client to provide a similar experience to the old API.&lt;/p&gt;
+&lt;p&gt;The main difference is that this new wrapper is generated from the &lt;a href=&quot;https://redis.io/commands/command&quot;&gt;COMMAND&lt;/a&gt; command,
+so the correct API it always exposed:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;RedisAPI redis = RedisAPI.api(client);
+
+redis.set(Arrays.asList(&lt;span class=&quot;hljs-string&quot;&gt;&quot;key1&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;value1&quot;&lt;/span&gt;), set -&amp;gt; {
+  &lt;span class=&quot;hljs-comment&quot;&gt;// ...&lt;/span&gt;
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;vert-x-amqp-client&quot;&gt;Vert.x AMQP Client&lt;/h4&gt;
+&lt;p&gt;The Vert.x AMQP client allows receiving and sending AMQP messages. It supersedes the current AMQP bridge and provide an API more
+flexible and very much user-friendly.&lt;/p&gt;
+&lt;p&gt;The Vert.x AMQP client allows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connecting to an AMQP broker or router - SASL and TLS connections are supported&lt;/li&gt;
+&lt;li&gt;Consuming message from a queue or a topic&lt;/li&gt;
+&lt;li&gt;Sending messages to a queue or a topic&lt;/li&gt;
+&lt;li&gt;Checking acknowledgement for sent messages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The AMQP 1.0 protocol support durable subscriptions, persistence, security, conversations, sophisticated routing… More
+ details on the protocol can be found on the &lt;a href=&quot;https://www.amqp.org/&quot;&gt;AMQP homepage&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Vert.x AMQP client is based on Vert.x Proton. If you need fine-grain control, we recommend using
+&lt;a href=&quot;https://github.com/vert-x3/vertx-proton&quot;&gt;Vert.x Proton&lt;/a&gt; directly.&lt;/p&gt;
+&lt;p&gt;To use this new module, add the following to the &lt;em&gt;dependencies&lt;/em&gt; section of your Maven POM file:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;io.vertx&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;vertx-amqp-client&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;3.7.0&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or, if you use Gradle:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;'io.vertx:vertx-amqp-client:3.7.0'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, you can connect to an AMQP broker:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;AmqpClientOptions options = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; AmqpClientOptions()
+      .setHost(&lt;span class=&quot;hljs-string&quot;&gt;&quot;localhost&quot;&lt;/span&gt;)
+      .setPort(&lt;span class=&quot;hljs-number&quot;&gt;5672&lt;/span&gt;)
+      .setUsername(&lt;span class=&quot;hljs-string&quot;&gt;&quot;user&quot;&lt;/span&gt;)
+      .setPassword(&lt;span class=&quot;hljs-string&quot;&gt;&quot;secret&quot;&lt;/span&gt;);
+
+AmqpClient client = AmqpClient.create(vertx, options);
+
+client.connect(ar -&amp;gt; {
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; (ar.failed()) {
+    System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Unable to connect to the broker&quot;&lt;/span&gt;);
+  } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
+    System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Connection succeeded&quot;&lt;/span&gt;);
+    AmqpConnection connection = ar.result();
+
+    &lt;span class=&quot;hljs-comment&quot;&gt;// You can create receivers and senders&lt;/span&gt;
+    connection.createReceiver(&lt;span class=&quot;hljs-string&quot;&gt;&quot;my-queue&quot;&lt;/span&gt;,
+      msg -&amp;gt; {
+        &lt;span class=&quot;hljs-comment&quot;&gt;// called on every received messages&lt;/span&gt;
+        System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Received &quot;&lt;/span&gt; + msg.bodyAsString());
+      },
+      done -&amp;gt; {
+        &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; (done.failed()) {
+          System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Unable to create receiver&quot;&lt;/span&gt;);
+        } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
+          AmqpReceiver receiver = done.result();
+        }
+      }
+    );
+
+    connection.createSender(&lt;span class=&quot;hljs-string&quot;&gt;&quot;my-queue&quot;&lt;/span&gt;, done -&amp;gt; {
+      &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; (done.failed()) {
+        System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Unable to create a sender&quot;&lt;/span&gt;);
+      } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
+        AmqpSender sender = done.result();
+        sender.send(AmqpMessage.create().withBody(&lt;span class=&quot;hljs-string&quot;&gt;&quot;hello&quot;&lt;/span&gt;).build());
+      }
+    });
+
+  }
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;stream-pipes&quot;&gt;Stream pipes&lt;/h4&gt;
+&lt;p&gt;When it comes to streaming, back-pressure is something you need to care about.&lt;/p&gt;
+&lt;p&gt;You have very much likely heard or used the Vert.x &lt;code&gt;Pump&lt;/code&gt; API to transfer data from a read stream to a write stream while
+respecting the write stream back-pressure.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;Pipe&lt;/code&gt; a new API superseding the &lt;code&gt;Pump&lt;/code&gt; to achieve the same effect and even more, it acts like a pump and handles for you&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;read stream pause/resume&lt;/li&gt;
+&lt;li&gt;write stream termination&lt;/li&gt;
+&lt;li&gt;stream failures handling&lt;/li&gt;
+&lt;li&gt;asynchronous result upon streaming completion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can transfer a read stream to a write stream simply, the write stream will be ended upon completion of the stream&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;readStream.pipeTo(writeStream);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can also be notified when the pipe completes:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;readStream.pipeTo(writeStream, ar -&amp;gt; {
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; (ar.succeeded()) {
+    System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;done&quot;&lt;/span&gt;);
+  } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
+    System.out.println(&lt;span class=&quot;hljs-string&quot;&gt;&quot;failed &quot;&lt;/span&gt; + ar.cause());
+  }
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Creating and using an asynchronous pipe is easy&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;// The read stream will be paused until the pipe is used&lt;/span&gt;
+Pipe pipe = readStream.pipe();
+getAsyncPipe(ar -&amp;gt; {
+  &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; (ar.succeeded()) {
+    pipe.to(writeStream);
+  } &lt;span class=&quot;hljs-keyword&quot;&gt;else&lt;/span&gt; {
+    pipe.close();
+  }
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;kafka-admin-client&quot;&gt;Kafka admin client&lt;/h4&gt;
+&lt;p&gt;The new version brings a Vert.x based first implementation of the native &lt;a href=&quot;https://kafka.apache.org/documentation/#adminapi&quot;&gt;Kafka Admin Client API&lt;/a&gt;
+which are in Java, instead of Scala used in the previous version.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;AdminUtils&lt;/code&gt; is now deprecated and the new &lt;code&gt;KafkaAdminClient&lt;/code&gt; is available instead.
+It allows to remove the last Scala artifact dependency.&lt;/p&gt;
+&lt;p&gt;While the &lt;code&gt;AdminUtils&lt;/code&gt; implementation needs to connect to Zookeeper for administration purposes,
+the &lt;code&gt;KafkaAdminClient&lt;/code&gt; only uses the Kafka bootstrap brokers connection.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs java&quot;&gt;Properties config = &lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; Properties();
+config.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, &lt;span class=&quot;hljs-string&quot;&gt;&quot;my-kafka-broker:9092&quot;&lt;/span&gt;);
+
+KafkaAdminClient adminClient = KafkaAdminClient.create(vertx, config);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The features currently supported are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create and delete topics&lt;/li&gt;
+&lt;li&gt;list all the topics&lt;/li&gt;
+&lt;li&gt;describe topics for getting information about leader partition, follower replicas and ISR (in-sync replicas) list&lt;/li&gt;
+&lt;li&gt;alter topics configuration&lt;/li&gt;
+&lt;li&gt;list all consumer groups&lt;/li&gt;
+&lt;li&gt;describe consumer groups for getting information like the state, the coordinator host, consumers per topics and so on&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are using the &lt;code&gt;AdminUtils&lt;/code&gt; today, consider migrate to the new &lt;code&gt;KafkaAdminClient&lt;/code&gt; because the former will be removed in Vert.x 4.0.&lt;/p&gt;
+&lt;h4 id=&quot;and-more-&quot;&gt;And more…&lt;/h4&gt;
+&lt;p&gt;Here are some other important improvements you can find in this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shared data structures available in local-only mode even when Vert.x is clustered&lt;/li&gt;
+&lt;li&gt;JSON decoding without prior knowledge of the structure (object, array, string, …etc)&lt;/li&gt;
+&lt;li&gt;Infinispan Cluster Manager upgraded to &lt;a href=&quot;https://infinispan.org&quot;&gt;Infinispan&lt;/a&gt; 9.4.10.Final&lt;/li&gt;
+&lt;li&gt;And obviously we have the usual bug fixes!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;finally&quot;&gt;Finally&lt;/h4&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/vert-x3/wiki/wiki/3.7.0-Release-Notes&quot;&gt;3.7.0 release notes&lt;/a&gt; can be found on the wiki, as well as the
+list of &lt;a href=&quot;https://github.com/vert-x3/wiki/wiki/3.7.0-Deprecations-and-breaking-changes&quot;&gt;deprecations and breaking changes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Docker images are available on &lt;a href=&quot;https://hub.docker.com/u/vertx/&quot;&gt;Docker Hub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Vert.x distribution can be downloaded on the website but is also available from &lt;a href=&quot;http://sdkman.io/index.html&quot;&gt;SDKMan&lt;/a&gt; and &lt;a href=&quot;http://brew.sh/&quot;&gt;HomeBrew&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The event bus client using the SockJS bridge is available from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/vertx3-eventbus-client&quot;&gt;NPM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vert-x3/vertx-bus-bower&quot;&gt;Bower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.webjars.org/&quot;&gt;WebJars&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The release artifacts have been deployed to &lt;a href=&quot;http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.vertx%22%20AND%20v%3A%223.7.0%22&quot;&gt;Maven Central&lt;/a&gt; and you can get the distribution on &lt;a href=&quot;https://bintray.com/vertx/downloads/distribution/3.7.0/view&quot;&gt;Bintray&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;That’s it! Happy coding and see you soon on our user or dev &lt;a href=&quot;https://vertx.io/community&quot;&gt;channels&lt;/a&gt;.&lt;/p&gt;
+&lt;/article&gt;</description>
+	<pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+</item>
+<item>
 	<title>JBoss Tools Team: JBoss Tools and Red Hat CodeReady Studio for Eclipse 2019-03</title>
 	<guid isPermaLink="true">https://tools.jboss.org/blog/12.11.0.ga.html</guid>
 	<link>https://tools.jboss.org/blog/12.11.0.ga.html</link>
@@ -915,26 +1204,6 @@ The Eclipse Ditto team&lt;/p&gt;</description>
 	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/35IWfgzH8M0/incubation-eclipse-development-process</link>
 	<description>The Eclipse Development Process has a notion of phases. Two of those phases are Incubation and Mature.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/35IWfgzH8M0&quot; width=&quot;1&quot; /&gt;</description>
 	<pubDate>Fri, 15 Mar 2019 20:30:00 +0000</pubDate>
-</item>
-<item>
-	<title>Wayne Beaton: Incubation in the Eclipse Development Process</title>
-	<guid isPermaLink="false">http://waynebeaton.wordpress.com/?p=5545</guid>
-	<link>https://waynebeaton.wordpress.com/2019/03/15/incubation-in-the-eclipse-development-process/</link>
-	<description>&lt;p&gt;The &lt;a href=&quot;https://www.eclipse.org/projects/dev_process/&quot;&gt;Eclipse Development Process&lt;/a&gt; has a notion of phases. Two of those phases are &lt;a href=&quot;https://www.eclipse.org/projects/dev_process/#6_2_3_Incubation&quot;&gt;Incubation&lt;/a&gt; and &lt;a href=&quot;https://www.eclipse.org/projects/dev_process/#6_2_4_Mature&quot;&gt;Mature&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;While in both of these phases, an Eclipse open source project operates in basically the same manner: only committers can push content, committers are brought on board by election, committers accept contributions, and projects in the incubation phase can issue major, minor, and service releases. In fact, we strongly encourage all new project teams to engage in at least one release while in the incubation phase as part of learning our process. Traditionally, a project in the incubation phase numbers their releases &amp;lt; 1.0 (e.g. “0.7”), but there is no requirement to do so.&lt;/p&gt;
-&lt;p&gt;Incubation is a phase, or state, for a project. That a project is in the incubation phase (we oftentimes refer to a project in this phase as “incubating”) is a flag for adopters and the community at large that the project team is still learning the various processes that Eclipse project teams follow, or that the content produced is either unstable or volatile (e.g. APIs are likely to change while a project is in incubation). Note my use of the word “or” in the previous sentence: a project with a stable code base that has just moved to the Eclipse Foundation (with committers who are new to our process) starts in incubation.&lt;/p&gt;
-&lt;p&gt;To highlight that a project is in the incubation phase, it must implement &lt;a href=&quot;https://www.eclipse.org/projects/handbook/#starting-project-phases&quot;&gt;incubation branding&lt;/a&gt;. Primarily, this takes the form of displaying the incubation logo in prominent locations, including the project’s major web properties and including the word “incubation” or warning that products shipped as part of a release “may include incubating components”.&lt;/p&gt;
-&lt;p&gt;For those readers who are already familiar with our incubating branding, you’ll hopefully be delighted to learn that we’ve &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=429305&quot;&gt;selected a logo&lt;/a&gt; to replace the venerable old “incubation egg” and will be rolling it out soon (while these sorts of things tend to be a team effort, we give credit to &lt;a href=&quot;https://twitter.com/stephaniejswart&quot;&gt;@stephaniejswart&lt;/a&gt; for bringing this new logo to life).&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;eclipse_incubation_vertical_png-02.png&quot; class=&quot;alignnone  wp-image-5546 aligncenter&quot; height=&quot;221&quot; src=&quot;https://waynebeaton.files.wordpress.com/2019/03/eclipse_incubation_vertical_png-02.png?w=169&amp;amp;h=221&quot; width=&quot;169&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The IP process provides some additional flexibility for projects in incubation; the implication being that there may be some modest increase in intellectual property-related risk (especially when combined with a new development team who don’t yet live and breath the &lt;a href=&quot;https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf&quot;&gt;Eclipse IP Policy&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;To leave incubation, a project team must engage in a &lt;a href=&quot;https://www.eclipse.org/projects/handbook/#release-graduation&quot;&gt;graduation review&lt;/a&gt; (graduation reviews are typically combined with a &lt;a href=&quot;https://www.eclipse.org/projects/handbook/#release-review&quot;&gt;progress or release review&lt;/a&gt;). During that review, the project team must demonstrate that:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The project team understands and implements the EDP and  and related processes, and understands their obligations under the Eclipse IP Policy;&lt;/li&gt;
-&lt;li&gt;The APIs are stable; and&lt;/li&gt;
-&lt;li&gt;The content produced is of “Eclipse Quality”&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In practice, this takes the form of a few extra sentences in the documentation associated with the review (after, of course, actually learning the ropes and stabilizing the content quality).&lt;/p&gt;</description>
-	<pubDate>Fri, 15 Mar 2019 16:33:01 +0000</pubDate>
 </item>
 
 </channel>
