@@ -35,5 +35,10 @@ public class Car {
 	public void setPlate(String plate) {
 		this.plate = plate;
 	}
+
+	@Override
+	public String toString() {
+		return brand + " " + model + " -> " + plate;
+	}
 	
 }
