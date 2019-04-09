@@ -1,5 +1,8 @@
 package forms;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -7,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-public class FirstForm extends JFrame {
+public class FirstForm extends JFrame implements ActionListener{
 
 	private JLabel lbl_nombre, lbl_comentario;
 	private JTextField txt_nombre;
@@ -24,6 +27,7 @@ public class FirstForm extends JFrame {
 		this.CrearObjetosFormulario(); // creamos todo
 		this.InsertarObjetosFormulario(); // Insertamos los objetos
 		this.PosicionarObejtosFormulario(); // Los posicionamos
+		this.AddEventoBoton();
 		
 	}
 	
@@ -59,7 +63,7 @@ public class FirstForm extends JFrame {
 		
 		lbl_nombre.setBounds(92, 67, 66, 15);
 		txt_nombre.setBounds(196, 65, 153, 19);
-		lbl_comentario.setBounds(92, 201, 101, 15);
+		lbl_comentario.setBounds(92, 220, 200, 15);
 		btn_aceptar.setBounds(162, 120, 114, 25);
 		btn_cerrar.setBounds(162, 180, 114, 25);
 		
@@ -68,7 +72,23 @@ public class FirstForm extends JFrame {
 	// Añadir eventos a los botones.
 	private void AddEventoBoton() {
 		
+		btn_aceptar.addActionListener(this);
+		btn_cerrar.addActionListener(this);
 		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		if(e.getSource() == btn_aceptar) {
+			
+			lbl_comentario.setText("NOMBRE: " + txt_nombre.getText());
+			
+		} else if(e.getSource() == btn_cerrar) {
+			
+			this.dispose();
+			
+		}
 		
 	}
 
