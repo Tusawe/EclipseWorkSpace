@@ -2,7 +2,6 @@ package ejercicios;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.Map;
 
 public class CarDAO {
@@ -60,15 +59,30 @@ public class CarDAO {
 	// Update car
 	public boolean updateCar(Car car) {
 		
-		return false;
+		if (car.getBrand() == null || 
+				car.getModel() == null ||
+				car.getPlate() == null ||
+				!listCars.containsKey(car.getPlate())) {
+			
+			return false;
+			
+		} else {
+			
+			String[] values = new String[2];
+			values[0] =  car.getModel();
+			values[1] =  car.getBrand();
+			listCars.put(car.getPlate(), values);
+			return true;
+			
+		}
 		
 	}
 	
 	
 	// Delete a car
 	public boolean deleteCarByPlate(String plate) {
-		
-		return false;
+	
+		return listCars.remove(plate) != null;
 		
 	}
 	
@@ -78,6 +92,8 @@ public class CarDAO {
 			CarDAO carDAO = new CarDAO(Helper.getDataFromFile(new File("data/car.json")));
 			System.out.println(carDAO.addCar(new Car("modelo","marca","matricula")));
 			System.out.println(carDAO.addCar(new Car("modelo","marca","matricula")));
+			System.out.println(carDAO.deleteCarByPlate("matricula"));
+			System.out.println(carDAO.deleteCarByPlate("matricula"));
 
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
