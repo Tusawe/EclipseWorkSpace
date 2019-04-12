@@ -72,12 +72,62 @@ public class TestCars {
 	}
 
 	private static void updateCar() {
-		// TODO Auto-generated method stub
+		
+		String model,brand,plate;
+		do {
+			
+			System.out.println("Enter the model of car:");
+			model = sc.nextLine();
+			
+		} while(!Helper.checkModel(model));
+		
+		do {
+			
+			System.out.println("Enter the brand of car:");
+			brand = sc.nextLine();
+			
+		} while(!Helper.checkBrand(brand));
+
+		do {
+	
+			System.out.println("Enter the plate of car:");
+			plate = sc.next();
+	
+		} while(!Helper.checkPlate(plate));
+		
+		Car car = new Car(model,brand,plate);
+		if (carDAO.updateCar(car)) System.out.println("Car updated.");
+		else System.out.println("Car not updated.");
 		
 	}
 
 	private static void addCar() {
-		// TODO Auto-generated method stub
+		
+		String model,brand,plate;
+		do {
+			
+			System.out.println("Enter the model of car:");
+			model = sc.nextLine();
+			
+		} while(!Helper.checkModel(model));
+		
+		do {
+			
+			System.out.println("Enter the brand of car:");
+			brand = sc.nextLine();
+			
+		} while(!Helper.checkBrand(brand));
+
+		do {
+	
+			System.out.println("Enter the plate of car:");
+			plate = sc.next();
+	
+		} while(!Helper.checkPlate(plate));
+		
+		Car car = new Car(model,brand,plate);
+		if (carDAO.addCar(car)) System.out.println("Car added.");
+		else System.out.println("Car not added.");
 		
 	}
 
@@ -91,7 +141,7 @@ public class TestCars {
 			
 		} while(!Helper.checkPlate(plate));
 		Car car = carDAO.getCar(plate);
-		if (car != null) System.out.println("This plate don't exist.");
+		if (car == null) System.out.println("This plate don't exist.");
 		else System.out.println(car);
 		
 	}

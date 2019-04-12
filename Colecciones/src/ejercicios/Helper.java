@@ -35,7 +35,7 @@ public class Helper {
 		
 		if (plate == null) return false; 
 		
-		return plate.toUpperCase().matches("[0-9]{4}-[A-Z]{3}");
+		return plate.toUpperCase().matches("[\\d]{4}-[A-Z]{3}");
 		
 	}
 	
@@ -43,7 +43,7 @@ public class Helper {
 		
 		if (model == null) return false; 
 		
-		return model.toUpperCase().matches("([A-Z]|[0-9])+(\\s([A-Z]|[0-9])*)*");
+		return model.toUpperCase().matches("[A-Z\\d]+[-\\sA-Z\\d]*");
 		
 	}
 
@@ -51,7 +51,7 @@ public class Helper {
 	
 	if (brand == null) return false; 
 	
-	return brand.toUpperCase().matches("[A-Z]+(\\s[A-Z]*)*");
+	return brand.toUpperCase().matches("[A-Z]+[-\\sA-Z]*[A-Z]");
 	
 }
 	

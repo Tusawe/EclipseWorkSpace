@@ -8,6 +8,13 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Doug Schaefer: The Journey to a “New Eclipse CDT”</title>
+	<guid isPermaLink="false">https://medium.com/p/3855ec52334</guid>
+	<link>https://medium.com/@dougschaefer/the-journey-to-a-new-eclipse-cdt-3855ec52334?source=rss-8f7a70438965------2</link>
+	<description>&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/756/1*mwdMRl-nYsZ3eQ_NRvfDRw.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;The Eclipse CDT project has been around for a long time. The first code commits were in June 2002 when QNX contributed the core C/C++ tooling components of it’s fresh new Momentics IDE. For the time it was quite visionary. Platform vendors are more often focused on their platforms and provide tools as an enabler for developers to leverage the power of those platforms. Having every company replicate that effort only leads to poor tools and unhappy developers. It doesn’t scale. Why not join together with like-minded vendors and build something we can all benefit from?&lt;/p&gt;&lt;p&gt;As an added bonus, we end up with a standard platform that allows developers to work with multiple environments on the same platform leading to some interesting partnership opportunities. At the very least developers acquire skills working with that IDE they can take to other jobs or even other projects in the same company. It truly is a win/win for everyone and makes for a very rich ecosystem.&lt;/p&gt;&lt;p&gt;But as with all long lasting projects, it has had it’s ebbs and flows. As we started, QNX and my team at Rational Software (later part of IBM) were the main contributors. There were a few others lurking around with a few contributions. The first few monthly CDT conference calls were cool as new voices appeared from around the world. It was a great start that led to the first EclipseCon where we had people standing in the hall trying to listen into our overflow birds of a feather session. We were overwhelmed by the interest.&lt;/p&gt;&lt;p&gt;But it didn’t last forever and the powers that be decided my team at IBM was needed elsewhere in the company. Obviously I wasn’t pleased and certainly wasn’t ready to leave the community. So when Sebastien Marineau, the CDT project lead at the time suggested I come work for him at QNX, I jumped at the chance. It wasn’t the easiest of moves but it was my chance to do what I could to help keep the CDT machine rolling and ended up getting a good start on my pride and joy, CDT’s super-fast indexer.&lt;/p&gt;&lt;p&gt;At the first CDT summit held in the fall of 2005 shortly after I had joined QNX, we had a lot of interest and it was well attended with over a dozen vendors present. We had some good presentations on what we were working on and some interesting presentations from other vendors on what they’d like to see in the project. Well someone said the wrong thing and I had to stop the proceedings. Of the 20 or so people in the room I asked the active contributors to stand up. There were four of us. How are they expecting this little team to do their bidding when the whole idea was to share in the effort and do something great together.&lt;/p&gt;&lt;p&gt;That’s probably the proudest and hardest moment of my time on the CDT. It worked. And from the chart above you can see we had healthy growth and lots of vendors coming to help after that. Those were the best years for the project. Though for me personally, I never really did recover from my lost team at Rational/IBM and ended up moving around a bit, never leaving the CDT project but not really giving it my all.&lt;/p&gt;&lt;p&gt;Luckily and happily, for the last four years, I’ve been back at QNX working on that original Momentics IDE and contributing to Eclipse trying to make it easier to use for C/C++ developers including my favorite add, the Launch Bar. Our customers are happy, the community seems happy, and there are more and more vendors delivering product based on our work in open source.&lt;/p&gt;&lt;p&gt;But also from the chart you can see participation in the CDT has been on a worrying trajectory to a point where we once again have about 4 people actively working on it. Despite being as popular as ever, only a small percentage of people and companies out there are helping with the common cause. It’s made me sad, and frankly angry. And I must apologize to my friends at last year’s EclipseCon for losing control of that a bit, but when you have so many companies leveraging something you are passionately doing for free for them, thanks to my sympathetic employer, you feel taken advantage of.&lt;/p&gt;&lt;p&gt;But as the leader of the project, it’s up to me with the help of my open source colleagues to find a way to turn that around. And we have some ideas that I’m very excited about. My next few posts will talk about that and go into details of some very cool new efforts underway in the CDT project. The IDE world has changed but it’s needed more than ever and we are ready to adapt. We really hope you can join us and make it great, again…&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=3855ec52334&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 11 Apr 2019 18:08:25 +0000</pubDate>
+</item>
+<item>
 	<title>N4JS: Automated rename refactoring in N4JS IDE</title>
 	<guid isPermaLink="false">tag:blogger.com,1999:blog-7569987920628430132.post-2530662466762609742</guid>
 	<link>https://n4js.blogspot.com/2019/03/automated-rename-refactoring-in-n4js.html</link>
@@ -1069,49 +1076,6 @@ The Eclipse Ditto team&lt;/p&gt;</description>
 &lt;p dir=&quot;ltr&quot;&gt; &lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-blog-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Tags: &lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/jakarta-ee&quot;&gt;Jakarta EE&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/developer-survey&quot;&gt;developer survey&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/community&quot;&gt;Community&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
 	<pubDate>Tue, 26 Mar 2019 20:38:52 +0000</pubDate>
-</item>
-<item>
-	<title>Tanja Obradovic: How to participate in advancing Jakarta EE Specification: Marketing and Promotional Work</title>
-	<guid isPermaLink="false">https://blogs.eclipse.org/6683 at https://blogs.eclipse.org</guid>
-	<link>https://blogs.eclipse.org/post/tanja-obradovic/how-participate-advancing-jakarta-ee-specification-marketing-and-promotional</link>
-	<description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p dir=&quot;ltr&quot;&gt;&lt;strong&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/lxzwUXhsUOJmUliLJhdKYgwweOXp51w2EigWbsBMi_TDmEo-rWG5iftFbCTMgUA1tg-s2EU1xuPxwNOkqzWbvnGKmuBo1lcfgVMHM6A6QaDrgQhtWZ7NrM0UI5Oh22ZTdCi5uTXS&quot; style=&quot;height: 207px; width: 591px;&quot; /&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p dir=&quot;ltr&quot;&gt;We all know in this day and age, marketing and social media are essential.  Social media is an effective way to stay connected with the Jakarta EE community. By informing the community about project milestones, progress, news around Jakarta EE, and how to become a contributor, you can help build and maintain this active community. Here are some ways in which you can help spread the word and participate:&lt;/p&gt;
-
-&lt;ul&gt;
-	&lt;li dir=&quot;ltr&quot;&gt;
-	&lt;p dir=&quot;ltr&quot;&gt;Follow Jakarta EE on social media&lt;/p&gt;
-
-	&lt;ul&gt;
-		&lt;li dir=&quot;ltr&quot;&gt;
-		&lt;p dir=&quot;ltr&quot;&gt;Twitter: @JakartaEE&lt;/p&gt;
-		&lt;/li&gt;
-		&lt;li dir=&quot;ltr&quot;&gt;
-		&lt;p dir=&quot;ltr&quot;&gt;Facebook: Jakarta EE&lt;/p&gt;
-		&lt;/li&gt;
-		&lt;li dir=&quot;ltr&quot;&gt;
-		&lt;p dir=&quot;ltr&quot;&gt;LinkedIn Group: Jakarta.EE&lt;/p&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;/li&gt;
-	&lt;li dir=&quot;ltr&quot;&gt;
-	&lt;p dir=&quot;ltr&quot;&gt;Write your own Jakarta EE related posts and repost our content&lt;/p&gt;
-	&lt;/li&gt;
-	&lt;li dir=&quot;ltr&quot;&gt;
-	&lt;p dir=&quot;ltr&quot;&gt;Add your blog to jakartablogs.ee by following these &lt;a href=&quot;https://github.com/jakartaee/jakartablogs.ee#guidelines&quot;&gt;guidelines&lt;/a&gt;&lt;/p&gt;
-	&lt;/li&gt;
-	&lt;li dir=&quot;ltr&quot;&gt;
-	&lt;p dir=&quot;ltr&quot;&gt;Subscribe to our mailing-lists&lt;a href=&quot;https://jakarta.ee/connect/&quot;&gt; https://jakarta.ee/connect/&lt;/a&gt;&lt;/p&gt;
-	&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p dir=&quot;ltr&quot;&gt;If you have any blogs, websites or other content related to Jakarta EE, let us know! We can promote your work and increase its reach within the community.&lt;/p&gt;
-
-&lt;p dir=&quot;ltr&quot;&gt;Same goes for any events you may be planning or event ideas you have. If it’s related to Jakarta EE, chances are we’d love a piece of it, just make sure to submit an &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSe16i4otNN_8cZ0iXBjZIB_YWgfi_5lq1jzJyUh9zBPnHlIPQ/viewform&quot;&gt;event form&lt;/a&gt; with all the details.&lt;/p&gt;
-
-&lt;p dir=&quot;ltr&quot;&gt; &lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-blog-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Tags: &lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/javaee&quot;&gt;#JavaEE&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/jakartaee&quot;&gt;#JakartaEE&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/marketing&quot;&gt;#marketing&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/opensource&quot;&gt;#OpenSource&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/communitywork&quot;&gt;#CommunityWork&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-	<pubDate>Mon, 25 Mar 2019 18:01:53 +0000</pubDate>
 </item>
 
 </channel>

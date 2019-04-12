@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sun.security.util.Length"/>
     <fullyQualifiedTypeName name="Ejercicio2.BinaryNumber"/>
     <fullyQualifiedTypeName name="Ejercicio2.HexadecimalNumber"/>
     <fullyQualifiedTypeName name="ClaseExterna"/>
@@ -27,7 +26,6 @@
     <fullyQualifiedTypeName name="clases.Libro"/>
     <fullyQualifiedTypeName name="clases.Biblioteca"/>
     <fullyQualifiedTypeName name="java.time.Period"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="javax.swing.JLabel"/>
@@ -57,7 +55,9 @@
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="ejercicios.Car"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
