@@ -2,6 +2,9 @@ package ejercicios;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Scanner;
@@ -15,7 +18,15 @@ public class TestCars {
 	public static void main(String[] args) {
 		
 		try {
-			carDAO = new CarDAO(Helper.getDataFromFile(new File("data/car.json")));
+			Path pathDB = Paths.get("db", "cars.sql");
+			if(!Files.exists(pathDB)) {
+				carDAO  = new CarDAO();
+				carDAO.setListCars(Helper.getDataFromFile(new File("data/car.json")));
+			}
+			else {
+				carDAO  = new CarDAO();
+				carDAO.setListCars(carDAO.getCarsFromDataBase());
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -96,7 +107,7 @@ public class TestCars {
 		} while(!Helper.checkPlate(plate));
 		
 		Car car = new Car(model,brand,plate);
-		if (carDAO.updateCar(car)) System.out.println("Car updated.");
+		if (carDAO.updateCarByPlate(car)) System.out.println("Car updated.");
 		else System.out.println("Car not updated.");
 		
 	}
@@ -140,7 +151,7 @@ public class TestCars {
 			plate = sc.next();
 			
 		} while(!Helper.checkPlate(plate));
-		Car car = carDAO.getCar(plate);
+		Car car = carDAO.getCarByPlate(plate);
 		if (car == null) System.out.println("This plate don't exist.");
 		else System.out.println(car);
 		

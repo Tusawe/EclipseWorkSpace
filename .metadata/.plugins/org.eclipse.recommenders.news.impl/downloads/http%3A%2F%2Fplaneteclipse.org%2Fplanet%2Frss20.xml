@@ -8,6 +8,207 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Eclipse Announcements: The 2019 IoT Developer Survey Results are Live</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/ueF1Td4fXn8/2019-iot-developer-survey-results-are-live</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/ueF1Td4fXn8/2019-iot-developer-survey-results-are-live</link>
+	<description>This year marks the fifth year the Eclipse IoT Working Group has asked the global IoT developer community to share their perceptions, requirements, and priorities.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/ueF1Td4fXn8&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 17 Apr 2019 13:40:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: New Survey of More Than 1,700 IoT Developers Reveals Top Hardware, Software &quot;Stack&quot; Choices</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/rvzoLsL0DKs/New-Survey-of-More-Than-1-700-IoT-Developers-Reveals-Top-Hardware-Software-Stack-Choices.html</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/rvzoLsL0DKs/New-Survey-of-More-Than-1-700-IoT-Developers-Reveals-Top-Hardware-Software-Stack-Choices.html</link>
+	<description>Today, we released the 2019 IoT Developer Survey results that canvassed more than 1,700 developers about their IoT efforts!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/rvzoLsL0DKs&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 17 Apr 2019 13:40:00 +0000</pubDate>
+</item>
+<item>
+	<title>Mike Milinkovich: The 2019 IoT Developer Survey Results are Live</title>
+	<guid isPermaLink="false">http://eclipse-foundation.blog/?p=1488</guid>
+	<link>https://eclipse-foundation.blog/2019/04/17/2019-iot-developer-survey/</link>
+	<description>&lt;p&gt;After months of hard work, the 2019 IoT Developer Survey results are live today. This year marks the fifth year the &lt;a href=&quot;https://iot.eclipse.org/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Eclipse IoT Working Group&lt;/a&gt; has asked the global IoT developer community to share their perceptions, requirements, and priorities. The survey has proven to be an influential assessment of the IoT market as viewed from the development front lines. Access the full findings of the 2019 IoT Developer Survey &lt;a href=&quot;http://bit.ly/2Z6SwiA&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Over 1,700 individuals took the survey between February and March 2019. Just like in previous years (see results from 2018, 2017, and earlier &lt;a href=&quot;https://iot.eclipse.org/iot-developer-surveys/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;), Eclipse IoT collaborated with key IoT ecosystem players like Bosch and Red Hat to maximize the reach of the survey.&lt;/p&gt;
+&lt;p&gt;The key findings this year include the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IoT drives real-world, commercial outcomes today. 65% of respondents are currently working on IoT projects professionally or will be in the next 18 months.&lt;/li&gt;
+&lt;li&gt;IoT developers mostly use C, C++, Java, JavaScript, and Python&lt;/li&gt;
+&lt;li&gt;AWS, Azure, and GCP are the leading IoT cloud platforms&lt;/li&gt;
+&lt;li&gt;Top three industry focus areas remain the same as last year: IoT Platforms, Home Automation, and Industrial Automation / IIoT.&lt;/li&gt;
+&lt;li&gt;MQTT remains the dominant IoT communication protocol leveraged by developers&lt;/li&gt;
+&lt;li&gt;The Eclipse Desktop IDE is the leading IDE for building IoT applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;IoT gets real(er)&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Consistent with our findings last year, two-thirds of the respondents to our survey develop and deploy IoT solutions today or will be doing so within 18 months. This continued focus on building and deploying real world solutions is reflected in the increases in developers’ focus on performance, connectivity, and standards shown in the survey.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;C and Java dominate&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;C won out as the programming language of choice for constrained devices, while Java was most popular for gateways/edge nodes and IoT cloud. Neither of those findings are surprising. C and C++ have long been the languages of choice for small embedded systems where minimizing memory space and power consumption, and maximizing processor utilization are key. Java is the dominant language and platform where the memory and processing resources are larger, and the complexity of the systems are greater. In particular, Java is the language of choice for most cloud infrastructure projects, so seeing it lead in IoT cloud is consistent with that.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;AWS, Azure, and Google hold on to the lead&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;As expected AWS, Azure, and GCP maintain their status as the leading IoT cloud platforms. The list of three and their rankings are entirely consistent with their relative weights in the cloud computing marketplace as a whole, so there is no surprise to see this reflected in our results.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;A continued focus on platforms, home automation, and IIoT&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;IoT Platforms (34%), Home Automation (27%), and Industrial Automation / IIoT (26%) were the respondents’ three most common industry focus areas. These areas are likely to continue to be key targets for IoT developer activity.  The fact that IoT Platforms is consistently year after year the number one focus for IoT developers is interesting. It implies that enterprises and industrials are putting resources into building their own IoT platforms for use by their companies. To me this suggests that industrial IoT is going to be a huge opportunity for hybrid cloud, as companies build and run IoT solutions on-premise based using modern, open technologies.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Security is (still) top of mind &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Security is still the top concern for IoT developers. Communication Security (38%) Data Encryption (38%), and JSON Web Tokens (JWTs) (26%) were the top three security technologies cited in the survey, with virtualization also starting to play a stronger role in IoT Security.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;MQTT is still the dominant IoT communication protocol&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;HTTP (49%), MQTT (42%), and Websockets (26%) were the top three communications protocols used by IoT developers. The growth in MQTT adoption over the past seven or eight years has been phenomenal, and I like to think that the Eclipse IoT community with its Eclipse Paho and Eclipse Mosquitto projects had a small part to play in that. Having robust open source implementations available has certainly been part of the MQTT’s success. Looking forward that main challenge we see for further MQTT adoption is the lack of interoperability built into the protocol. While MQTT is a great lightweight, low latency protocol it does not provide any guidance on the topic structures and payload definitions used by any device or application. This means that no two teams using MQTT would expect to have their systems be able to reliably exchange data. The Eclipse Tahu project defines the Sparkplug protocol — created by Arlen Nipper one of the co-inventors of MQTT itself. Sparkplug defines the topic structures and payload definitions necessary for out-of-the-box interoperability of SCADA systems. We are hopeful that Sparkplug could spur MQTT to even greater adoption in industrial IoT use cases.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;The Eclipse Desktop IDE is the leading IoT IDE&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;45% of respondents use the Eclipse Desktop IDE. It is not at all surprising that the Eclipse IDE has a strong franchise with IoT developers, given the dominance of C and Java. The Eclipse CDT project has long been hugely important in the embedded software space. The past decade CDT has been used by virtually every chip, SOC, and RTOS company as the basis for their toolset. Those developer solutions also typically use additional tools such as the Target Management Framework, and Remote Systems Explorer that were specifically designed with the embedded developer in mind. That, coupled with the Eclipse IDE’s broad use amongst professional Java developers makes its leadership in IoT clear.&lt;/p&gt;
+&lt;p&gt;In addition, close to 10% also use Eclipse Che, our community’s next generation cloud-based tooling solution. It really seems part of the future of IoT is in the cloud, one way or another.&lt;/p&gt;
+&lt;p&gt;Access the full findings of the 2019 IoT Developer Survey &lt;a href=&quot;http://bit.ly/2Z6SwiA&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks to everyone who took the time to fill out this survey, and thanks again our Eclipse IoT members for their help with the promotion.&lt;/p&gt;
+&lt;p&gt;We are very interested in hearing your thoughts and feedback about this year’s findings. And, of course, we are always open to suggestions on how to improve the survey in the future!&lt;/p&gt;</description>
+	<pubDate>Wed, 17 Apr 2019 11:00:50 +0000</pubDate>
+</item>
+<item>
+	<title>itemis: How to reference UML elements from Xtext DSLs</title>
+	<guid isPermaLink="true">https://blogs.itemis.com/en/how-to-reference-uml-elements-from-xtext-dsls</guid>
+	<link>https://blogs.itemis.com/en/how-to-reference-uml-elements-from-xtext-dsls</link>
+	<description>&lt;p&gt;With the &lt;a href=&quot;https://www.eclipse.org/Xtext/&quot;&gt;Xtext framework&lt;/a&gt;, you can build DSL workbenches in just a few steps. However, sometimes you want to reuse model elements already defined in other formats or even in other languages. In this blog post I’m going to demonstrate typical scenarios when you’re reusing model elements belonging to a different language.&lt;/p&gt; 
+&lt;p&gt;Firstly, consider having some pre-defined Eclipse UML2 models, and you want to reference classes of these UML models from your Xtext DSL.&lt;/p&gt; 
+&lt;p&gt;If you are interested in reusing model elements belonging to the same language but defined in different formats, take a look at my previous blog post “&lt;a href=&quot;https://hosting.itemis.de/en/combining-emf-models-with-xtext-dsls&quot;&gt;Combining EMF models with Xtext DSLs&lt;/a&gt;”.&lt;/p&gt; 
+&lt;p&gt;Let's get started with the preparatory steps:&lt;/p&gt; 
+&lt;h2&gt;Preparatory steps&lt;/h2&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;Install the latest version of the &lt;em&gt;UML2 Extender SDK&lt;/em&gt; and the &lt;em&gt;Xtext Complete SDK&lt;/em&gt; of the Eclipse release train.&lt;br /&gt;&lt;br /&gt;&lt;img alt=&quot;install-Xtext-Complete-SDK-and-UML2-Extender-SDK&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog%20(2019)/Software%20Development/How%20to%20reference%20UML%20elements%20from%20Xtext%20DSLs/install-Xtext-Complete-SDK-and-UML2-Extender-SDK.jpg?width=770&amp;amp;name=install-Xtext-Complete-SDK-and-UML2-Extender-SDK.jpg&quot; style=&quot;width: 770px;&quot; width=&quot;770&quot; /&gt; &lt;p&gt; &lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt;Create the &lt;em&gt;Domainmodel&lt;/em&gt; project, based on the &lt;a href=&quot;https://www.eclipse.org/Xtext/documentation/102_domainmodelwalkthrough.html&quot;&gt;Xtext 15 Minutes Tutorial&lt;/a&gt;. The meta-model of the &lt;em&gt;Domainmodel&lt;/em&gt; project&lt;br /&gt;&lt;br /&gt;&lt;img alt=&quot;meta-model-of-the-Domainmodel project&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog%20(2019)/Software%20Development/How%20to%20reference%20UML%20elements%20from%20Xtext%20DSLs/meta-model-of-the-Domainmodel%20project.jpg?width=750&amp;amp;name=meta-model-of-the-Domainmodel%20project.jpg&quot; style=&quot;width: 750px;&quot; width=&quot;750&quot; /&gt;&lt;br /&gt;&lt;br /&gt;describes that a domain model consist of certain types (data types and entities), an entity contains features and each feature can have a type. To be able to use UML classes in the feature's type definition, the following modifications are necessary:&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;h2&gt;Modifications&lt;sup&gt;1&lt;/sup&gt; in the &lt;em&gt;org.example.domainmodel&lt;/em&gt; plug-in&lt;/h2&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;Extend the &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel/src/org/example/domainmodel/Domainmodel.xtext#L23&quot;&gt;&lt;em&gt;Domainmodel.xtext&lt;/em&gt;&lt;/a&gt; grammar definition:&lt;br /&gt; &lt;pre class=&quot;prettyprint&quot;&gt;grammar org.example.domainmodel.Domainmodel with org.eclipse.xtext.common.Terminals
+
+...
+
+import &quot;http://www.eclipse.org/uml2/5.0.0/UML&quot; as uml
+
+...
+
+Feature:
+	(many?='many')? name=ID ':' type=[uml::Class|FQN] | type=[Type];
+
+...&lt;/pre&gt; &lt;p&gt; &lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt;Extend the &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel/src/org/example/domainmodel/GenerateDomainmodel.mwe2#L11-L66&quot;&gt;&lt;em&gt;GenerateDomainmodel.mwe2&lt;/em&gt;&lt;/a&gt; workflow:&lt;br /&gt; &lt;pre class=&quot;prettyprint&quot;&gt;module org.example.domainmodel.GenerateDomainmodel
+
+import org.eclipse.emf.mwe.utils.*
+import org.eclipse.xtext.xtext.generator.*
+import org.eclipse.xtext.xtext.generator.model.project.*
+
+var rootPath = &quot;..&quot;
+
+Workflow {
+
+	bean = StandaloneSetup {
+		
+		scanClassPath = true
+		platformUri = rootPath
+		
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.emf.codegen.ecore/model/GenModel.genmodel&quot;
+			to = &quot;platform:/resource/org.eclipse.emf.codegen.ecore/model/GenModel.genmodel&quot;
+		}
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel&quot;
+			to = &quot;platform:/resource/org.eclipse.emf.ecore/model/Ecore.genmodel&quot;
+		}
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.uml2.codegen.ecore/model/GenModel.genmodel&quot;
+			to = &quot;platform:/resource/org.eclipse.uml2.codegen.ecore/model/GenModel.genmodel&quot;
+		}
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.uml2.uml/model/UML.genmodel&quot;
+			to = &quot;platform:/resource/org.eclipse.uml2.uml/model/UML.genmodel&quot;
+		}
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.emf.codegen.ecore/model/GenModel.ecore&quot;
+			to = &quot;platform:/resource/org.eclipse.emf.codegen.ecore/model/GenModel.ecore&quot;
+		}
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore&quot;
+			to = &quot;platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore&quot;
+		}
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.uml2.codegen.ecore/model/GenModel.ecore&quot;
+			to = &quot;platform:/resource/org.eclipse.uml2.codegen.ecore/model/GenModel.ecore&quot;
+		}
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore&quot;
+			to = &quot;platform:/resource/org.eclipse.uml2.uml/model/UML.ecore&quot;
+		}
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel&quot;
+			to = &quot;platform:/resource/org.eclipse.uml2.types/model/Types.genmodel&quot;
+		}
+		uriMap = {
+			from = &quot;platform:/plugin/org.eclipse.uml2.types/model/Types.ecore&quot;
+			to = &quot;platform:/resource/org.eclipse.uml2.types/model/Types.ecore&quot;
+		}
+		
+		registerGeneratedEPackage = &quot;org.eclipse.emf.ecore.EcorePackage&quot;
+		registerGeneratedEPackage = &quot;org.eclipse.uml2.uml.UMLPackage&quot;
+		registerGeneratedEPackage = &quot;org.eclipse.uml2.types.TypesPackage&quot;
+		registerGeneratedEPackage = &quot;org.eclipse.emf.codegen.ecore.genmodel.GenModelPackage&quot;
+		registerGeneratedEPackage = &quot;org.eclipse.uml2.codegen.ecore.genmodel.GenModelPackage&quot;
+		registerGenModelFile = &quot;platform:/resource/org.eclipse.emf.ecore/model/Ecore.genmodel&quot;
+		registerGenModelFile = &quot;platform:/resource/org.eclipse.emf.codegen.ecore/model/GenModel.genmodel&quot;
+		registerGenModelFile = &quot;platform:/resource/org.eclipse.uml2.uml/model/UML.genmodel&quot;
+		registerGenModelFile = &quot;platform:/resource/org.eclipse.uml2.codegen.ecore/model/GenModel.genmodel&quot;
+	}
+	
+	component = XtextGenerator {
+		...
+	}
+}&lt;/pre&gt; &lt;p&gt; &lt;/p&gt; &lt;/li&gt; 
+ &lt;li&gt;Add the following plugins to the Require-Bundle section in the &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel/META-INF/MANIFEST.MF#L18-L19&quot;&gt;&lt;em&gt;MANIFEST.MF&lt;/em&gt;&lt;/a&gt; file: 
+  &lt;ul&gt; 
+   &lt;li&gt;&lt;em&gt;org.eclipse.uml2.uml&lt;/em&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;em&gt;org.eclipse.uml2.codegen.ecore&lt;/em&gt;&lt;/li&gt; 
+  &lt;/ul&gt; &lt;/li&gt; 
+ &lt;li&gt;Add the following classes: 
+  &lt;ul&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel/src/org/example/domainmodel/UMLLanguageConstants.xtend&quot;&gt;&lt;em&gt;UMLLanguageConstants.xtend&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel/src/org/example/domainmodel/UMLQualifiedNameProvider.xtend&quot;&gt;&lt;em&gt;UMLQualifiedNameProvider.xtend&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel/src/org/example/domainmodel/UMLRuntimeModule.xtend&quot;&gt;&lt;em&gt;UMLRuntimeModule.xtend&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel/src/org/example/domainmodel/UMLStandaloneSetup.xtend&quot;&gt;&lt;em&gt;UMLStandaloneSetup.xtend&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+  &lt;/ul&gt; &lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;h2&gt;Modifications&lt;sup&gt;2&lt;/sup&gt; in the &lt;em&gt;org.example.domainmodel.ui&lt;/em&gt; plug-in&lt;/h2&gt; 
+&lt;ol&gt; 
+ &lt;li&gt;Add the following classes: 
+  &lt;ul&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui/src/org/example/domainmodel/ui/UMLExecutableExtensionFactory.xtend&quot;&gt;&lt;em&gt;UMLExecutableExtensionFactory.xtend&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui/src/org/example/domainmodel/ui/UMLUiModule.xtend&quot;&gt;&lt;em&gt;UMLUiModule.xtend&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui/src/org/example/domainmodel/ui/editor/ReflectiveTreeEditorOpener.xtend&quot;&gt;&lt;em&gt;ReflectiveTreeEditorOpener.xtend&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+   &lt;li&gt;&lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui/src/org/example/domainmodel/ui/internal/DomainmodelActivatorEx.xtend&quot;&gt;&lt;em&gt;DomainmodelActivatorEx.xtend&lt;/em&gt;&lt;/a&gt;&lt;/li&gt; 
+  &lt;/ul&gt; &lt;/li&gt; 
+ &lt;li&gt;Register &lt;em&gt;DomainmodelActivatorEx&lt;/em&gt; as &lt;em&gt;Bundle-Activator&lt;/em&gt; in the &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui/META-INF/MANIFEST.MF#L27&quot;&gt;&lt;em&gt;MANIFEST.MF&lt;/em&gt;&lt;/a&gt; file.&lt;/li&gt; 
+ &lt;li&gt;Add the following plugin to the Require-Bundle section in the &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui/META-INF/MANIFEST.MF#L21&quot;&gt;&lt;em&gt;MANIFEST.MF&lt;/em&gt;&lt;/a&gt;: 
+  &lt;ul&gt; 
+   &lt;li&gt;&lt;em&gt;org.eclipse.emf.ecore.editor&lt;/em&gt;&lt;/li&gt; 
+  &lt;/ul&gt; &lt;/li&gt; 
+ &lt;li&gt;Add the following section to the &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui/plugin.xml#L435-L442&quot;&gt;&lt;em&gt;plugin.xml&lt;/em&gt;&lt;/a&gt; file:&lt;br /&gt; &lt;pre class=&quot;prettyprint&quot;&gt;&amp;lt;!-- register the Xtext UI language services to Xtext's registry --&amp;gt;
+&amp;lt;extension
+	point=&quot;org.eclipse.xtext.extension_resourceServiceProvider&quot;&amp;gt;
+	&amp;lt;resourceServiceProvider
+		class=&quot;org.example.domainmodel.ui.UMLExecutableExtensionFactory:org.eclipse.xtext.ui.resource.generic.EmfResourceUIServiceProvider&quot;
+		uriExtension=&quot;uml&quot;&amp;gt;
+	&amp;lt;/resourceServiceProvider&amp;gt;
+&amp;lt;/extension&amp;gt;&lt;/pre&gt; &lt;p&gt; &lt;/p&gt; &lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;h2&gt;Manual testing&lt;/h2&gt; 
+&lt;p&gt;Start an Eclipse runtime to verify that parsing, linking, content assistant, hovering, hyperlink navigation, quickfixes, etc., are working properly.&lt;/p&gt; 
+&lt;p&gt;&lt;img alt=&quot;Eclipse-manual-testing&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog%20(2019)/Software%20Development/How%20to%20reference%20UML%20elements%20from%20Xtext%20DSLs/Eclipse-manual-testing.jpg?width=707&amp;amp;name=Eclipse-manual-testing.jpg&quot; style=&quot;width: 707px;&quot; width=&quot;707&quot; /&gt;&lt;/p&gt; 
+&lt;h2&gt;Automated testing&lt;/h2&gt; 
+&lt;ul&gt; 
+ &lt;li&gt;Extend the &lt;em&gt;org.example.domainmodel.tests&lt;/em&gt; plug-in by the &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.tests/src/org/example/domainmodel/tests/DomainmodelIndexTest.xtend&quot;&gt;&lt;em&gt;Indexing&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.tests/src/org/example/domainmodel/tests/DomainmodelLinkingTest.xtend&quot;&gt;&lt;em&gt;Linking&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.tests/src/org/example/domainmodel/tests/DomainmodelParsingTest.xtend&quot;&gt;&lt;em&gt;Parsing&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.tests/src/org/example/domainmodel/tests/DomainmodelScopingTest.xtend&quot;&gt;&lt;em&gt;Scoping&lt;/em&gt;&lt;/a&gt;, etc. JUnit test cases.&lt;/li&gt; 
+ &lt;li&gt;Extend the &lt;em&gt;org.example.domainmodel.ui.tests&lt;/em&gt; plug-in by the &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui.tests/src/org/example/domainmodel/ui/tests/DomainmodelContentAssist2Test.xtend&quot;&gt;&lt;em&gt;ContentAssistant&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui.tests/src/org/example/domainmodel/ui/tests/DomainmodelHover2Test.xtend&quot;&gt;&lt;em&gt;Hovering&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui.tests/src/org/example/domainmodel/ui/tests/DomainmodelHyperlinking2Test.xtend&quot;&gt;&lt;em&gt;Hyperlinking&lt;/em&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/itemis/itemis-blog/blob/referencing-uml-elements-from-xtext-dsls/org.example.domainmodel.ui.tests/src/org/example/domainmodel/ui/tests/DomainmodelQuickfix2Test.xtend&quot;&gt;&lt;em&gt;Quickfixes&lt;/em&gt;&lt;/a&gt;, etc. JUnit Plug-in test cases.&lt;/li&gt; 
+&lt;/ul&gt; 
+&lt;h2&gt;Conclusion&lt;/h2&gt; 
+&lt;p&gt;We have done the preparatory steps, modifications and testing necessary to reuse model elements belonging to a different language. This example has been kept simple on purpose.&lt;/p&gt; 
+&lt;p&gt;If you are interested in more advanced use-cases on the Xtext/UML integration, I recommend &lt;a href=&quot;https://hosting.itemis.de/author/karsten-thoms&quot;&gt;Karsten&lt;/a&gt;‘s and &lt;a href=&quot;https://hosting.itemis.de/author/holger-schill&quot;&gt;Holger&lt;/a&gt;‘s presentation on “&lt;a href=&quot;https://www.youtube.com/watch?v=teOULtQ81-U&quot;&gt;How to build Code Generators for Non-Xtext Models with Xtend&lt;/a&gt;”.&lt;/p&gt; 
+&lt;p&gt;Do you have questions or feedback? Feel free to leave me a comment below.&lt;/p&gt; 
+&lt;p&gt; &lt;/p&gt;  
+&lt;p&gt;&lt;sup&gt;1,2&lt;/sup&gt; Please note that the blog post “&lt;a href=&quot;https://hosting.itemis.de/en/combining-emf-models-with-xtext-dsls&quot;&gt;Combining EMF Models with Xtext DSLs&lt;/a&gt;” explains the necessary modifications in detail.&lt;/p&gt;  
+&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://track.hubspot.com/__ptq.gif?a=761475&amp;amp;k=14&amp;amp;r=https%3A%2F%2Fblogs.itemis.com%2Fen%2Fhow-to-reference-uml-elements-from-xtext-dsls&amp;amp;bu=https%253A%252F%252Fblogs.itemis.com&amp;amp;bvt=rss&quot; style=&quot;width: 1px!important;&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 16 Apr 2019 14:00:00 +0000</pubDate>
+	<author>miklossy@itemis.de (Tamas Miklossy)</author>
+</item>
+<item>
 	<title>Doug Schaefer: The Journey to a “New Eclipse CDT”</title>
 	<guid isPermaLink="false">https://medium.com/p/3855ec52334</guid>
 	<link>https://medium.com/@dougschaefer/the-journey-to-a-new-eclipse-cdt-3855ec52334?source=rss-8f7a70438965------2</link>
@@ -994,88 +1195,6 @@ list of &lt;a href=&quot;https://github.com/vert-x3/wiki/wiki/3.7.0-Deprecations
 	<link>https://medium.com/@donraab/our-journey-to-1000-github-stars-and-commits-efa442bf3603?source=rss-df39b86e9f04------2</link>
 	<description>&lt;p&gt;Taking note of an important milestone, how we got here, and where we go next.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*c2lR0FCHgmwdl_SWPP1jGQ.jpeg&quot; /&gt;&lt;/figure&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;Eclipse Collections&lt;/a&gt; became a reality at the Eclipse Foundation at the end of 2015. We had successfully migrated GS Collections to the Eclipse Foundation to become Eclipse Collections. An announcement was &lt;a href=&quot;https://www.infoq.com/news/2016/01/GS-Collections-Eclipse-Foundn&quot;&gt;published at InfoQ in January 2016&lt;/a&gt; on the migration.&lt;/p&gt;&lt;blockquote&gt;By partnering with the Eclipse Foundation, we hope to grow a vibrant and open community of contributors and committers around the Eclipse Collections project.&lt;/blockquote&gt;&lt;p&gt;The GS Collections project had only allowed contributions from Goldman Sachs developers. At the Eclipse Foundation, anyone can contribute to the Eclipse Collections project as long as they sign the &lt;a href=&quot;https://www.eclipse.org/legal/ECA.php&quot;&gt;Eclipse Contributor Agreement&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;At the time of the move to the Eclipse Foundation, GS Collections had reached 1400 stars on GitHub. After three years of hard work, &lt;a href=&quot;https://www.eclipse.org/collections/&quot;&gt;Eclipse Collections&lt;/a&gt; has reached the milestone of 1000 GitHub stars. I marked the milestone in Twitter.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/605/1*uocRVs2CcbqJXMmTFc4YqA.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;With 49 contributors so far, we are realizing our dream of building a vibrant and open community around Eclipse Collections. Contributors are welcome &lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;here&lt;/a&gt;!&lt;/p&gt;&lt;h3&gt;We started from zero stars three years ago&lt;/h3&gt;&lt;p&gt;Although GS Collections is no longer actively developed, it has continued growing from 1400 stars in 2016 to over 1700 on GitHub today.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/785/1*x8iY3Xv-l8QP5yKFxwN5CA.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;Eclipse Collections started at zero stars in 2016 and passed the 1000 star milestone earlier this month. This has been thanks to the support of our growing community. We are fortunate to have some motivated and inspirational Eclipse Collections advocates who help us raise awareness by acting as information radiators and amplifiers.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/783/1*I2ujSELCUYEY_Cg80Mzt1Q.png&quot; /&gt;&lt;/figure&gt;&lt;h3&gt;How did we get here?&lt;/h3&gt;&lt;p&gt;I gave a talk at the Open Source Strategy Forum in 2017 which explained some of the things we have done to help increase awareness of Eclipse Collections. The title of the talk was “&lt;a href=&quot;https://opensourcestrategyforum.org/talks/cant-hear-mute/&quot;&gt;They Can’t Hear You On Mute&lt;/a&gt;.” It took a lot more than this to get us here.&lt;/p&gt;&lt;h4&gt;There is no “I” in Open Source.&lt;/h4&gt;&lt;p&gt;We got where we are today because we worked hard to build a community of energized contributors and vocal advocates. The success of Eclipse Collections has been driven by the support of its vibrant and open developer community. The first thing we had to do was build this community from the ground floor. We actively encourage developers to contribute to the project in numerous ways.&lt;/p&gt;&lt;p&gt;We have promoted the approach of using code katas for learning and teaching the framework. The code katas for Eclipse Collections can be found &lt;a href=&quot;https://github.com/eclipse/eclipse-collections-kata&quot;&gt;here&lt;/a&gt;. One of the greatest contributions someone can make to a framework is to learn it, use it and then to teach it to others. The Eclipse Collections Kata was taught recently at a &lt;a href=&quot;https://ti.to/dublin-java-user-group/Eclipse-Collections-Kata-Barry-Evans/&quot;&gt;Dublin Java User Group meet-up&lt;/a&gt;.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/604/1*8m1L5D6OXahAEIuN2XIvhQ.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;Teaching is the best way to learn, and a great way to contribute. Thank you to all the teachers!&lt;/p&gt;&lt;p&gt;We’ve seen multiple blogs and articles written by members of the community, in addition to many tweets. We continue to make rounds at conferences and Java User Group meet-ups, and are happy to hand out Eclipse Collections stickers to anyone who wants one.&lt;/p&gt;&lt;p&gt;Every little bit helps. Thank you to everyone who has contributed to our success.&lt;/p&gt;&lt;h3&gt;You can’t get there from here&lt;/h3&gt;&lt;p&gt;The committers on the project balance their day jobs with engaging with the open source Java community at tech conferences, on Twitter, writing blogs and articles, reviewing issues and pull requests, and occasionally adding new features to the framework. Our role as committers has changed significantly from the days when we were primarily contributors and our focus was to write code we needed for the projects we worked on. Our job now is to raise awareness, provide training, increase adoption, encourage and promote the contributions of others, and continue to build the community. We are actively looking out for developers who are interested in vesting themselves in the framework to the level at which they can become the next committers on the project.&lt;/p&gt;&lt;p&gt;You can become a Committer and even Project Lead on an open source project if you set that as a goal and demonstrate you are vested in supporting the project. Below is a link to a great blog post which explains the process of becoming a Committer on an open source project at the Eclipse Foundation.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://waynebeaton.wordpress.com/2018/02/08/the-eclipse-committer-election-workflow/&quot;&gt;https://waynebeaton.wordpress.com/2018/02/08/the-eclipse-committer-election-workflow/&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Thank you to everyone in the community&lt;/h3&gt;&lt;p&gt;We received our 1000th commit on the same day that we reached 1000 stars on GitHub. Thank you to our entire Eclipse Collections developer community for helping us reach this second amazing milestone!&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1003/1*T6At97Vi2xtq5uDp7IFsyw.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;If you look at the activity in Eclipse Collections since the beginning, you will see a fairly steady flow of work being contributed by our amazing community.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/755/1*gX2ugFubsUdsE3G6_dsidA.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;It is a nice milestone to have now passed 1000 commits, and it was cool to unlock this achievement on the same day we passed 1000 stars. I gave a shout out on Twitter to the developer who helped us pass this milestone.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/604/1*VY59WgQ5G-DtXZjoMP97CQ.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;Thank you to all of the contributors who helped Eclipse Collections reach 1000 commits.&lt;/p&gt;&lt;h3&gt;Open source will surprise you&lt;/h3&gt;&lt;p&gt;In 2018, the greatest surprise contribution from the open source community came in the form of Jackson serialization support for Eclipse Collections types in the jackson-datatypes-collections project.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/FasterXML/jackson-datatypes-collections&quot;&gt;FasterXML/jackson-datatypes-collections&lt;/a&gt;&lt;/p&gt;&lt;p&gt;This is an amazing contribution to all users of Eclipse Collections who also use the Jackson library for serialization support. We literally did not see this contribution coming, until it arrived. I had hoped someone would be interested in providing this support, and I am very thankful to the developer who worked on it.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/FasterXML/jackson-datatypes-collections&quot;&gt;Star this repo&lt;/a&gt; if you use a third-party collections library and benefit from the the Jackson serialization support provided by one of the amazing developers who contribute their time and energy to make our lives as developers easier.&lt;/p&gt;&lt;p&gt;We sent some Eclipse Collections mugs and stickers to the developer who made this awesome contribution to the open source Java community.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/607/1*rrjoQPuyg5qm3Vu3Jp-4-Q.png&quot; /&gt;Be willing to be surprised, and remember to say thank you.&lt;/figure&gt;&lt;h3&gt;What’s next for Eclipse Collections?&lt;/h3&gt;&lt;p&gt;We’re hoping to see our 50th, 60th, and maybe 100th contributor, and our 6th, 7th and maybe even 10th committer by the end of 2019. We appreciate contributions of any kind. No contribution is too small.&lt;/p&gt;&lt;p&gt;We’d also like to pass 2000 stars in 2019. We can’t get there without further building our community, so expect to see some energized Eclipse Collections advocates presenting at technical conferences and Java User Group meet-ups throughout 2019.&lt;/p&gt;&lt;p&gt;We will be releasing version 10.0 of the project in the next few months. The project has become stable enough that we have not done a major release since September 2017. The addition of default methods in Java 8 has made it possible for us to safely release API changes in minor releases, so the &lt;a href=&quot;https://medium.com/@donraab/eclipse-collections-9-1-released-24c413d200ec&quot;&gt;9.1&lt;/a&gt; and &lt;a href=&quot;https://medium.com/oracledevs/eclipse-collections-9-2-released-aa88b56ecacc&quot;&gt;9.2&lt;/a&gt; releases had quite a few new APIs added.&lt;/p&gt;&lt;h3&gt;One last thank you for the journey ahead&lt;/h3&gt;&lt;p&gt;Eclipse Collections is an open source project built by an amazing developer community for an amazing developer community. We love Java, and we are thankful to the &lt;a href=&quot;https://www.eclipse.org/&quot;&gt;Eclipse Foundation&lt;/a&gt; for giving us a great place to build our community.&lt;/p&gt;&lt;p&gt;Thank you to all those that have helped the project reach this stage in its evolution. Thank you to all those that continue to help us as we move the project forward and as we look to build our community further.&lt;/p&gt;&lt;p&gt;I hope this blog reaches developers out there who have been interested in joining an open source community and making their first contribution. We are here and happy to help you take that first step.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;&lt;em&gt;Eclipse Collections&lt;/em&gt;&lt;/a&gt;&lt;em&gt; is open for &lt;/em&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;&lt;em&gt;contributions&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. If you like the library, you can let us know by starring it on GitHub.&lt;/em&gt;&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=efa442bf3603&quot; width=&quot;1&quot; /&gt;</description>
 	<pubDate>Mon, 01 Apr 2019 03:59:23 +0000</pubDate>
-</item>
-<item>
-	<title>Orion: Announcing Orion 20</title>
-	<guid isPermaLink="false">http://planetorion.org/news/?p=915</guid>
-	<link>http://planetorion.org/news/2019/03/announcing-orion-20/</link>
-	<description>&lt;p&gt;We are pleased to announce the twentieth release of Orion, “Your IDE in the Cloud”. You can run it now at &lt;a href=&quot;https://orionhub.org/&quot;&gt;OrionHub,&lt;/a&gt; from &lt;a href=&quot;https://www.npmjs.com/package/orion&quot;&gt;NPM&lt;/a&gt; or &lt;a href=&quot;https://download.eclipse.org/orion/drops/R-20.0-201903291844/index.html&quot;&gt;download the server&lt;/a&gt; to run your own instance locally.&lt;/p&gt;
-
-
-
-&lt;p&gt;Once again, thank you to all committers and contributors for your hard work this release. &lt;/p&gt;
-
-
-
-&lt;p&gt;This release was focussed entirely on accessibility.&lt;/p&gt;</description>
-	<pubDate>Fri, 29 Mar 2019 19:25:08 +0000</pubDate>
-</item>
-<item>
-	<title>Eclipse Ditto: Announcing Ditto Milestone 0.9.0-M1</title>
-	<guid isPermaLink="true">https://www.eclipse.org/ditto/2019-03-28-milestone-announcement-090-M1.html</guid>
-	<link>https://www.eclipse.org/ditto/2019-03-28-milestone-announcement-090-M1.html</link>
-	<description>&lt;p&gt;Today the Ditto team is happy to announce the first milestone of the upcoming release 
-&lt;a href=&quot;https://projects.eclipse.org/projects/iot.ditto/releases/0.9.0&quot;&gt;0.9.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Have a look at the Milestone &lt;a href=&quot;https://www.eclipse.org/ditto/release_notes_090-M1.html&quot;&gt;0.9.0-M1 release notes&lt;/a&gt; for what changed in detail.&lt;/p&gt;
-
-&lt;p&gt;The main changes and new features since the last release &lt;a href=&quot;https://www.eclipse.org/ditto/release_notes_080.html&quot;&gt;0.8.0&lt;/a&gt; are&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;memory optimizations when working with millions of digital twins&lt;/li&gt;
-  &lt;li&gt;enhance connectivity to also be able to establish connections to Apache Kafka&lt;/li&gt;
-  &lt;li&gt;providing more detailed metrics for connections&lt;/li&gt;
-  &lt;li&gt;cluster bootstrapping stability improvements&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;artifacts&quot;&gt;Artifacts&lt;/h2&gt;
-
-&lt;p&gt;The new Java artifacts have been published at the &lt;a href=&quot;https://repo.eclipse.org/content/repositories/ditto/&quot;&gt;Eclipse Maven repository&lt;/a&gt;
-as well as &lt;a href=&quot;https://repo1.maven.org/maven2/org/eclipse/ditto/&quot;&gt;Maven central&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The Docker images have been pushed to Docker Hub:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-policies/&quot;&gt;eclipse/ditto-policies&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-things/&quot;&gt;eclipse/ditto-things&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-things-search/&quot;&gt;eclipse/ditto-things-search&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-gateway/&quot;&gt;eclipse/ditto-gateway&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-connectivity/&quot;&gt;eclipse/ditto-connectivity&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-concierge/&quot;&gt;eclipse/ditto-concierge&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img alt=&quot;Ditto&quot; class=&quot;docimage&quot; src=&quot;https://www.eclipse.org/ditto/images/ditto.svg&quot; /&gt;&lt;/figure&gt;
-
-&lt;p&gt;–&lt;br /&gt;
-The Eclipse Ditto team&lt;/p&gt;</description>
-	<pubDate>Thu, 28 Mar 2019 04:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>Fabio Zadrozny: LiClipse 5.2.2 released</title>
-	<guid isPermaLink="false">tag:blogger.com,1999:blog-7855001383687474475.post-5274877453732983738</guid>
-	<link>http://liclipse.blogspot.com/2019/03/liclipse-522-released.html</link>
-	<description>This version does an updated of the main dependencies of LiClipse.&lt;br /&gt;&lt;br /&gt;It's now based on:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Eclipse 4.11 (also named 2019-03)&lt;/li&gt;&lt;li&gt;PyDev (5.2.2) &lt;/li&gt;&lt;li&gt;EGit (5.3.0)&lt;/li&gt;&lt;/ul&gt;As a note, it seems I haven't updated this blog as often as I should (I end up putting more effort into announcing the PyDev updates) but just to note, LiClipse is always updated whenever PyDev is updated.&lt;br /&gt;&lt;br /&gt;Enjoy! &lt;br /&gt;&lt;br /&gt;</description>
-	<pubDate>Wed, 27 Mar 2019 13:46:27 +0000</pubDate>
-	<author>noreply@blogger.com (Fabio Zadrozny)</author>
-</item>
-<item>
-	<title>Thabang Mashologu: Thank You for Taking the Jakarta EE 2019 Developer Survey!</title>
-	<guid isPermaLink="false">https://blogs.eclipse.org/6684 at https://blogs.eclipse.org</guid>
-	<link>https://blogs.eclipse.org/post/thabang-mashologu/thank-you-taking-jakarta-ee-2019-developer-survey</link>
-	<description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p dir=&quot;ltr&quot;&gt;The Jakarta EE 2019 Developer Survey, organized by the &lt;a href=&quot;https://jakarta.ee/&quot;&gt;Jakarta EE Working Group&lt;/a&gt;, is now closed. The survey wrapped up at midnight on Monday, March 25, with&lt;strong&gt; over 1,770 responses&lt;/strong&gt; from developers around the globe. Truly an outstanding response from an amazing community!&lt;/p&gt;
-
-&lt;p dir=&quot;ltr&quot;&gt;Thank you all for taking the time to participate in this year’s survey. We greatly appreciate your valuable input on enterprise and cloud native application development trends, priorities, and approaches.&lt;/p&gt;
-
-&lt;p dir=&quot;ltr&quot;&gt;We look forward to sharing the key findings and insights from your survey responses. The results will be published in late April.&lt;/p&gt;
-
-&lt;p dir=&quot;ltr&quot;&gt;Stay tuned and thanks again!&lt;/p&gt;
-
-&lt;p dir=&quot;ltr&quot;&gt;&lt;strong&gt;&lt;img src=&quot;https://lh4.googleusercontent.com/x_Kxjni_ZF-_Z4ZQYRxYVHGomHStHfokBBNypqEnOpLr9Wz0Ji_ximVdtj9GNZaSXSSpV7wDErGPdZxYfsGRW8GrUbQyy2FwNU8B-I0xEs4kA5JvZt8v4F00At-OnqzhWtO1AT5T&quot; style=&quot;height: 312px; width: 624px;&quot; /&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p dir=&quot;ltr&quot;&gt; &lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-blog-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Tags: &lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/jakarta-ee&quot;&gt;Jakarta EE&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/developer-survey&quot;&gt;developer survey&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/community&quot;&gt;Community&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-	<pubDate>Tue, 26 Mar 2019 20:38:52 +0000</pubDate>
 </item>
 
 </channel>

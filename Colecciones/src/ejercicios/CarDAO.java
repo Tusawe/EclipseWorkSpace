@@ -1,105 +1,156 @@
 package ejercicios;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.HashMap;
 import java.util.Map;
 
 public class CarDAO {
-
 	Map<String, String[]> listCars;
+	Connection connection;
 
-	public CarDAO(Map<String, String[]> listCars) {
-		this.listCars = listCars;
-	}
-
-	public void setListCars(Map<String, String[]> listCars) {
-		this.listCars = listCars;
-	}
-	
-	// Matodos CRUD (crear, leer, actualizar y borrar)
-	
-	// Add entry to map
-	public boolean addCar(Car car) {
-		
-		if (car.getBrand() == null || 
-				car.getModel() == null ||
-				car.getPlate() == null ||
-				listCars.containsKey(car.getPlate())) {
-			
-			return false;
-			
-		} else {
-			
-			String[] values = new String[2];
-			values[0] =  car.getModel();
-			values[1] =  car.getBrand();
-			listCars.put(car.getPlate(), values);
-			return true;
-			
-		}
-		
-	}
-	
-	// Read all cars
-	public Map<String, String[]> getListCars() {
-		
-		return listCars;
-		
-	}
-	
-	// Read one car
-	public Car getCar(String plate) {
-	
-		String[] values = listCars.get(plate);
-		
-		return new Car(values[0],values[1],plate);
-		
-	}
-	
-	// Update car
-	public boolean updateCar(Car car) {
-		
-		if (car.getBrand() == null || 
-				car.getModel() == null ||
-				car.getPlate() == null ||
-				!listCars.containsKey(car.getPlate())) {
-			
-			return false;
-			
-		} else {
-			
-			String[] values = new String[2];
-			values[0] =  car.getModel();
-			values[1] =  car.getBrand();
-			listCars.put(car.getPlate(), values);
-			return true;
-			
-		}
-		
-	}
-	
-	
-	// Delete a car
-	public boolean deleteCarByPlate(String plate) {
-	
-		return listCars.remove(plate) != null;
-		
-	}
-	
-	public static void main(String[] args) {
-		
+	public CarDAO() {
 		try {
-			CarDAO carDAO = new CarDAO(Helper.getDataFromFile(new File("data/car.json")));
-			System.out.println(carDAO.addCar(new Car("modelo","marca","matricula")));
-			System.out.println(carDAO.addCar(new Car("modelo","marca","matricula")));
-			System.out.println(carDAO.deleteCarByPlate("matricula"));
-			System.out.println(carDAO.deleteCarByPlate("matricula"));
-
-		} catch (FileNotFoundException e) {
+			connection =  ConnectionDB.getConnection();
+		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 	}
+	//create table
+	public void createTableCar() {
+		//DOS OPERACIONES: DROP Y CREATE. SE DEBEN HACER LAS DOS O NINGUNA
+		//IMPLICA TRANSACCIONES
+		
+			
+	//	int rowsDrop = 0, rowsCreate = 0;
+		String dropTable   = " DROP TABLE IF EXISTS car;";
+		String createTable = "CREATE TABLE car ( model TEXT NOT NULL, " + 
+				"brand TEXT NOT NULL, plate TEXT PRIMARY KEY);";
+		Statement statement = null;
+		try {
+			//OBLIGAMOS A SQLITE QUE LAS OPERACIONES NO SEAN ATÓMICAS
+			connection.setAutoCommit(false); 
+			statement = connection.createStatement();
+			statement.executeUpdate(dropTable);
+			statement.executeUpdate(createTable);
+			connection.commit();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			try {
+				connection.rollback();
+			} catch (SQLException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} finally {
+				if (statement != null)
+					try {
+						statement.close();
+					} catch (SQLException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+//				try {
+//					connection.setAutoCommit(true);
+//				} catch (SQLException e1) {
+//					// TODO Auto-generated catch block
+//					e1.printStackTrace();
+//				}
+			}
+		}
+		
+		
+	}
 	
+	//Fill table car
+	public void fillTableCar(Map<String, String[]> listCars) {
+		int count = 0;
+		String sqlInsert = "INSERT INTO car VALUES (? , ? , ?);";
+		try (PreparedStatement psStatement = connection.prepareStatement(sqlInsert);){
+			for (String plate : listCars.keySet()) {
+				psStatement.setString(3, plate);
+				String[] values = listCars.get(plate);
+				psStatement.setString(1, values[0]);
+				psStatement.setString(2, values[1]);
+				count += psStatement.executeUpdate();
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.printf("Insert %d rows%n", count);
+	}
+	
+    //get cars from database
+	public Map<String,String[]> getCarsFromDataBase(){
+		String sql = "SELECT * FROM car;";
+		Map<String, String[]> listCarsFromDB = new HashMap<>();
+		try (Statement statement = connection.createStatement();){
+			ResultSet rSet = statement.executeQuery(sql);
+			while(rSet.next()) {
+				// System.out.println(rSet.getString(3));
+				listCarsFromDB.put(rSet.getString(3), 
+						new String[] {rSet.getString(1),rSet.getString(2)});
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public void setListCars(Map<String, String[]> listCars) {
+		this.listCars = listCars;
+	}
+	//methods CRUD
+	//add entry to map
+	public boolean addCar(Car car) {
+		if (car.getBrand() == null || car.getModel() == null || 
+				car.getPlate() == null || listCars.containsKey(car.getPlate()))
+			return false;
+		else {
+			listCars.put(car.getPlate(), new String[] { car.getModel(), car.getBrand()});
+			return true;
+		}
+	}
+	//read all car
+	public Map<String, String[]> getListCars() {
+		return listCars;
+	}
+	//read one car
+	public Car getCarByPlate(String plate) {
+		if (plate == null || listCars.get(plate) == null)	
+			return null;
+		return new Car(listCars.get(plate)[0],listCars.get(plate)[1], plate);
+	}
+	//update model/maker one car
+	public boolean updateCarByPlate(Car car) {
+		if (car.getBrand() == null || car.getModel() == null || 
+				car.getPlate() == null || !listCars.containsKey(car.getPlate()))
+			return false;
+		else {
+			listCars.put(car.getPlate(), new String[] {car.getModel(), car.getBrand()});
+			return true;
+		}
+	}
+	//delete car 
+	public boolean deleteCarByPlate(String plate) {
+//		String[] values = listCars.remove(plate);
+//		System.out.println(Arrays.toString(values));
+//		return values != null;
+		return listCars.remove(plate) != null;
+	}
+
+//	public static void main(String[] args) throws FileNotFoundException {
+//		CarDAO carDAO = new CarDAO();
+//		carDAO.createTableCar();
+//		carDAO.fillTableCar(Helper.getDataFromFile(new File("data/car.json")));
+//	}
+
 }
