@@ -8,6 +8,52 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Eclipse Ditto: Announcing Ditto Milestone 0.9.0-M2</title>
+	<guid isPermaLink="true">https://www.eclipse.org/ditto/2019-04-29-milestone-announcement-090-M2.html</guid>
+	<link>https://www.eclipse.org/ditto/2019-04-29-milestone-announcement-090-M2.html</link>
+	<description>&lt;p&gt;The second milestone of the upcoming release 
+&lt;a href=&quot;https://projects.eclipse.org/projects/iot.ditto/releases/0.9.0&quot;&gt;0.9.0&lt;/a&gt; was released today.&lt;/p&gt;
+
+&lt;p&gt;Have a look at the Milestone &lt;a href=&quot;https://www.eclipse.org/ditto/release_notes_090-M2.html&quot;&gt;0.9.0-M2 release notes&lt;/a&gt; for what changed in detail.&lt;/p&gt;
+
+&lt;p&gt;The main changes and new features since the last milestone &lt;a href=&quot;https://www.eclipse.org/ditto/release_notes_090-M1.html&quot;&gt;0.9.0-M1&lt;/a&gt; are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;rewrite of Ditto’s “search” service in order to use the same index and have the same query performance for API v1 and v2&lt;/li&gt;
+  &lt;li&gt;several contributions in order to operate Eclipse Ditto on Microsoft Azure&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;artifacts&quot;&gt;Artifacts&lt;/h2&gt;
+
+&lt;p&gt;The new Java artifacts have been published at the &lt;a href=&quot;https://repo.eclipse.org/content/repositories/ditto/&quot;&gt;Eclipse Maven repository&lt;/a&gt;
+as well as &lt;a href=&quot;https://repo1.maven.org/maven2/org/eclipse/ditto/&quot;&gt;Maven central&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Docker images have been pushed to Docker Hub:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-policies/&quot;&gt;eclipse/ditto-policies&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-things/&quot;&gt;eclipse/ditto-things&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-things-search/&quot;&gt;eclipse/ditto-things-search&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-gateway/&quot;&gt;eclipse/ditto-gateway&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-connectivity/&quot;&gt;eclipse/ditto-connectivity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/r/eclipse/ditto-concierge/&quot;&gt;eclipse/ditto-concierge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img alt=&quot;Ditto&quot; class=&quot;docimage&quot; src=&quot;https://www.eclipse.org/ditto/images/ditto.svg&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;–&lt;br /&gt;
+The Eclipse Ditto team&lt;/p&gt;</description>
+	<pubDate>Mon, 29 Apr 2019 04:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Eclipse Foundation on the move!</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/RRGNn66sEKI/eclipse-foundation-move</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/RRGNn66sEKI/eclipse-foundation-move</link>
+	<description>After 15 years at 102 Centrepointe Drive in Ottawa, the Eclipse Foundation is on the move!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/RRGNn66sEKI&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 25 Apr 2019 20:00:00 +0000</pubDate>
+</item>
+<item>
 	<title>Mike Milinkovich: Eclipse Foundation on the move!</title>
 	<guid isPermaLink="false">http://eclipse-foundation.blog/?p=1490</guid>
 	<link>https://eclipse-foundation.blog/2019/04/24/eclipse-foundation-on-the-move/</link>
@@ -1176,27 +1222,6 @@ list of &lt;a href=&quot;https://github.com/vert-x3/wiki/wiki/3.7.0-Deprecations
 	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/Ar_6mKh1Spw/welcome-gabriela</link>
 	<description>We'd like to welcome Gabriela Motroc to the Eclipse Foundation as a Content Marketing Specialist based in Germany!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/Ar_6mKh1Spw&quot; width=&quot;1&quot; /&gt;</description>
 	<pubDate>Mon, 01 Apr 2019 14:40:00 +0000</pubDate>
-</item>
-<item>
-	<title>Eclipse Announcements: Thank You for Taking the Jakarta EE 2019 Developer Survey!</title>
-	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/q90YGK_0yag/thank-you-taking-jakarta-ee-2019-developer-survey</guid>
-	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/q90YGK_0yag/thank-you-taking-jakarta-ee-2019-developer-survey</link>
-	<description>The survey wrapped up at midnight on Monday, March 25, with over 1,770 responses from developers around the globe.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/q90YGK_0yag&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Mon, 01 Apr 2019 13:40:00 +0000</pubDate>
-</item>
-<item>
-	<title>Thabang Mashologu: Welcome Gabriela!</title>
-	<guid isPermaLink="false">https://blogs.eclipse.org/6687 at https://blogs.eclipse.org</guid>
-	<link>https://blogs.eclipse.org/post/thabang-mashologu/welcome-gabriela</link>
-	<description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;I am happy to announce that Gabriela Motroc has joined the Eclipse Foundation as a Content Marketing Specialist based in Germany.&lt;/p&gt;
-
-&lt;p&gt;Gabriela joins us from the Software &amp;amp; Support Media Group, where she was an editor of &lt;a href=&quot;http://jaxenter.com/&quot;&gt;JAXenter.com&lt;/a&gt; and JAX Magazine. She is well known to many in the Eclipse community and recently spearheaded JAXenter’s excellent &lt;a href=&quot;https://jaxenter.com/understanding-jakarta-ee-series-little-150668.html&quot;&gt;Understanding Jakarta EE Series&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;Gabriela holds a Master’s degree in International Communication Management and a B.A. Journalism. Her knowledge and experience will be great assets in developing and sharing updates, news, and content that motivates, educates, and inspires the engagement of our community.&lt;/p&gt;
-
-&lt;p&gt;Please join me in welcoming Gabriela to the Eclipse Foundation marketing team.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-blog-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Tags: &lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/eclipse-foundation&quot;&gt;Eclipse Foundation&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/marketing-0&quot;&gt;Marketing&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://blogs.eclipse.org/blog-tags/jakarta-ee&quot;&gt;Jakarta EE&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-	<pubDate>Mon, 01 Apr 2019 13:12:24 +0000</pubDate>
 </item>
 
 </channel>

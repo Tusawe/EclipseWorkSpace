@@ -158,7 +158,7 @@
 		<item value="1" key="VisibilityModifier"/>
 		<item value="false" key="LimitElements"/>
 		<item value="false" key="InstanceOf"/>
-		<item value="0" key="StringStyle"/>
+		<item value="3" key="StringStyle"/>
 		<item value="0" key="ToStringTemplateSelected"/>
 		<item value="false" key="SkipNull"/>
 		<item value="false" key="FinalModifier"/>
